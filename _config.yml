@@ -1,0 +1,24 @@
+# Site settings
+title: Bit Podcast
+email: benjaminreid.nouveller@gmail.com
+description: "Bit Podcast is an ongoing series about games, design & development from the mouths of @DavidDarnes and @BenjaminReid"
+baseurl: ""
+url: "https://bitpodcast.com"
+paginate: 5
+paginate_path: "posts/:num"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Podcast settings
+lang: en
+author: David Darnes and Benjamin Reid
+
+# Jekyll plugins
+gems:
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-paginate
+
+jekyll-mentions: https://twitter.com
