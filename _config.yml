@@ -1,9 +1,9 @@
 # Site settings
 title: Bit Podcast
 email: benjaminreid.nouveller@gmail.com
-description: "Bit Podcast is an ongoing series about games, design & development from the mouths of @DavidDarnes and @BenjaminReid"
+description: "aethermonolog ist ein Podcast von und mit Kai Birkenfeld"
 baseurl: ""
-url: "https://bitpodcast.com"
+url: "http://aethermonolog.de"
 paginate: 5
 paginate_path: "posts/:num"
 
@@ -14,6 +14,21 @@ permalink: pretty
 # Podcast settings
 lang: en
 author: David Darnes and Benjamin Reid
+
+# Site owner
+owner:
+  name: Kai Birkenfeld
+  bio:
+  avatar:
+  email: mail@dyscribe.com
+  disqus-shortname: dyscribe
+  twitter: dyscribe
+  github: dyscribe
+  flattr: dyscribe
+  google:
+    plus: +KaiBirkenfeld
+    verify: 
+
 
 # Jekyll plugins
 gems:
