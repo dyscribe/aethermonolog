@@ -3,18 +3,15 @@ layout: default
 title: aethermonolog.de | Audio Podcast
 ---
 
-{% include teaser.html %}
-
 <article>
-  <h2>Podcast Feed</h2>
 
   {% for post in paginator.posts %}
 
-  <h3>
+  <h2>
     <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
       {{ post.title }}
     </a>
-  </h3>
+  </h2>
   <p>{{ post.excerpt }}</p>
   {% if post.file %}
   <audio src="{{ post.file }}" preload="auto" controls="controls" type="audio/mp3">
@@ -31,6 +28,7 @@ title: aethermonolog.de | Audio Podcast
   {% endfor %}
 </article>
 
+{% include subscribe.html %}
 
 <nav class="pagination">
   {% if paginator.previous_page %}

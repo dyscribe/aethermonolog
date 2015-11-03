@@ -13,7 +13,7 @@
   padding: .65em 1em
   border-radius: $corners
   box-sizing: border-box
-  margin: 0.5em 0
+  margin: 0.5em 0 2em 0
   cursor: pointer
   &:visited
     background-color: $custom-color
@@ -24,11 +24,17 @@
   &:active
     color: $backgrounds
     background: darken($links, 20%)
+  @media (min-width: 526px)
+    float: right
+    max-width: 170px
+    margin-top: 0
+    font-size: 0.9em
 
 section p
   font-family: $secodary-font
   color: $copy
   line-height: 1.5em
+  padding-bottom: 2em
 
 // Selection
 ::selection

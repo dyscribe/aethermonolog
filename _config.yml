@@ -3,7 +3,8 @@ title: aethermonolog
 email: mail@aethermonolog.de
 description: "Musiker Kai"
 baseurl: ""
-url: "http://aethermonolog.de"
+#url: "http://aethermonolog.de"
+url: "http://localhost:4000"
 paginate: 5
 paginate_path: "posts/:num"
 
