@@ -1,0 +1,319 @@
+//// Global
+html
+  margin: 0
+  padding: 0
+
+body
+  color: $copy
+  font-size: 16px
+  font-weight: 400
+  font-family: $primary-font
+  background: $backgrounds url('../images/background.jpg') center
+  background-size: cover
+
+
+//// Structure
+// Title outside wrapper
+.logo
+  text-align: center
+  width: 100%
+  display: block
+  padding: 1.5em 0
+  a
+    cursor: pointer
+    border: none
+  img
+    width: auto
+    max-width: 100%
+
+// Site wrapper
+section
+  max-width: 500px
+  margin: 0 auto
+  background: $backgrounds
+  padding: 15px 20px
+  clear: both
+  @include box-shadow(1px)
+  // Reset for article sections
+  section
+    margin: 0
+    padding: 0
+    padding: 0 0 .6em
+    @include box-shadow(none)
+
+// Nothing that comes after these are getting past
+article, form, footer, hr
+  clear: both
+
+// Left positioned things
+header, aside, input, textarea, label
+  float: left
+
+// Divider line
+article, footer, [class*="author-"], .comments, form, aside
+  border-top: 1px solid $borders
+  padding: 1em 0 .8em
+
+// Makes images go flush to the width of the site
+img
+  width: auto
+  max-width: 100%
+  height: auto
+
+
+
+
+//// Typography
+// Reset (avoid any weird positioning and italics)
+h1, h2, h3, h4, h5, h6, p, a, small, ul, li, blockquote, code, strong, input, textarea
+  margin: 0
+  padding: 0
+  font-style: normal
+
+h1, h2, h3, h4, h5, h6
+  color: $titles
+  // Keeps weight for linked headings
+  a
+    font-weight: inherit
+
+h1
+  font-size: 2em
+  line-height: 1.3em
+  padding-bottom: .5em
+
+h2
+  font-size: 1.8em
+  line-height: 1.3em
+  padding-bottom: 0.2em
+
+h3
+  font-size: 1.2em
+  line-height: 1.5em
+  padding-bottom: .4em
+
+h4
+  font-size: 1em
+  line-height: 1.5em
+  padding-bottom: .5em
+
+
+h5
+  font-weight: 400
+  font-size: .8em
+  line-height: 1.8em
+  padding-bottom: 1em
+
+
+// Optional caption type
+h6
+  color: lighten($copy, 10%)
+  font-style: italic
+  font-weight: 300
+  font-size: .7em
+  line-height: 1.8em
+  padding-bottom: 1em
+
+p, legend
+  font-size: 1em
+  line-height: 1.8em
+  padding-bottom: .5em
+
+a
+  color: $links
+  @include transition()
+  text-decoration: none
+  &:hover,
+    color: lighten($links, 10%)
+    text-decoration: underline
+  &:active
+    color: darken($links, 5%)
+
+
+
+// Massive quotes
+blockquote
+  margin: 0
+  padding: 1em
+  font-weight: 300
+  font-size: 2em
+  color: lighten($copy, 20%)
+  // Paragraph inside quotes needs resetting
+  p
+    padding: 0
+    line-height: 1.2em
+
+
+
+// Subtle border and background to give focus to code snippets
+code
+  font-family: Courier New, Courier, monospace
+  border: 1px solid lighten($copy, 50%)
+  background: lighten($copy, 58%)
+  @include border-radius()
+  padding: .2em .4em
+
+// Thin subtle line
+hr
+  height: 1px
+  border: 0
+  background: $borders
+  margin: 0 0 1em
+
+
+// Credits
+.credit a
+  color: $copy
+  &:hover
+    color: darken($copy, 20%)
+
+
+
+// Selection
+::selection
+  background: $links // Safari
+  color: $backgrounds
+
+::-moz-selection
+  background: $links // Firefox
+  color: $backgrounds
+
+
+
+//// Forms
+// Used to split fields apart
+form p
+  display: inline-block
+  padding-bottom: 1em
+  clear: both
+
+
+// Style inspired by Anchor CMS fields
+input, textarea
+  -webkit-appearance: none // Stop webkit ugly styling
+  min-width: 231px // Keeps fields going full width
+  min-height: 29px // Keeps fields in check in Firefox
+  border: 0
+  outline: none
+  background: darken($backgrounds, 6%)
+  padding: .38em 1em
+  @include border-radius(0 3px 3px 0)
+  line-height: 2.3em
+  font-family: "Helvetica Neue", "Arial", sans-serif
+  color: lighten($copy, 10%)
+  @include transition()
+  // Slightly lighter when typing in the field
+  &:focus
+    background: darken($backgrounds, 3%)
+
+
+
+// Clears webkit styling for search field (#term is for Firefox, which doesn't recognise type=search for some reason)
+input[type="search"], #term
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration
+    display: none
+
+
+
+textarea
+  @include border-radius(0 3px 3px 3px)
+  min-height: 100px // Big enough to write in comfortably
+
+
+// Matching labels next to fields, flush to each other
+label
+  display: inline-block
+  background: darken($backgrounds, 10%)
+  padding: 0 1em
+  @include border-radius(3px 0 0 3px)
+  line-height: 3em
+  min-width: 116px
+
+
+// Nice placeholder colour
+::-webkit-input-placeholder
+  color: lighten($copy, 20%)
+
+\:-moz-placeholder
+  color: lighten($copy, 20%)
+
+::-moz-placeholder
+  color: lighten($copy, 20%)
+
+\:-ms-input-placeholder
+  color: lighten($copy, 20%)
+
+
+// Dark but not loud buttons
+input[type="submit"], button[type="submit"]
+  min-width: inherit
+  min-height: 40px // Keeps buttons in check on Firefox
+  border: 0
+  outline: none
+  background: darken($backgrounds, 35%)
+  padding: 0 1.2em
+  margin: 0
+  border-radius: 3px
+  line-height: 2em
+  font-family: "Helvetica Neue", "Arial", sans-serif
+  color: $backgrounds
+  cursor: pointer
+  @include transition()
+  line-height: 3em
+  // Darken on holder
+  &:hover
+    background: darken($backgrounds, 45%)
+
+  // Even darker on click
+  &:active
+    background: darken($backgrounds, 55%)
+
+
+
+// Match fields up with everything else
+label, input, textarea, button
+  font-size: 1em
+
+
+
+//// Comments
+.comments
+  // Title needs to take a step back from comments
+  h3
+    color: lighten($copy, 10%)
+
+  // Clear general styling for lists
+  ul
+    list-style: none
+    padding: 0
+
+  // Keep comments apart
+  li
+    padding-bottom: .4em
+
+  // Keep the timestamp close
+  p
+    padding-bottom: .2em
+
+
+
+// Notes for comment form user
+.notifications
+  text-align: center
+  p
+    display: block
+    width: 100%
+    padding: .55em 0
+    margin-bottom: .75em
+    @include border-radius()
+    background: darken($backgrounds, 10%)
+    border: 1px solid darken($backgrounds, 30%)
+    // Its worked
+    &.success
+      background: lighten($success, 60%)
+      border: 1px solid $success
+
+    // Its not worked
+    &.error
+      background: lighten($error, 45%)
+      border: 1px solid $error

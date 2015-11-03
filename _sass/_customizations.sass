@@ -1,0 +1,76 @@
+// Buttons
+.button
+  display: inline-block
+  width: 100%
+  max-width: 280px
+  color: $white
+  line-height: 1em
+  text-align: center
+  text-transform: uppercase
+  @include transition(.2s)
+  background: $custom-color
+  text-shadow: 0 1px 0 darken($links, 10%)
+  padding: .65em 1em
+  border-radius: $corners
+  box-sizing: border-box
+  margin: 0.5em 0
+  cursor: pointer
+  &:visited
+    background-color: $custom-color
+  &:hover,
+    background: lighten($custom-color, 5%)
+    color: $white
+    text-decoration: none
+  &:active
+    color: $backgrounds
+    background: darken($links, 20%)
+
+section p
+  font-family: $secodary-font
+  color: $copy
+  line-height: 1.5em
+
+// Selection
+::selection
+  background: $links // Safari
+  color: $backgrounds
+  text-shadow: none
+
+::-moz-selection
+  background: $links // Firefox
+  color: $backgrounds
+  text-shadow: none
+
+
+// Media
+audio
+  @include border-radius($corners)
+  background: $links
+  float: left
+  box-sizing: border-box
+  max-width: 100%
+
+
+// Teaser & Introduction Area
+
+.teaser
+  margin: 0 auto
+  .col-left
+    width: 100%
+    text-align: center
+    img
+      text-align: center
+      border: 10px solid #fff
+      box-sizing: border-box
+      outline: 1px solid #efefef
+      box-shadow: 1px 1px 5px #efefef
+  @media (min-width: 480px)
+    .col-left
+      width: 50%
+      float: left
+      box-sizing: border-box
+      padding-right: 1em
+    .col-right
+      width: 50%
+      float: right
+      box-sizing: border-box
