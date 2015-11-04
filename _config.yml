@@ -17,15 +17,15 @@ markdown: kramdown
 permalink: pretty
 
 # Podcast settings
-lang: en
-author: David Darnes and Benjamin Reid
+lang: de
+author: Kai Birkenfeld
 
 # Site owner
 owner:
   name: Kai Birkenfeld
   bio:
   avatar:
-  email: mail@dyscribe.com
+  email: mail@aethermonolog.de
   disqus-shortname: dyscribe
   twitter: dyscribe
   github: dyscribe
