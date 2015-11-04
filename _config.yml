@@ -1,14 +1,16 @@
 # Site settings
-destination: ../html/aethermonolg.de
+destination: ../html/aethermonolog.de
 title: aethermonolog
 email: mail@aethermonolog.de
 description: ""
-baseurl: ""
-url: http://aethermonolog.de
+baseurl: "/"
+url: http://dyscribe.serpens.uberspace.de/aethermonolog.de
 #url: http://localhost:4000
 
 paginate: 5
 paginate_path: "posts/:num"
+
+exclude: ["lib", "config.rb", "gulpfile.js", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
 # Build settings
 markdown: kramdown
@@ -31,16 +33,6 @@ owner:
   google:
     plus: +KaiBirkenfeld
     verify:
-
-## podlove-web-palyer ##########################################################
-poster: /img/logo-360x360.png
-alwaysShowHours: true
-startVolume: 0.8
-width: auto
-summaryVisible: false
-timecontrolsVisible: false
-chaptersVisible: true
-sharebuttonsVisible: false
 
 
 # Jekyll plugins
