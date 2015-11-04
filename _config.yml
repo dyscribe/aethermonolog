@@ -1,12 +1,13 @@
-# Site settings
+# Global site configurations
+
 destination: ../html/aethermonolog.de
-title: aethermonolog
-email: mail@aethermonolog.de
-description: ""
+title: aethermonolog.de
+email: moin@aethermonolog.de
+description: "Die Heimat des aethermonolog Podcasts: Monologe von der Waterkant in den Aether von und mit Kai Birkenfeld."
 baseurl: "/"
 url: http://dyscribe.serpens.uberspace.de/aethermonolog.de
 #url: http://localhost:4000
-
+aws_url: podcasts.aethermonolog.de.s3-website.eu-central-1.amazonaws.com
 paginate: 5
 paginate_path: "posts/:num"
 
@@ -25,7 +26,7 @@ owner:
   name: Kai Birkenfeld
   bio:
   avatar:
-  email: mail@aethermonolog.de
+  email: moin@aethermonolog.de
   disqus-shortname: dyscribe
   twitter: dyscribe
   github: dyscribe
