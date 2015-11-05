@@ -4,6 +4,7 @@ destination: ../html/aethermonolog.de
 title: aethermonolog.de
 email: moin@aethermonolog.de
 description: "Die Heimat des aethermonolog Podcasts: Monologe von der Waterkant in den Aether von und mit Kai Birkenfeld."
+keywords: ""
 
 # For production
 baseurl: "/"

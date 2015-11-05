@@ -20,7 +20,7 @@
 
 <itunes:author>{{ site.author }}</itunes:author>
 
-<itunes:keywords>design,development,dev,web,code,front-end,games,gaming,david,darnes,benjamin,reid</itunes:keywords>
+<itunes:keywords>{{ site.keywords }}</itunes:keywords>
 
 <itunes:summary>{{ site.description }}</itunes:summary>
 
@@ -64,11 +64,11 @@
 
 		<guid>{{ site.url }}{{ post.url }}</guid>
 
-		<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
+		<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} CET</pubDate>
 
 		<itunes:duration>{{ post.duration }}</itunes:duration>
 
-		<itunes:keywords>design,development,dev,web,code,front-end,games,gaming,david,darnes,benjamin,reid</itunes:keywords>
+		<itunes:keywords>{{ site.keywords }}</itunes:keywords>
 
 	</item>
 
