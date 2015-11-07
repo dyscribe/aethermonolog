@@ -6,10 +6,12 @@
   <body>
 
     <div class="logo">
-      <picture>
-        <a href="{{ site.url }}"><source srcset="/images/full-logo.png, /images/full-logo-2x.png 2x">
-        <img src="/images/full-logo.png" alt="aethermonolog Podcast Logo"></a>
-      </picture>
+      <a href="{{ site.url }}">
+        <picture>
+          <source srcset="/images/full-logo.png, /images/full-logo-2x.png 2x" media="(min-width: 600px)">
+          <img src="/images/full-logo.png" alt="aethermonolog Podcast Logo">
+        </picture>
+      </a>
     </div>
 
     <section>
@@ -18,14 +20,14 @@
 
       <footer>
         <!-- iTunes Badge -->
-        <a href="#" class="itunes">
-          <picture>
-            <source srcset="/images/available-on-itunes.jpg, /images/available-on-itunes-2x.jpg 2x">
+          <a href="#" class="itunes">
+            <picture>
+              <source srcset="/images/available-on-itunes.jpg, /images/available-on-itunes-2x.jpg 2x">
               <img src="/images/available-on-itunes.jpg" alt="aethermonolog auf iTunes anhören und abonieren">
-          </picture>
-        </a>
+            </picture>
+          </a>
+        <!-- Twitter Button -->
         <a href="https://twitter.com/dyscribe" class="twitter-follow-button" data-show-count="false" data-size="small" data-dnt="true">Follow @dyscribe</a>
-        <script></script>
         <!-- Flattr Button -->
         <script id='fb5snpy'></script>
       </footer>
