@@ -7,8 +7,12 @@ body
   color: $copy
   font-size: 16px
   font-family: $primary-font
-  background: $backgrounds url('../images/background.jpg') center
+  margin-bottom: 4em
+  background: $backgrounds url('../images/background-mobile.jpg') center
   background-size: cover
+  @media (min-width: 480px)
+    background: $backgrounds url('../images/background.jpg') center
+    background-size: cover
 
 
 //// Structure
@@ -50,7 +54,6 @@ header, aside, input, textarea, label
 
 // Divider line
 article, footer, [class*="author-"], .comments, form, aside
-  border-top: 1px solid $borders
   padding: 1em 0 .8em
 
 // Makes images go flush to the width of the site
@@ -81,7 +84,7 @@ h1
   padding-bottom: 0.9em
 
 h2
-  font-size: 1.4em
+  font-size: 1.6em
   line-height: 1.4em
   padding-bottom: 0.7em
 
@@ -123,10 +126,13 @@ a
   text-decoration: none
   &:hover,
     color: lighten($links, 10%)
-    text-decoration: underline
   &:active
     color: darken($links, 5%)
 
+h2 a,
+p a,
+  &:hover
+    border-bottom: 2px solid lighten($links, 10%)
 
 
 // Massive quotes
@@ -316,3 +322,13 @@ label, input, textarea, button
     &.error
       background: lighten($error, 45%)
       border: 1px solid $error
+
+
+// Pagination Styling
+
+nav.pagination
+  text-align: center
+  font-size: 1.1em
+  margin-bottom: 1em
+  a
+    margin: 1em

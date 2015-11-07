@@ -3,20 +3,20 @@ layout: default
 title: aethermonolog.de | Audio Podcast
 ---
 
-{% include info.html %}
+<!--{% include info.html %}-->
 
 <article>
 
   {% for post in paginator.posts %}
 
   <h2>
-    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+    <a href="{{ post.url }}" title="{{ post.title }}">
       {{ post.title }}
     </a>
   </h2>
   <p>{{ post.excerpt }}</p>
   {% if post.file %}
-  <audio src="{{ post.file }}" preload="auto" controls="controls" type="audio/mp3">
+  <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
     Your browser doesn't support the <code>audio</code> element.
   </audio>
 
@@ -30,17 +30,17 @@ title: aethermonolog.de | Audio Podcast
   {% endfor %}
 </article>
 
-{% include author.html %}
-
 <nav class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/" class="previous">← Newer</a>
+    <a href="/" class="previous">◄</a>
     {% else %}
-    <a href="/posts/{{ paginator.previous_page }}" class="previous">← Newer</a>
+    <a href="/posts/{{ paginator.previous_page }}" class="previous">◄</a>
     {% endif %}
   {% endif %}
   {% if paginator.next_page %}
-    <a href="/posts/{{ paginator.next_page }}" class="next">Older →</a>
+    <a href="/posts/{{ paginator.next_page }}" class="next">►</a>
   {% endif %}
 </nav>
+
+<!--{% include author.html %}-->

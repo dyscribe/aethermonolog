@@ -8,19 +8,22 @@ keywords: ""
 
 # For production
 baseurl: "/"
-url: http://aethermonolog.de
+#url: http://aethermonolog.de
 
 # For local
-#baseurl: "/"
-#url: http://localhost:4000
+url: http://localhost:4000
 paginate: 5
 paginate_path: "posts/:num"
 
 exclude: ["lib", "config.rb", "gulpfile.js", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+permalink: none
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Podcast settings
 lang: de
@@ -40,6 +43,15 @@ owner:
     plus: +KaiBirkenfeld
     verify:
 
+# Podlove Web Player settings
+poster: /images/podlove.jpg
+alwaysShowHours: true
+startVolume: 0.8
+width: auto
+summaryVisible: false
+timecontrolsVisible: false
+chaptersVisible: false
+sharebuttonsVisible: false
 
 # Jekyll plugins
 gems:
