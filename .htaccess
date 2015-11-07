@@ -4,11 +4,6 @@ Options -Indexes
 # Define UTF-8 Charset
 AddDefaultCharset utf-8
 
-# Enforce https
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ http://aethermonolog.de/$1 [R,L]
-
 # Normalize urls (redirect www to /)
 RewriteEngine On
 RewriteBase /
