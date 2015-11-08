@@ -14,13 +14,11 @@
 
 <language>{{ site.lang }}</language>
 
-<copyright>{{ site.author }}</copyright>
+<copyright>{{ site.copyright }} {{ site.author }}</copyright>
 
 <itunes:subtitle>{{ site.description }}</itunes:subtitle>
 
 <itunes:author>{{ site.author }}</itunes:author>
-
-<itunes:keywords>{{ site.keywords }}</itunes:keywords>
 
 <itunes:summary>{{ site.description }}</itunes:summary>
 
@@ -36,13 +34,16 @@
 
 <itunes:image href="{{ site.url }}/images/itunes.png" />
 
-<itunes:category text="Design, Development &amp; Games" />
+<itunes:category text="Music" />
 
-<itunes:category text="Design" />
+<itunes:category text="Technology">
+	<itunes:category text="Podcasting" />
+</itunes:category>
 
-<itunes:category text="Development" />
+<itunes:category text="Society &amp; Culture">
+	<itunes:category text="Philosophy" />
+</itunes:category>
 
-<itunes:category text="Games" />
 
 <itunes:new-feed-url>{{ site.url }}/podcast.xml</itunes:new-feed-url>
 
@@ -54,7 +55,7 @@
 
 		<itunes:author>{{ site.author }}</itunes:author>
 
-		<itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
+		<itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
 
 		<itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
 
@@ -67,8 +68,6 @@
 		<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} CET</pubDate>
 
 		<itunes:duration>{{ post.duration }}</itunes:duration>
-
-		<itunes:keywords>{{ site.keywords }}</itunes:keywords>
 
 	</item>
 

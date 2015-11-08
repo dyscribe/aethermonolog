@@ -3,7 +3,8 @@
 destination: ../html/aethermonolog.de
 title: aethermonolog.de
 email: moin@aethermonolog.de
-description: "Die Heimat des aethermonolog Podcasts: Monologe von der Waterkant in den Aether von und mit Kai Birkenfeld."
+description: "Monologe aus dem Kopf eines Musikers: Was inspiriert, was blockiert, was funktioniert. Eine akustische Dokumentation muskialischer Schaffensprozesse mit Ausflügen ins generalphilosophische Querdenken"
+subtitle: "Lamento ergo sum."
 keywords: ""
 paginate: 5
 paginate_path: "posts/:num"
@@ -20,21 +21,22 @@ exclude: ["lib", "config.rb", "gulpfile.js", "Capfile", "config", "log", "Rakefi
 
 # Build settings
 permalink: none
-markdown:    kramdown
+markdown: kramdown
 highlighter: pygments
 sass:
   sass_dir: _sass
   style: compressed
 
 # Podcast settings
-lang: de
+lang: de-DE
 author: Kai Birkenfeld
+copyright: "&#x2117; &amp; &#xA9; 2015"
 
 # Site owner
 owner:
   name: Kai Birkenfeld
   bio:
-  avatar:
+  avatar: /images/profile.jpg
   email: moin@aethermonolog.de
   disqus-shortname: dyscribe
   twitter: dyscribe
@@ -42,17 +44,6 @@ owner:
   flattr: dyscribe
   google:
     plus: +KaiBirkenfeld
-    verify:
-
-# Podlove Web Player settings
-poster: /images/podlove.jpg
-alwaysShowHours: true
-startVolume: 0.8
-width: auto
-summaryVisible: false
-timecontrolsVisible: false
-chaptersVisible: false
-sharebuttonsVisible: false
 
 # Jekyll plugins
 gems:
