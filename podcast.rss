@@ -28,19 +28,17 @@
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
 		<itunes:image href="{{ site.url }}/images/itunes.png" />
-		<itunes:category text="Arts">
-			<itunes:category text="Design" />
-		</itunes:category>
+		<itunes:category text="Music" />
 		<itunes:category text="Technology">
-			<itunes:category text="Tech News" />
+			<itunes:category text="Podcasting" />
 		</itunes:category>
-		<itunes:category text="Games &amp; Hobbies">
-			<itunes:category text="Video Games" />
+		<itunes:category text="Society &amp; Culture">
+			<itunes:category text="Philosophy" />
 		</itunes:category>
 		<itunes:explicit>yes</itunes:explicit>
 		{% for post in site.posts %}
 			<item>
-				<title>{{ post.title }}</title>
+				<title>{{ post.title | xml_escape }}</title>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<description>{{ post.content | xml_escape }}</description>
@@ -50,9 +48,9 @@
 				<itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
 				<itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
 				<itunes:duration>{{ post.duration }}</itunes:duration>
-				<itunes:keywords>{{ site.keywords }}</itunes:keywords>
+				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
 				<itunes:image href="{{ site.url }}/images/itunes.png" />
-				<itunes:explicit>{{ site.explicit }}</itunes:explicit>
+				<itunes:explicit>{{ post.explicit }}</itunes:explicit>
 			</item>
 		{% endfor %}
 	</channel>

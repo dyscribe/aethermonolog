@@ -3,17 +3,16 @@
 destination: ../html/aethermonolog.de
 title: aethermonolog.de
 email: moin@aethermonolog.de
-description: "Monologe aus dem Kopf eines Musikers: Was inspiriert, was blockiert, was funktioniert. Eine akustische Dokumentation muskialischer Schaffensprozesse mit Ausflügen ins generalphilosophische Querdenken"
+description: "Monologe aus dem Kopf eines Musikers: Was inspiriert? Was blockiert? Was funktioniert? Eine Dokumentation muskialischer Schaffensprozesse, irgendwo zwischen Street-Knowledge und general-philosophischem Querdenken."
 subtitle: "Lamento ergo sum."
-keywords: ""
 paginate: 5
 paginate_path: "posts/:num"
 baseurl: "/"
 
 # For production
-url: http://aethermonolog.de
+# url: http://aethermonolog.de
 # For local development
-# url: http://localhost:4000
+url: http://localhost:4000
 
 include: [".htaccess"]
 
@@ -51,4 +50,6 @@ gems:
 - jekyll-redirect-from
 - jekyll-paginate
 
-jekyll-mentions: https://twitter.com
+# Jekyll Twitter Mentions
+jekyll-mentions:
+  base_url: https://twitter.com
