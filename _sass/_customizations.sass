@@ -81,6 +81,27 @@ audio
       float: right
       box-sizing: border-box
 
+// Newsletter Ares
+
+.newsletter
+  margin: 0 auto
+  .col-left
+    width: 0
+  .col-right
+    width: 100%
+    box-sizing: border-box
+    float: left
+  @media (min-width: 480px)
+    .col-left
+      width: 30%
+      float: left
+      box-sizing: border-box
+      padding-right: 1em
+    .col-right
+      width: 70%
+      float: right
+      box-sizing: border-box
+
 // iTunes Badge
 
 a.itunes
@@ -103,3 +124,43 @@ a.itunes
 @media (min-width: 480px)
   .fb-like.fb_iframe_widget
     top: -4px
+
+// Newsletter:
+
+input[type="email"]
+  border: 2px solid $moderate-grey
+  background-color: $lightest-grey
+  color: $copy
+  padding: 0.6em
+  border-radius: $corners
+  width: 100%
+  max-width: 300px
+  box-sizing: border-box
+  display: inline-block
+
+#mc_embed_signup div.mce_inline_error
+  padding: 0.7em !important
+  background-color: $error !important
+  display: inline-block !important
+  box-sizing: border-box
+  width: 100%
+  margin-top: -2px !important
+  max-width: 300px
+
+#mc_embed_signup input.mce_inline_error
+  border-color: $error !important
+
+div#mce-responses
+  display: -webkit-inline-box
+
+div#mce-success-response,
+div#mce-error-response
+  width: 100%
+  box-sizing: border-box
+  font-family: $secodary-font
+  margin: 1em 0 1em 0
+  border-radius: $corners
+  background-color: $lightest-grey
+  border: 2px dotted $moderate-grey
+  display: block
+  padding: 0.5em

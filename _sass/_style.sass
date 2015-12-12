@@ -196,48 +196,9 @@ form p
   clear: both
 
 
-// Style inspired by Anchor CMS fields
-input, textarea
-  -webkit-appearance: none // Stop webkit ugly styling
-  min-width: 231px // Keeps fields going full width
-  min-height: 29px // Keeps fields in check in Firefox
-  border: 0
-  outline: none
-  background: darken($backgrounds, 6%)
-  padding: .38em 1em
-  @include border-radius(0 3px 3px 0)
-  line-height: 2.3em
-  font-family: "Helvetica Neue", "Arial", sans-serif
-  color: lighten($copy, 10%)
-  @include transition()
-  // Slightly lighter when typing in the field
-  &:focus
-    background: darken($backgrounds, 3%)
-
-
-
-// Clears webkit styling for search field (#term is for Firefox, which doesn't recognise type=search for some reason)
-input[type="search"], #term
-  &::-webkit-search-cancel-button,
-  &::-webkit-search-decoration
-    display: none
-
-
-
 textarea
   @include border-radius(0 3px 3px 3px)
   min-height: 100px // Big enough to write in comfortably
-
-
-// Matching labels next to fields, flush to each other
-label
-  display: inline-block
-  background: darken($backgrounds, 10%)
-  padding: 0 1em
-  @include border-radius(3px 0 0 3px)
-  line-height: 3em
-  min-width: 116px
-
 
 // Nice placeholder colour
 ::-webkit-input-placeholder
@@ -259,23 +220,34 @@ input[type="submit"], button[type="submit"]
   min-height: 40px // Keeps buttons in check on Firefox
   border: 0
   outline: none
-  background: darken($backgrounds, 35%)
   padding: 0 1.2em
-  margin: 0
-  border-radius: 3px
-  line-height: 2em
-  font-family: "Helvetica Neue", "Arial", sans-serif
-  color: $backgrounds
+  color: $white
+  line-height: 1em
+  text-align: center
+  text-transform: uppercase
+  font-family: $primary-font
+  @include transition(.2s)
+  background: $custom-color
+  text-shadow: 0 1px 0 darken($links, 10%)
+  padding: .65em 1em
+  border-radius: $corners
+  box-sizing: border-box
+  margin: 0.5em 0 2em 0
   cursor: pointer
-  @include transition()
-  line-height: 3em
-  // Darken on holder
-  &:hover
-    background: darken($backgrounds, 45%)
-
-  // Even darker on click
+  &:visited
+    background-color: $custom-color
+  &:hover,
+    background: lighten($custom-color, 5%)
+    color: $white
+    text-decoration: none
   &:active
-    background: darken($backgrounds, 55%)
+    color: $backgrounds
+    background: darken($links, 20%)
+  @media (min-width: 526px)
+    float: right
+    max-width: 170px
+    margin-top: 0
+    font-size: 0.9em
 
 
 
