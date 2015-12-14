@@ -18,25 +18,25 @@
 
       {{ content }}
 
-      {% include newsletter.html %}
-
       <!-- Footer -->
       <footer>
           <!-- iTunes -->
-          <a href="https://itunes.apple.com/de/podcast/aethermonolog.de/id1067599238?l=de" class="itunes">
+          <a target="blank" href="https://itunes.apple.com/de/podcast/aethermonolog.de/id1067599238?l=de" class="itunes">
             <picture>
               <source srcset="/images/available-on-itunes.jpg, /images/available-on-itunes-2x.jpg 2x">
               <img src="/images/available-on-itunes.jpg" alt="aethermonolog auf iTunes anhören und abonieren">
             </picture>
           </a>
-        <!-- Facebook -->
-        <div class="fb-like" data-href="http://aethermonolog.de" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-        <!-- Twitter -->
-        <a href="https://twitter.com/dyscribe" class="twitter-follow-button" data-show-count="false" data-size="small" data-dnt="true">Folgen</a>
-        <!-- Flattr -->
-        <a href="https://flattr.com/submit/auto?user_id=dyscribe&url={{ site.url }}&title={{ site.title }}">
-          <img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr aethermonolog" />
-        </a>
+        <div class="social">
+          <!-- Facebook -->
+            <div class="fb-like" data-href="http://aethermonolog.de" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+          <!-- Twitter -->
+            <a href="https://twitter.com/dyscribe" class="twitter-follow-button" data-show-count="false" data-size="small" data-dnt="true"></a>
+          <!-- Flattr -->
+            <a href="https://flattr.com/submit/auto?user_id=dyscribe&url={{ site.url }}&title={{ site.title }}">
+              <img src="/images/flattr-badge-large.png" alt="Flattr aethermonolog" />
+            </a>
+          </div>
       </footer>
 
     </section>

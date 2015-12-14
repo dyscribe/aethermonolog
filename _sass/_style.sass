@@ -309,3 +309,12 @@ nav.pagination
   margin-bottom: 1em
   a
     margin: 1em
+
+// Hide Social Stuff on mobile
+
+.social
+  display: none
+  @media (min-width: 480px)
+    display: block
+    .fb-like.fb_iframe_widget.fb_iframe_widget_fluid
+      display: inline-block

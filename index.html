@@ -3,8 +3,6 @@ layout: default
 title: aethermonolog.de | Audio Podcast
 ---
 
-<!--{% include info.html %}-->
-
 <article>
 
   {% for post in paginator.posts %}
@@ -30,17 +28,17 @@ title: aethermonolog.de | Audio Podcast
   {% endfor %}
 </article>
 
+      {% include newsletter.html %}
+
 <nav class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/" class="previous">◄</a>
+    <a href="/" class="previous"><< Neuere</a>
     {% else %}
-    <a href="/posts/{{ paginator.previous_page }}" class="previous">◄</a>
+    <a href="/posts/{{ paginator.previous_page }}" class="previous"><< Neuere</a>
     {% endif %}
   {% endif %}
   {% if paginator.next_page %}
-    <a href="/posts/{{ paginator.next_page }}" class="next">►</a>
+    <a href="/posts/{{ paginator.next_page }}" class="next">Ältere >></a>
   {% endif %}
 </nav>
-
-<!--{% include author.html %}-->

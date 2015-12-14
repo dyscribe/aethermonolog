@@ -81,32 +81,31 @@ audio
       float: right
       box-sizing: border-box
 
-// Newsletter Ares
+// Newsletter Area
 
-.newsletter
-  margin: 0 auto
-  .col-left
-    width: 0
-  .col-right
-    width: 100%
-    box-sizing: border-box
-    float: left
+.newsletter img
+  display: none
   @media (min-width: 480px)
-    .col-left
-      width: 30%
-      float: left
-      box-sizing: border-box
-      padding-right: 1em
-    .col-right
-      width: 70%
-      float: right
-      box-sizing: border-box
+    display: inline-block
+    float: left
+    max-width: 60px
+    margin-right: 1em
+
+// Footer
+
+footer
+  text-align: center
+  @media (min-width: 480px)
+    text-align: left
+
 
 // iTunes Badge
 
 a.itunes
-  float: right
-  max-width: 100px
+  float: none
+  @media (min-width: 480px)
+    float: right
+    max-width: 100px
 
 
 // Pagination Styling
@@ -114,12 +113,6 @@ a.itunes
 .down-shift
   position: relative
   top: .15em
-
-// Facebook Widget
-
-.fb-like.fb_iframe_widget.fb_iframe_widget_fluid
-  display: block
-  margin: 0.5em 0 0.5em 0
 
 @media (min-width: 480px)
   .fb-like.fb_iframe_widget
