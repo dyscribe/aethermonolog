@@ -11,7 +11,7 @@
   background: $custom-color
   text-shadow: 0 1px 0 darken($links, 10%)
   padding: .65em 1em
-  border-radius: $corners
+  @include border-radius($corners)
   box-sizing: border-box
   margin: 0.5em 0 2em 0
   cursor: pointer
@@ -97,6 +97,12 @@ footer
   text-align: center
   @media (min-width: 480px)
     text-align: left
+  .social-icons i
+    font-size: 2em
+    border-bottom: none
+    color: $custom-color
+    &:hover
+      color: lighten($custom-color,5)
 
 
 // iTunes Badge
@@ -105,6 +111,7 @@ a.itunes
   float: none
   img
     max-width: 100px
+    margin-bottom: 1em
   @media (min-width: 480px)
     float: right
 
@@ -119,19 +126,29 @@ a.itunes
   .fb-like.fb_iframe_widget
     top: -4px
 
-// Newsletter:
+// Newsletter & Contact Input
 
-input[type="email"]
+input[type="email"],
+input[type="text"],
+textarea
   border: 2px solid $moderate-grey
   background-color: $lightest-grey
   color: $copy
   padding: 0.6em
-  border-radius: $corners
+  @include border-radius($corners)
   width: 100%
   max-width: 300px
   box-sizing: border-box
   display: inline-block
   -webkit-appearance: none
+  margin-bottom: 1em
+
+// Contact Form
+/////////////////////////////
+
+// Make Button left aligned
+
+
 
 #mc_embed_signup div.mce_inline_error
   padding: 0.7em !important
@@ -154,8 +171,36 @@ div#mce-error-response
   box-sizing: border-box
   font-family: $secodary-font
   margin: 1em 0 1em 0
-  border-radius: $corners
+  @include border-radius($corners)
   background-color: $lightest-grey
   border: 2px dotted $moderate-grey
   display: block
   padding: 0.5em
+
+
+// Sucess Message Pumping Heart
+
+.success
+  text-align: center
+  @include transition(1s)
+  @media (min-width: 480px)
+    text-align: left
+  .ico-heart
+    background-color: $custom-color
+    color: white
+    padding: 0.5em
+    font-size: 2em
+    border-radius: 100%
+    display: inline-block
+    -webkit-animation: pulse 1.5s infinite
+    @media (min-width: 480px)
+      float: left
+      margin-right: 1em
+
+@-webkit-keyframes pulse
+  0%
+    -webkit-transform: scale(0.98)
+  50%
+    -webkit-transform: scale(1.1)
+  100%
+    -webkit-transform: scale(0.98)

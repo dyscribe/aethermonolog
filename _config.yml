@@ -10,9 +10,9 @@ paginate_path: "posts/:num"
 baseurl: "/"
 
 # For production
-url: http://aethermonolog.de
+# url: http://aethermonolog.de
 # For local development
-# url: http://localhost:4000
+url: http://localhost:4000
 
 include: [".htaccess"]
 
@@ -37,8 +37,8 @@ owner:
   bio:
   avatar: /images/profile.jpg
   email: moin@aethermonolog.de
-  disqus-shortname: dyscribe
   twitter: dyscribe
+  facebook: Klartexter
   github: dyscribe
   flattr: dyscribe
   google:
@@ -49,6 +49,7 @@ gems:
 - jekyll-mentions
 - jekyll-redirect-from
 - jekyll-paginate
+- jekyll-sitemap
 
 # Jekyll Twitter Mentions
 jekyll-mentions:

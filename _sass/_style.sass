@@ -230,7 +230,7 @@ input[type="submit"], button[type="submit"]
   background: $custom-color
   text-shadow: 0 1px 0 darken($links, 10%)
   padding: .65em 1em
-  border-radius: $corners
+  @include border-radius($corners)
   box-sizing: border-box
   margin: 0.5em 0 2em 0
   cursor: pointer
@@ -249,6 +249,11 @@ input[type="submit"], button[type="submit"]
     max-width: 170px
     margin-top: 0
     font-size: 0.9em
+
+input.pull-left
+  clear: both !important
+  float: left !important
+  display: block !important
 
 
 
@@ -310,11 +315,7 @@ nav.pagination
   a
     margin: 1em
 
-// Hide Social Stuff on mobile
+// Social Links below Headline
 
-.social
-  display: none
-  @media (min-width: 480px)
-    display: block
-    .fb-like.fb_iframe_widget.fb_iframe_widget_fluid
-      display: inline-block
+.social-article
+  clear: both

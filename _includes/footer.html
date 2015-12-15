@@ -1,0 +1,36 @@
+<!-- Footer -->
+<footer>
+    <!-- iTunes -->
+    <a target="blank" href="https://itunes.apple.com/de/podcast/aethermonolog.de/id1067599238?l=de" class="itunes">
+      <picture>
+        <source srcset="/images/available-on-itunes.jpg, /images/available-on-itunes-2x.jpg 2x">
+        <img src="/images/available-on-itunes.jpg" alt="aethermonolog auf iTunes anhören und abonieren">
+      </picture>
+    </a>
+
+    <div class="social-icons">
+      <!-- Twitter -->
+      {% if site.owner.twitter %}<a href="//twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name }} on Twitter" target="_blank"><i class="ico-twitter-round"></i></a>{% endif %}
+      <!-- Facebook -->
+      {% if site.owner.facebook %}<a href="//facebook.com/{{ site.owner.facebook }}" title="{{ site.owner.name }} on Facebook" target="_blank"><i class="ico-facebook-round"></i></a>{% endif %}
+      {% if site.owner.google.plus %}<a href="https://plus.google.com/{{ site.owner.google.plus }}" rel="publisher" target="_blank"><i class="ico-googleplus-round"></i></a>{% endif %}
+      {% if site.owner.github %}<a href="//github.com/{{ site.owner.github }}" title="{{ site.owner.name }} on Github" target="_blank"><i class="ico-github-round"></i></a>{% endif %}
+
+      <a href="kontakt.html" title="schicke eine Nachricht"><i class="ico-email-round"></i></a>
+
+      <a href="{{ site.url }}/podcast.xml" title="Atom/RSS feed"><i class="ico-rss-round"></i></a>
+    </div>
+
+
+<!--  <div class="social">
+      // Facebook Button
+      <div class="fb-like" data-href="http://aethermonolog.de" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+      // Twitter Button
+      <a href="https://twitter.com/dyscribe" class="twitter-follow-button" data-show-count="false" data-size="small" data-dnt="true"></a>
+      // Flattr Button
+      <a href="https://flattr.com/submit/auto?user_id=dyscribe&url={{ site.url }}&title={{ site.title }}">
+        <img src="/images/flattr-badge-large.png" alt="Flattr aethermonolog" />
+      </a>
+    </div>
+-->
+</footer>
