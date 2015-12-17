@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Aethermonolog Podcast | Kontakt | aethermonolog.de
+sitemap: false
 ---
 
 <article>
@@ -9,15 +10,32 @@ title: Aethermonolog Podcast | Kontakt | aethermonolog.de
     Eine Nachricht schreiben
   </h2>
 
-  <form action="https://getsimpleform.com/messages?form_api_token=5514ba77402583e3a404a6c285914573" method="post">
-    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-    <input type='hidden' name='redirect_to' value='http://aethermonolog.de/success.html' />
-    <!-- all your input fields here.... -->
-    <input type='text' name='Name' placeholder="Dein Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Name'"/>
-    <input type='email' name='Mail' placeholder="Deine Mail Adresse" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Mail Adresse'"/>
-    <textarea name='Message' rows="5" placeholder="Deine Nachricht" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Nachricht'"></textarea>
-    <input class="pull-left" type='submit' value='Nachricht senden' />
-  </form>
+  <div class="col-left-50">
+    <form action="https://getsimpleform.com/messages?form_api_token=5514ba77402583e3a404a6c285914573" method="post">
+      <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+      <input type='hidden' name='redirect_to' value='http://aethermonolog.de/success.html' />
+      <!-- all your input fields here.... -->
+      <input type='text' name='Name' placeholder="Dein Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Name'"/>
+      <input type='email' name='Mail' placeholder="Deine Mail Adresse" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Mail Adresse'"/>
+      <textarea name='Message' rows="5" placeholder="Deine Nachricht" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Nachricht'"></textarea>
+      <input class="pull-left" type='submit' value='Nachricht senden' />
+    </form>
+  </div>
+
+  <div class="col-right-50">
+    <p id="kontakt">
+      Alternativ kannst kannst du mir eine Email an
+
+      <script language="JavaScript">
+      var username = "moin";
+      var hostname = "aethermonolog.de";
+      var linktext = username + "@" + hostname ;
+      document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "' rel='nofollow'>" + linktext + "</a>");
+      </script>
+
+      schicken.
+    </p>
+  </div>
 
 </article>
 

@@ -57,29 +57,36 @@ audio
   max-width: 100%
 
 
-// Teaser & Introduction Area
+// Collumns
 
-.teaser
-  margin: 0 auto
-  .col-left
-    width: 100%
+.col-left-50
+  width: 100%
+  img
     text-align: center
-    img
-      text-align: center
-      border: 10px solid #fff
-      box-sizing: border-box
-      outline: 1px solid #efefef
-      box-shadow: 1px 1px 5px #efefef
+    border: 10px solid #fff
+    box-sizing: border-box
+    outline: 1px solid #efefef
+    box-shadow: 1px 1px 5px #efefef
   @media (min-width: 480px)
-    .col-left
-      width: 50%
-      float: left
-      box-sizing: border-box
-      padding-right: 1em
-    .col-right
-      width: 50%
-      float: right
-      box-sizing: border-box
+    width: 50%
+    float: left
+    box-sizing: border-box
+    padding-right: 1em
+
+.col-right-50
+  width: 100%
+  padding: 1em 0 1em 0
+  display: inline-block
+  @media (min-width: 480px)
+    width: 50%
+    float: right
+    box-sizing: border-box
+    padding: 0
+
+
+#kontakt
+  padding: .7em 0 0 0
+  word-wrap: break-word
 
 // Newsletter Area
 
