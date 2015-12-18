@@ -24,6 +24,11 @@ title: Aethermonolog Podcast | aethermonolog.de
   {% if post.soundcloud %}
   {{ post.soundcloud }}
   {% endif %}
+
+  <div class="comment-count">
+    <i class="ico-comment"></i><a href="{{ post.url }}#disqus_thread">Kommentare laden</a>
+  </div>
+
   <hr>
   {% endfor %}
 </article>
