@@ -10,9 +10,9 @@ paginate_path: "posts/:num"
 baseurl: ""
 
 # For production
-url: http://aethermonolog.de
+# url: http://aethermonolog.de
 # For local development
-# url: http://localhost:4000
+url: http://localhost:4000
 
 include: [".htaccess"]
 
@@ -41,8 +41,10 @@ owner:
   facebook: Klartexter
   github: dyscribe
   flattr: dyscribe
+  disqus: aethermonolog
   google:
     plus: +KaiBirkenfeld
+    verify: XIwbHY2nAqd1Azf8Z3yHwuv1-k8FUlnnm9xQIxJsojQ
 
 # Jekyll plugins
 gems: [jekyll-mentions, jekyll-redirect-from, jekyll-paginate, jekyll-sitemap]
