@@ -1,9 +1,9 @@
 # Global site configurations
 
 destination: ../html/aethermonolog.de
-title: aethermonolog.de
+title: aethermonolog
 email: moin@aethermonolog.de
-description: "Monologe aus dem Kopf eines Musikers: Was inspiriert? Was blockiert? Was funktioniert? Eine Dokumentation muskialischer Schaffensprozesse, irgendwo zwischen Street-Knowledge und general-philosophischem Querdenken."
+description: "Monologe aus dem Kopf eines Musikers: Was inspiriert? Was blockiert? Was funktioniert? Eine Dokumentation muskialischer Schaffensprozesse."
 subtitle: "Lamento ergo sum."
 paginate: 1
 paginate_path: "posts/:num"
@@ -45,11 +45,7 @@ owner:
     plus: +KaiBirkenfeld
 
 # Jekyll plugins
-gems:
-- jekyll-mentions
-- jekyll-redirect-from
-- jekyll-paginate
-- jekyll-sitemap
+gems: [jekyll-mentions, jekyll-redirect-from, jekyll-paginate, jekyll-sitemap]
 
 # Jekyll Twitter Mentions
 jekyll-mentions:
