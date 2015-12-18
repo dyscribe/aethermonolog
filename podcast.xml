@@ -58,7 +58,7 @@
 
 		<itunes:subtitle>{{ post.subtitle | xml_escape }}</itunes:subtitle>
 
-		<itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+		<itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
 
 		<itunes:image href="{{ site.url }}/images/itunes.png" />
 
