@@ -9,9 +9,8 @@ paginate: 1
 paginate_path: "posts/:num"
 baseurl: ""
 
-# For production
+# Switch between production and local development
 url: http://aethermonolog.de
-# For local development
 # url: http://localhost:4000
 
 include: [".htaccess"]
