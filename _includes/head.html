@@ -6,6 +6,414 @@
   <meta name="description" content="{{ site.description }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+  <!-- Inline Critical CSS -->
+  <style>
+  @font-face {
+font-family: "dyscribe_iconfont";
+src: url("fonts/dyscribe_iconfont.eot");
+}
+
+i {
+font-family: "dyscribe_iconfont";
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+font-size: 12px;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.ico-comment:before {
+content: "";
+}
+
+.ico-twitter-round:before {
+content: "";
+}
+
+.ico-facebook-round:before {
+content: "";
+}
+
+.ico-googleplus-round:before {
+content: "";
+}
+
+.ico-github-round:before {
+content: "";
+}
+
+.ico-email-round:before {
+content: "";
+}
+
+.ico-rss-round:before {
+content: "";
+}
+
+html {
+margin: 0;
+padding: 0;
+}
+
+body {
+color: #454545;
+font-size: 16px;
+font-family: "Podkova",serif;
+margin-bottom: 4em;
+background: #fff url("/images/background-mobile.jpg") center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+@media (min-width: 480px) {
+body {
+background: #fff url("/images/background.jpg") center;
+background-size: cover;
+background-attachment: fixed;
+}
+}
+
+.logo {
+text-align: center;
+width: 100%;
+display: block;
+padding: 1.5em 0;
+max-width: 600px;
+margin: 0 auto;
+}
+
+.logo a {
+cursor: pointer;
+border: none;
+}
+
+.logo img {
+width: auto;
+max-width: 100%;
+}
+
+section {
+max-width: 500px;
+margin: 0 auto;
+background: #fff;
+padding: 15px 20px;
+clear: both;
+-webkit-box-shadow: 1px;
+-moz-box-shadow: 1px;
+-o-box-shadow: 1px;
+box-shadow: 1px;
+}
+
+article,
+form,
+footer,
+hr {
+clear: both;
+}
+
+input {
+float: left;
+}
+
+article,
+footer,
+form {
+padding: 1em 0 .8em;
+}
+
+img {
+width: auto;
+max-width: 100%;
+height: auto;
+}
+
+h2,
+p,
+a,
+code,
+input {
+margin: 0;
+padding: 0;
+font-style: normal;
+}
+
+h2 {
+color: #343434;
+}
+
+h2 a {
+font-weight: inherit;
+}
+
+h2 {
+font-size: 1.6em;
+line-height: 1.4em;
+padding-bottom: .7em;
+}
+
+p {
+font-size: 1em;
+line-height: 1.8em;
+padding-bottom: .5em;
+}
+
+a {
+color: #009688;
+-webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+transition: all .2s ease-out;
+text-decoration: none;
+}
+
+code {
+font-family: Courier New,Courier,monospace;
+border: 1px solid #c5c5c5;
+background: #d9d9d9;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+padding: .2em .4em;
+}
+
+hr {
+height: 1px;
+border: 0;
+background: #d1d1d1;
+margin: 0 0 1em;
+}
+
+::selection {
+background: #009688;
+color: #fff;
+}
+
+::-moz-selection {
+background: #009688;
+color: #fff;
+}
+
+::-webkit-input-placeholder {
+color: #787878;
+}
+
+:-moz-placeholder {
+color: #787878;
+}
+
+::-moz-placeholder {
+color: #787878;
+}
+
+:-ms-input-placeholder {
+color: #787878;
+}
+
+input[type="submit"] {
+min-width: inherit;
+min-height: 40px;
+border: 0;
+outline: none;
+padding: 0 1.2em;
+color: #fff;
+line-height: 1em;
+text-align: center;
+text-transform: uppercase;
+font-family: "Podkova",serif;
+-webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+transition: all .2s ease-out;
+background: #009688;
+text-shadow: 0 1px 0 #00635a;
+padding: .65em 1em;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+box-sizing: border-box;
+margin: .5em 0 2em 0;
+cursor: pointer;
+-webkit-appearance: none;
+}
+
+@media (min-width: 526px) {
+input[type="submit"] {
+float: right;
+max-width: 170px;
+margin-top: 0;
+font-size: .9em;
+}
+}
+
+input {
+font-size: 1em;
+}
+
+nav.pagination {
+text-align: center;
+font-size: 1.1em;
+margin-bottom: 1em;
+}
+
+nav.pagination a {
+margin: 1em;
+}
+
+.button {
+display: inline-block;
+width: 100%;
+max-width: 300px;
+color: #fff;
+line-height: 1em;
+text-align: center;
+text-transform: uppercase;
+-webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+transition: all .2s ease-out;
+background: #009688;
+text-shadow: 0 1px 0 #00635a;
+padding: .65em 1em;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+box-sizing: border-box;
+margin: .5em 0 2em 0;
+cursor: pointer;
+}
+
+@media (min-width: 526px) {
+.button {
+float: right;
+max-width: 170px;
+margin-top: 0;
+font-size: .9em;
+}
+}
+
+section p {
+font-family: "Muli",sans-serif;
+color: #454545;
+line-height: 1.5em;
+padding-bottom: 2em;
+}
+
+::selection {
+background: #009688;
+color: #fff;
+text-shadow: none;
+}
+
+::-moz-selection {
+background: #009688;
+color: #fff;
+text-shadow: none;
+}
+
+audio {
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+background: #009688;
+float: left;
+box-sizing: border-box;
+max-width: 100%;
+}
+
+footer {
+text-align: center;
+}
+
+@media (min-width: 480px) {
+footer {
+text-align: left;
+}
+}
+
+footer .social-icons i {
+font-size: 2em;
+border-bottom: none;
+color: #009688;
+}
+
+a.itunes {
+float: none;
+}
+
+a.itunes img {
+max-width: 100px;
+margin-bottom: 1em;
+}
+
+@media (min-width: 480px) {
+a.itunes {
+float: right;
+}
+}
+
+input[type="email"],
+input[type="text"] {
+border: 2px solid #999;
+background-color: #efefef;
+color: #454545;
+padding: .6em;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+width: 100%;
+max-width: 300px;
+box-sizing: border-box;
+display: inline-block;
+-webkit-appearance: none;
+margin-bottom: 1em;
+}
+
+div#mce-responses {
+display: -webkit-inline-box;
+}
+
+div#mce-success-response,
+div#mce-error-response {
+width: 100%;
+box-sizing: border-box;
+font-family: "Muli",sans-serif;
+margin: 1em 0 1em 0;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+background-color: #efefef;
+border: 2px dotted #999;
+display: block;
+padding: .5em;
+}
+
+.comment-count {
+margin: 2em 0em;
+float: left;
+}
+
+.comment-count a {
+font-weight: bold;
+}
+
+.comment-count i {
+color: #009688;
+font-size: 1.5em;
+margin: 0 .5em 0 0;
+vertical-align: middle;
+}
+  </style>
+
   {% if site.owner.google.verify %}
     <!-- Webmaster Tools verfication -->
       <meta name="google-site-verification" content="{{ site.owner.google.verify }}">
