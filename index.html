@@ -29,7 +29,7 @@ title: Aethermonolog Podcast | aethermonolog.de
   {% endif %}
 
   <div class="comment-count">
-    <i class="ico-comment"></i><a href="{{ post.url }}#disqus_thread">Lädt...</a>
+    <i class="ico-comment"></i><a rel="nofollow" href="{{ post.url }}#disqus_thread">Lädt...</a>
   </div>
 
   <hr>
@@ -41,13 +41,13 @@ title: Aethermonolog Podcast | aethermonolog.de
 <nav class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/" class="previous"><< Neuere</a>
+    <a href="/" class="previous" rel="nofollow"><< Neuere</a>
     {% else %}
-    <a href="/posts/{{ paginator.previous_page }}" class="previous"><< Neuere</a>
+    <a href="/posts/{{ paginator.previous_page }}" class="previous" rel="nofollow"><< Neuere</a>
     {% endif %}
   {% endif %}
   {% if paginator.next_page %}
-    <a href="/posts/{{ paginator.next_page }}" class="next">Ältere >></a>
+    <a href="/posts/{{ paginator.next_page }}" class="next" rel="nofollow">Ältere >></a>
   {% endif %}
 </nav>
 
