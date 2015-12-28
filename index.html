@@ -12,13 +12,16 @@ title: Aethermonolog Podcast | aethermonolog.de
       {{ post.title }}
     </a>
   </h2>
-  <p>{{ post.excerpt }}</p>
-  {% if post.file %}
-  <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
-    Your browser doesn't support the <code>audio</code> element.
-  </audio>
 
-  <a href="{{ post.file }}" class="button">Download</a>
+  <p>{{ post.excerpt }}</p>
+
+  {% if post.file %}
+    <div class="audio-player">
+      <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
+        Your browser doesn't support the <code>audio</code> element.
+      </audio>
+      <a href="{{ post.url }}" class="button">Mehr lesen</a>
+    </div>
   {% endif %}
 
   {% if post.soundcloud %}
@@ -26,14 +29,14 @@ title: Aethermonolog Podcast | aethermonolog.de
   {% endif %}
 
   <div class="comment-count">
-    <i class="ico-comment"></i><a href="{{ post.url }}#disqus_thread">Kommentare laden</a>
+    <i class="ico-comment"></i><a href="{{ post.url }}#disqus_thread">Lädt...</a>
   </div>
 
   <hr>
   {% endfor %}
 </article>
 
-      {% include newsletter.html %}
+{% include newsletter.html %}
 
 <nav class="pagination">
   {% if paginator.previous_page %}
@@ -47,3 +50,5 @@ title: Aethermonolog Podcast | aethermonolog.de
     <a href="/posts/{{ paginator.next_page }}" class="next">Ältere >></a>
   {% endif %}
 </nav>
+
+{% include social-block.html %}

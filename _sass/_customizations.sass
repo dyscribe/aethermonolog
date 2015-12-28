@@ -47,16 +47,6 @@ section p
   color: $backgrounds
   text-shadow: none
 
-
-// Media
-audio
-  @include border-radius($corners)
-  background: $links
-  float: left
-  box-sizing: border-box
-  max-width: 100%
-
-
 // Collumns
 
 .col-left-50
@@ -209,7 +199,7 @@ div#mce-error-response
 // Comment Count
 
 .comment-count
-  margin: 2em 0em
+  margin: .5em 0em 1.5em 0
   float: left
   a
     font-weight: bold
@@ -218,3 +208,16 @@ div#mce-error-response
     font-size: 1.5em
     margin: 0 0.5em 0 0
     vertical-align: middle
+
+// Audio Player
+
+audio
+  @include border-radius($corners)
+  background: $links
+  float: left
+  box-sizing: border-box
+  max-width: 100%
+
+.audio-player
+  @media (min-width: 480px)
+    margin-bottom: 3em

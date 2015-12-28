@@ -5,32 +5,21 @@ layout: article
   <h1>{{ page.title }}</h1>
 </header>
 
-<div class="social-article">
-  <!-- Flattr -->
-    <a href="https://flattr.com/submit/auto?user_id=dyscribe&url={{ post.url }}&title={{ site.title }}">
-      <img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr aethermonolog" />
-    </a>
-</div>
-
 <article>
   {{ content }}
 </article>
 
 {% if page.file %}
-<audio src="{{ page.file }}" preload="auto" controls="controls" type="audio/mp3">
-  Your browser doesn't support the <code>audio</code> element.
-</audio>
+<div class="audio-player">
+  <audio src="{{ page.file }}" preload="auto" controls="controls" type="audio/mp3">
+    Your browser doesn't support the <code>audio</code> element.
+  </audio>
 
-<a href="{{ page.file }}" class="button">Download</a>
-{% endif %}
-
-{% if page.soundcloud %}
-{{ page.soundcloud }}
+  <a href="{{ page.file }}" class="button">Download</a>
+</div>
 {% endif %}
 
 <!-- Comments -->
-
-<h2 class="clear">Kommentiere diese Episode:</h2>
 
 <div id="comments">
       <div id="disqus_thread">
@@ -39,3 +28,5 @@ layout: article
 </div>
 
 <hr>
+
+{% include social-block.html %}
