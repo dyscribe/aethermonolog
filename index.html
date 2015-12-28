@@ -41,13 +41,13 @@ title: Aethermonolog Podcast | aethermonolog.de
 <nav class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/" class="previous" rel="nofollow"><< Neuere</a>
+    <a href="/" class="previous" rel="nofollow">&laquo; Neuere</a>
     {% else %}
-    <a href="/posts/{{ paginator.previous_page }}" class="previous" rel="nofollow"><< Neuere</a>
+    <a href="/posts/{{ paginator.previous_page }}" class="previous" rel="nofollow">&laquo; Neuere</a>
     {% endif %}
   {% endif %}
   {% if paginator.next_page %}
-    <a href="/posts/{{ paginator.next_page }}" class="next" rel="nofollow">Ältere >></a>
+    <a href="/posts/{{ paginator.next_page }}" class="next" rel="nofollow">Ältere &raquo;</a>
   {% endif %}
 </nav>
 
