@@ -11,7 +11,7 @@ baseurl: ""
 
 # Switch between production and local development
 url: http://aethermonolog.de
-#url: http://localhost:4000
+# url: http://localhost:4000
 
 include: [".htaccess"]
 
