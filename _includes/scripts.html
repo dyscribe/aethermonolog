@@ -10,18 +10,29 @@
 <script type="text/javascript" async>
   $script('{{ site.url }}/assets/js/jquery-1.9.1.min.js', function () {
     $script('//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', 'mailchimp');
+    $script('{{ site.url }}/assets/podlove/podlove-web-player.js', 'podlove');
 
-    $script.ready('mailchimp', function($) {
+    $script.ready('mailchimp', function() {
         window.fnames = new Array();
         window.ftypes = new Array();fnames[0]='EMAIL';
         ftypes[0]='email';fnames[1]='FNAME';
         ftypes[1]='text';fnames[2]='LNAME';
         ftypes[2]='text';
-        (jQuery);
+
         var $mcj = jQuery.noConflict(true);
     });
     console.log( "Mailchimp is loaded." );
+
+    $( document ).ready(function() {
+      console.log( "document loaded" );
     });
+
+    $( window ).load(function() {
+        console.log( "window loaded" );
+    });
+
+
+  });
 </script>
 
 <!-- POLYFILL JS (minified) -->
@@ -121,6 +132,10 @@ var stylesheet = loadCSS( "/assets/css/main.css" );
 onloadCSS( stylesheet, function() {
     console.log( "CSS has been loaded." );
   });
+var stylesheet = loadCSS( "/assets/podlove/podlove-web-player.css" );
+onloadCSS( stylesheet, function() {
+    console.log( "Podlove CSS loaded." );
+    });
 </script>
 
 <script>
@@ -133,12 +148,3 @@ onloadCSS( stylesheet, function() {
   ga('send', 'pageview');
 
 </script>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
