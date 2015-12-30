@@ -17,7 +17,10 @@ title: Aethermonolog Musik Podcast | aethermonolog.de
 
   {% if post.file %}
     <div class="audio-player">
-      {% include player.html %}
+      <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
+        Your browser doesn't support the <code>audio</code> element.
+      </audio>
+      <a href="{{ post.url }}" class="button">Mehr lesen</a>
     </div>
 
 
