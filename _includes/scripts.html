@@ -9,7 +9,7 @@
 
 <script type="text/javascript" async>
   $script('{{ site.url }}/assets/js/jquery-1.9.1.min.js', function () {
-    $script('//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', 'mailchimp');
+    $script('{{ site.url }}/assets/js/mc-validate-min.js', 'mailchimp');
     $script('{{ site.url }}/assets/podlove/podlove-web-player.js', 'podlove');
 
     $script.ready('mailchimp', function() {
