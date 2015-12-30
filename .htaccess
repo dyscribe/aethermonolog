@@ -19,7 +19,7 @@ RewriteRule ^(.*)$ – [F,L]
 RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} !FeedValidator [NC]
 RewriteCond %{HTTP_USER_AGENT} !FeedPress [NC]
-RewriteRule ^feed/?$ http://feedpress.me/aethermonolog [R=302,NC,L]
+RewriteRule ^podcast.rss$ http://feedpress.me/aethermonolog [R=302,NC,L]
 # END FEEDPRESS
 
 # Keep alive
