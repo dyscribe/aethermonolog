@@ -3,7 +3,7 @@
 destination: ../html/aethermonolog.de
 title: aethermonolog
 email: moin@aethermonolog.de
-description: "Monologe aus dem Kopf eines Musikers: Was inspiriert? Was blockiert? Was funktioniert? Eine Dokumentation muskialischer Schaffensprozesse."
+description: "Monologe aus dem Kopf eines Musikers: Was inspiriert? Was blockiert? Was funktioniert? Eine Dokumentation musikalischer Schaffensprozesse."
 subtitle: "Lamento ergo sum."
 paginate: 1
 paginate_path: "posts/:num"
