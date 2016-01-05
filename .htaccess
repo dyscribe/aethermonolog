@@ -29,12 +29,18 @@ RewriteRule ^(.*)$ – [F,L]
 
 # Deflate compression by MimeType
 <IfModule mod_deflate.c>
- <FilesMatch "\.(js|min.js|jpg|jpeg|gif|png|ico|json|html|css)$">
+ <FilesMatch "\.(js|min.js|jpg|jpeg|gif|png|ico|json)$">
   ExpiresActive on
   ExpiresDefault "access plus 1 month"
   SetOutputFilter DEFLATE
  </FilesMatch>
 </IfModule>
+
+# Set 2 Hour caching on commonly updated files
+<FilesMatch "\.(xml|txt|html|css)$">
+ExpiresDefault A7200
+Header append Cache-Control "proxy-revalidate"
+</FilesMatch>
 
 # DEFLATE by type - html, text, css, xml
 AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
