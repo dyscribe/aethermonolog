@@ -47,7 +47,3 @@ owner:
 
 # Jekyll plugins
 gems: [jekyll-mentions, jekyll-redirect-from, jekyll-paginate, jekyll-sitemap, jekyll-sass-converter]
-
-# Jekyll Twitter Mentions
-jekyll-mentions:
-  base_url: https://twitter.com
