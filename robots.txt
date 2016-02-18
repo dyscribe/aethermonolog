@@ -1,5 +1,6 @@
 User-agent: *
 user-agent: googlebot
 user-agent: googlebot-news
-Disallow: [^kontakt$]
-Disallow: [^success$]
+Allow: *
+Disallow: /kontakt.html
+Disallow: /success.html
