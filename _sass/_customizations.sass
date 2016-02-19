@@ -31,7 +31,7 @@
     font-size: 0.9em
 
 section p
-  font-family: $secodary-font
+  font-family: $secondary-font
   color: $copy
   line-height: 1.5em
   padding-bottom: 2em
@@ -112,10 +112,6 @@ a.itunes
   position: relative
   top: .15em
 
-@media (min-width: 480px)
-  .fb-like.fb_iframe_widget
-    top: -4px
-
 // Newsletter & Contact Input
 
 input[type="email"],
@@ -127,27 +123,22 @@ textarea
   padding: 0.6em
   @include border-radius($corners)
   width: 100%
-  max-width: 300px
+  max-width: 340px
   box-sizing: border-box
   display: inline-block
   -webkit-appearance: none
   margin-bottom: 1em
 
-// Contact Form
-/////////////////////////////
-
-// Make Button left aligned
-
-
-
 #mc_embed_signup div.mce_inline_error
-  padding: 0.7em !important
-  background-color: $error !important
-  display: inline-block !important
+  padding: 0.5em
+  background-color: red !important
   box-sizing: border-box
   width: 100%
   margin-top: -2px !important
-  max-width: 300px
+  max-width: 340px
+  position: absolute
+  left: 2em
+  top: 17.1em
 
 #mc_embed_signup input.mce_inline_error
   border-color: $error !important
@@ -159,7 +150,7 @@ div#mce-success-response,
 div#mce-error-response
   width: 100%
   box-sizing: border-box
-  font-family: $secodary-font
+  font-family: $primary-font
   margin: 1em 0 1em 0
   @include border-radius($corners)
   background-color: $lightest-grey
@@ -167,6 +158,8 @@ div#mce-error-response
   display: block
   padding: 0.5em
 
+// Contact Form
+/////////////////////////////
 
 // Sucess Message Pumping Heart
 

@@ -38,8 +38,6 @@ title: Aethermonolog Musik Podcast | aethermonolog.de
   {% endfor %}
 </article>
 
-{% include newsletter.html %}
-
 <nav class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
@@ -54,3 +52,5 @@ title: Aethermonolog Musik Podcast | aethermonolog.de
 </nav>
 
 {% include social-block.html %}
+
+{% include popup-modal.html %}
