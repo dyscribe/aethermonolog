@@ -66,7 +66,7 @@
 
 		<guid>{{ site.url }}{{ post.url }}</guid>
 
-		<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} CET</pubDate>
+		<pubDate>{{ post.date | date_to_rfc822 }} CET</pubDate>
 
 		<itunes:duration>{{ post.duration }}</itunes:duration>
 
