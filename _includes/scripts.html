@@ -10,7 +10,6 @@
 <script type="text/javascript" async>
   $script('/assets/js/jquery-1.9.1.min.js', function () {
     $script('/assets/js/mc-validate-min.js', 'mailchimp');
-    $script('/assets/js/ouibounce.js', 'ouibounce');
 
     $script.ready('mailchimp', function() {
         window.fnames = new Array();
@@ -22,27 +21,6 @@
         var $mcj = jQuery.noConflict(true);
     });
     console.log( "Mailchimp is loaded." );
-
-    $script.ready('ouibounce', function() {
-            var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
-              aggressive: true,
-              timer: 0,
-              callback: function() { console.log('ouibounce fired!'); }
-            });
-
-            $('body').on('click', function() {
-              $('#ouibounce-modal').hide();
-            });
-
-            $('#ouibounce-modal .modal-footer').on('click', function() {
-              $('#ouibounce-modal').hide();
-            });
-
-            $('#ouibounce-modal .modal').on('click', function(e) {
-              e.stopPropagation();
-            });
-          });
-          console.log( "Ouibounce Loaded" );
 
     $( document ).ready(function() {
       console.log( "document loaded" );
@@ -165,3 +143,5 @@ onloadCSS( stylesheet, function() {
   ga('send', 'pageview');
 
 </script>
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"51fa74881242eaa159eb6b9c0","lid":"096e160dfd"}) })</script>
