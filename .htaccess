@@ -22,6 +22,10 @@ RewriteCond %{HTTP_REFERER} ^http://.*social-buttons\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
+Redirect 301 /2014/05/13/git-lokale-änderungen-verwerfen-und-repository-zurücksetzen/ https://dyscribe.com/de/git-lokale-aenderungen-verwerfen.html
+Redirect 301 /2013/10/20/magic-the-gathering-reihenfolge-der-romane/ https://dyscribe.com/de/magic-the-gathering-roman-reihenfolge.html
+Redirect 301 /2014/03/15/dark-souls-2-official-soundtrack-cover-fan-art/ https://dyscribe.com/de/darksouls-2-ost-cover-fan-art.html
+
 # Keep alive
 <IfModule mod_headers.c>
  Header set Connection keep-alive
