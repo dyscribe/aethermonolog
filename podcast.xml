@@ -32,7 +32,7 @@
 
 </itunes:owner>
 
-<itunes:image href="{{ site.url }}/images/itunes.png" />
+<itunes:image href="{{ site.url }}/images/itunes.jpg" />
 
 <itunes:category text="Music" />
 
@@ -60,7 +60,7 @@
 
 		<itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
 
-		<itunes:image href="{{ site.url }}/images/itunes.png" />
+		<itunes:image href="{{ site.url }}/images/itunes.jpg" />
 
 		<enclosure url="{{ post.file_itunes }}" length="{{ post.length }}" type="audio/x-m4a" />
 

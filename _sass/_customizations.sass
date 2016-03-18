@@ -255,65 +255,13 @@ audio
   text-align: center
   clear: both
 
+// List Items
 
-// Top Navigation
-////////////////////////////////
+ul
+  li
+    font-family: $secondary-font
 
-#top-navigation
-  width: 100%
-  max-height: 4em
-  background-color: transparent
-  position: fixed
-  display: inline-block
-  #logo-container
-    height: 3em
-    background-image: url("/images/mini-logo.png")
-    background-size: contain
-    background-repeat: no-repeat
-    opacity: 0
-    width: 32px
-    margin-top: 10px
-    display: inline-block
-    @media (min-width: 530px)
-      background-image: url("/images/full-logo.png")
-      width: 240px
-      margin-top: 5px
-      height: 3em
+// About
 
-  nav
-    display: inline-block
-    float: right
-    li
-      display: inline-block
-      a
-        padding: .5em
-        font-size: 0.8em
-        @media (min-width: 320px)
-          font-size: 1em
-        &:hover
-          border-bottom: 3px solid lighten($custom-color, 15)
-    #navigation-cta
-      background-color: $custom-color
-      padding: .5em
-      color: white
-      border-radius: $corners
-      &:hover
-        background-color: lighten($custom-color, 5)
-        border-bottom: 0
-
-.is-sticky
-  #top-navigation
-    background-color: white
-    transition: background-color 2s ease-in-out
-    z-index: 1000
-    box-shadow: 1px 1px 5px #ccc
-    opacity: .96
-    #logo-container
-      opacity: 1
-      transition: opacity 2s ease-in-out
-
-.navigation-wrapper
-  max-width: 100%
-  padding: .5em
-  margin: 0 auto
-  box-sizing: border-box
+#about p
+  padding-bottom: .5em
