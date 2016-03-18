@@ -4,7 +4,9 @@ Allow: /
 User-agent: googlebot
 Disallow: /kontakt.html
 Disallow: /success.html
+Disallow: /kontakt/
 
 user-agent: googlebot-news
 Disallow: /kontakt.html
 Disallow: /success.html
+Disallow: /kontakt/

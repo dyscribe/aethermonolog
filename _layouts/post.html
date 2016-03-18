@@ -1,57 +1,81 @@
----
-layout: article
----
-<header>
-  <h1>{{ page.title }}</h1>
-</header>
+<!DOCTYPE html>
+<html>
 
-<!-- Date and Author -->
-<span id="date">
-  <i class="ico-time"></i>
-  {% assign m = page.date | date: "%-m" %}
-  {{ page.date | date: "%-d" }}
-  {% case m %}
-    {% when '1' %}Januar
-    {% when '2' %}Februar
-    {% when '3' %}M&auml;rz
-    {% when '4' %}April
-    {% when '5' %}Mai
-    {% when '6' %}Juni
-    {% when '7' %}Juli
-    {% when '8' %}August
-    {% when '9' %}September
-    {% when '10' %}Oktober
-    {% when '11' %}November
-    {% when '12' %}Dezember
-  {% endcase %}
-  {{ page.date | date: "%Y" }}
-  &nbsp;
-  <i class="ico-edit"></i>
-  {{ site.author }}
-</span>
+  {% include head.html %}
 
-<article>
-  {{ content }}
-</article>
+  <body>
 
-{% if page.file %}
-<div class="audio-player">
-  <audio src="{{ page.file }}" preload="auto" controls="controls" type="audio/mp3">
-    Your browser doesn't support the <code>audio</code> element.
-  </audio>
+    {% include navigation.html %}
 
-  <a href="{{ page.file }}" class="button">Download</a>
-</div>
-{% endif %}
+    <div class="logo">
+      <a href="{{ site.url }}">
+        <picture>
+          <source srcset="/images/full-logo.png, /images/full-logo-2x.png 2x" media="(min-width: 600px)">
+          <img src="/images/full-logo.png" alt="Der Aethermonolog Podcast | aethermonolog.de">
+        </picture>
+      </a>
+    </div>
 
-<!-- Comments -->
+    <section>
 
-<div id="comments">
-      <div id="disqus_thread">
-      {% include disqus_comments.html %}
-      </div><!-- /#disqus_thread -->
-</div>
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
 
-<hr>
+      <!-- Date and Author -->
+      <span id="date">
+        <i class="ico-time"></i>
+        {% assign m = page.date | date: "%-m" %}
+        {{ page.date | date: "%-d" }}
+        {% case m %}
+          {% when '1' %}Januar
+          {% when '2' %}Februar
+          {% when '3' %}M&auml;rz
+          {% when '4' %}April
+          {% when '5' %}Mai
+          {% when '6' %}Juni
+          {% when '7' %}Juli
+          {% when '8' %}August
+          {% when '9' %}September
+          {% when '10' %}Oktober
+          {% when '11' %}November
+          {% when '12' %}Dezember
+        {% endcase %}
+        {{ page.date | date: "%Y" }}
+        &nbsp;
+        <i class="ico-edit"></i>
+        {{ site.author }}
+      </span>
 
-{% include social-block.html %}
+      <article>
+        {{ content }}
+      </article>
+
+      {% if page.file %}
+      <div class="audio-player">
+        <audio src="{{ page.file }}" preload="auto" controls="controls" type="audio/mp3">
+          Your browser doesn't support the <code>audio</code> element.
+        </audio>
+
+        <a href="{{ page.file }}" class="button">Download</a>
+      </div>
+      {% endif %}
+
+      <!-- Comments -->
+
+      <div id="comments">
+            <div id="disqus_thread">
+            {% include disqus_comments.html %}
+            </div><!-- /#disqus_thread -->
+      </div>
+
+      <hr>
+
+      {% include social-block.html %}
+
+      {% include footer.html %}
+
+    </section>
+    {% include scripts.html %}
+  </body>
+</html>

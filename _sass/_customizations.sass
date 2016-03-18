@@ -30,6 +30,39 @@
     margin-top: 0
     font-size: 0.9em
 
+.button-invert
+  display: inline-block
+  width: 100%
+  max-width: 300px
+  line-height: 0.9em
+  text-align: center
+  text-transform: uppercase
+  @include transition(.2s)
+  padding: .65em 1em
+  @include border-radius($corners)
+  border: 1px solid $custom-color
+  box-sizing: border-box
+  margin: 0.5em 0 2em 0
+  cursor: pointer
+  &:visited
+    background-color: $custom-color
+  &:hover,
+    background: lighten($custom-color, 5%)
+    color: $white
+    text-decoration: none
+  &:active
+    color: $backgrounds
+    background: darken($links, 20%)
+  @media (min-width: 526px)
+    float: right
+    max-width: 170px
+    margin-top: 0
+    font-size: 0.9em
+
+a.button.ask-me
+  max-width: 260px
+  float: none
+
 section p
   font-family: $secondary-font
   color: $copy
@@ -214,3 +247,73 @@ audio
 .audio-player
   @media (min-width: 480px)
     margin-bottom: 3em
+
+// Center Div
+
+.center
+  width: 100%
+  text-align: center
+  clear: both
+
+
+// Top Navigation
+////////////////////////////////
+
+#top-navigation
+  width: 100%
+  max-height: 4em
+  background-color: transparent
+  position: fixed
+  display: inline-block
+  #logo-container
+    height: 3em
+    background-image: url("/images/mini-logo.png")
+    background-size: contain
+    background-repeat: no-repeat
+    opacity: 0
+    width: 32px
+    margin-top: 10px
+    display: inline-block
+    @media (min-width: 530px)
+      background-image: url("/images/full-logo.png")
+      width: 240px
+      margin-top: 5px
+      height: 3em
+
+  nav
+    display: inline-block
+    float: right
+    li
+      display: inline-block
+      a
+        padding: .5em
+        font-size: 0.8em
+        @media (min-width: 320px)
+          font-size: 1em
+        &:hover
+          border-bottom: 3px solid lighten($custom-color, 15)
+    #navigation-cta
+      background-color: $custom-color
+      padding: .5em
+      color: white
+      border-radius: $corners
+      &:hover
+        background-color: lighten($custom-color, 5)
+        border-bottom: 0
+
+.is-sticky
+  #top-navigation
+    background-color: white
+    transition: background-color 2s ease-in-out
+    z-index: 1000
+    box-shadow: 1px 1px 5px #ccc
+    opacity: .96
+    #logo-container
+      opacity: 1
+      transition: opacity 2s ease-in-out
+
+.navigation-wrapper
+  max-width: 100%
+  padding: .5em
+  margin: 0 auto
+  box-sizing: border-box
