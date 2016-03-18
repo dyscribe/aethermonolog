@@ -5,6 +5,8 @@
 
   <body>
 
+    {% include navigation.html %}
+
     <div class="logo">
       <a href="{{ site.url }}">
         <picture>
@@ -16,7 +18,17 @@
 
     <section>
 
-      {{ content }}
+      <header>
+        <h1>Über mich:</h1>
+      </header>
+
+      <article>
+        {{ content }}
+      </article>
+
+      <hr>
+
+      {% include social-block.html %}
 
       {% include footer.html %}
 
