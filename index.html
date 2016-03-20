@@ -66,13 +66,13 @@ title: Aethermonolog Musik Podcast | Home | aethermonolog.de
 <nav class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/" class="previous" rel="nofollow">&laquo; Neuere</a>
+    <a href="/" class="previous" rel="nofollow">&laquo;</a>
     {% else %}
-    <a href="/posts/{{ paginator.previous_page }}" class="previous" rel="nofollow">&laquo; Neuere</a>
+    <a href="/posts/{{ paginator.previous_page }}" class="previous" rel="nofollow">&laquo;</a>
     {% endif %}
   {% endif %}
   {% if paginator.next_page %}
-    <a href="/posts/{{ paginator.next_page }}" class="next" rel="nofollow">Ältere &raquo;</a>
+    <a href="/posts/{{ paginator.next_page }}" class="next" rel="nofollow">&raquo;</a>
   {% endif %}
 </nav>
 

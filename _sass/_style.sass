@@ -11,8 +11,9 @@ body
   background: $backgrounds url('/images/background-mobile.jpg') center
   background-size: cover
   background-attachment: fixed
-  -webkit-font-smoothing: antialiased
   text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
   @media (min-width: 480px)
     background: $backgrounds url('/images/background.jpg') center
     background-size: cover
@@ -315,7 +316,13 @@ nav.pagination
   font-size: 1.1em
   margin-bottom: 1em
   a
-    margin: 1em
+    font-size: 1.3em
+    padding: .3em
+    border: 1px solid $custom-color
+    border-radius: $corners
+    &:hover
+      background-color: $custom-color
+      color: white
 
 // Social Links below Headline
 
