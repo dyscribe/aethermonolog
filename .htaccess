@@ -29,6 +29,14 @@ Redirect 301 /episode-00b.html http://aethermonolog.de/
 Redirect 301 /episode-00a.html http://aethermonolog.de/
 Redirect 301 /2013/11/03/mac-desktopsymbole-ausblenden/ https://dyscribe.com/404
 Redirect 301 /sitemap/ http://aethermonolog.de/sitemap.xml
+Redirect 301 /2014/03/10/risen-3-titan-lords-erscheint-im-august-2014/ https://dyscribe.com/404
+Redirect 301 /2013/10/27/praxistest-cubase-5-5-unter-os-x-mavericks/ https://dyscribe.com/404
+Redirect 301 /2014/03/11/atom-githubs-neuer-editor-in-der-beta-phase/ https://dyscribe.com/404
+Redirect 301 /2014/10/29/praxistest-cubase-5-5-unter-os-x-yosemite/ https://dyscribe.com/404
+Redirect 301 /2014/01/15/vom-mac-%C3%BCber-ssh-auf-raspberry-pi-mit-minepeon-zugreifen/ https://dyscribe.com/404
+Redirect 301 /2014/01/12/tutorial-akai-mpk-mit-mpc-fat-pads-umr%C3%BCsten/ https://dyscribe.com/404
+
+
 
 # Keep alive
 <IfModule mod_headers.c>
