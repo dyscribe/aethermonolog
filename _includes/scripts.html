@@ -9,19 +9,7 @@
 
 <script type="text/javascript" async>
   $script('/assets/js/jquery-1.9.1.min.js', function () {
-  $script('/assets/js/mc-validate-min.js', 'mailchimp');
   $script('/assets/js/jquery.sticky.js', 'sticky');
-
-    $script.ready('mailchimp', function() {
-        window.fnames = new Array();
-        window.ftypes = new Array();fnames[0]='EMAIL';
-        ftypes[0]='email';fnames[1]='FNAME';
-        ftypes[1]='text';fnames[2]='LNAME';
-        ftypes[2]='text';
-
-        var $mcj = jQuery.noConflict(true);
-    });
-    console.log( "Mailchimp is loaded." );
 
     $script.ready('sticky', function() {
         $("#top-navigation").sticky({topSpacing:0});
@@ -30,6 +18,20 @@
 
     $( document ).ready(function() {
       console.log( "document loaded" );
+    });
+
+    $( document ).ready(function(){
+    $("#nav-mobile").html($("#nav-main").html());
+    $("#nav-trigger span").click(function(){
+        if ($("#nav-indicator, nav#nav-mobile ul").hasClass("expanded")) {
+            $("#nav-indicator.expanded, nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+      });
+      console.log( "responsive nav loaded" );
     });
 
     $( window ).load(function() {

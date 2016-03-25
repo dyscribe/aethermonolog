@@ -6,7 +6,7 @@
   max-height: 4em
   background-color: transparent
   position: inherit
-  display: block
+  display: inline-block
   #logo-container
     height: 3em
     background-image: url("/images/mini-logo.png")
@@ -22,40 +22,77 @@
       margin-top: 0px
       height: 3em
 
-  nav
-    display: inline-block
-    float: right
-    li
+  #nav-main
+    display: none
+    @media (min-width: 620px)
       display: inline-block
-      a
+      float: right
+      li
+        display: inline-block
+        a
+          padding: .5em
+          font-size: 0.8em
+          @media (min-width: 320px)
+            font-size: 1em
+          &:hover
+            border-bottom: 3px solid lighten($custom-color, 15)
+      #navigation-cta
+        background-color: $custom-color
         padding: .5em
-        font-size: 0.8em
-        @media (min-width: 320px)
-          font-size: 1em
+        color: white
+        border-radius: $corners
         &:hover
-          border-bottom: 3px solid lighten($custom-color, 15)
-    #navigation-cta
-      background-color: $custom-color
-      padding: .5em
-      color: white
-      border-radius: $corners
-      &:hover
-        background-color: lighten($custom-color, 5)
-        border-bottom: 0
+          background-color: lighten($custom-color, 5)
+          border-bottom: 0
 
 .is-sticky
   #top-navigation
     background-color: white
-    transition: background-color 2s ease-in-out
+    transition: background-color 1s ease-in-out
     z-index: 1000
     box-shadow: 1px 1px 5px #ccc
     opacity: .96
     #logo-container
       opacity: 1
-      transition: opacity 2s ease-in-out
+      transition: opacity 1s ease-in-out
 
 .navigation-wrapper
   max-width: 100%
   padding: .5em
   margin: 0 auto
   box-sizing: border-box
+
+// Navigation Trigger
+
+#nav-trigger
+  display: inline-block
+  text-align: center
+  float: right
+  font-size: .8em
+  margin-top: .4em
+  @media (min-width: 526px)
+    font-size: 1em
+    margin-top: .5em
+  span
+    display: inline-block
+  @media (min-width: 620px)
+    display: none
+
+// Mobile Navigation
+
+#nav-mobile
+  display: block
+  position: absolute
+  right: 0
+  top: 4em
+  width: 10em
+  background-color: white
+  box-shadow: 1px 1px 5px #ccc
+  ul
+    display: none
+    list-style: none
+    padding: 1em
+    li
+      padding: .5em
+  @media (min-width: 620px)
+    display: none
