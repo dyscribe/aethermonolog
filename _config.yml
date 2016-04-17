@@ -24,6 +24,8 @@ highlighter: pygments
 sass:
   sass_dir: _sass
   style: compressed
+kramdown:
+  entity_output: numeric
 
 # Podcast settings
 lang: de-DE

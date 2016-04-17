@@ -21,7 +21,7 @@
 		</image>
 		<itunes:subtitle>{{ site.description | xml_escape }}</itunes:subtitle>
 		<itunes:author>{{ site.author }}</itunes:author>
-		<itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
+		<itunes:summary>{{ site.description }}</itunes:summary>
 		<itunes:keywords>{{ site.keywords }}</itunes:keywords>
 		<itunes:owner>
 			<itunes:name>{{ site.author }}</itunes:name>
@@ -41,12 +41,12 @@
 				<title>{{ post.title | xml_escape }}</title>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-				<description>{{ post.excerpt | xml_escape }}</description>
+				<description><![CDATA[{{ post.excerpt }}]]></description>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 				<enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mp3"/>
 				<itunes:author>{{ site.author }}</itunes:author>
 				<itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
-				<itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
+				<itunes:summary><![CDATA[{{ post.summary }}]]></itunes:summary>
 				<itunes:duration>{{ post.duration }}</itunes:duration>
 				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
 				<itunes:image href="{{ site.url }}/images/itunes.jpg" />
