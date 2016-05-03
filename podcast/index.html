@@ -1,0 +1,79 @@
+---
+layout: default
+title: Aethermonolog - Recording, Produktion und Musik machen | Podcasts | aethermonolog.de
+---
+
+<article>
+
+  {% for post in site.categories.podcast %}
+
+  <h2>
+    <a href="{{ post.url }}" title="{{ post.title }}">
+      {{ post.title }}
+    </a>
+  </h2>
+
+  <!-- Date and Author -->
+  <span id="date">
+    <i class="ico-time"></i>
+    {% assign m = post.date | date: "%-m" %}
+    {{ post.date | date: "%-d" }}
+    {% case m %}
+      {% when '1' %}Januar
+      {% when '2' %}Februar
+      {% when '3' %}M&auml;rz
+      {% when '4' %}April
+      {% when '5' %}Mai
+      {% when '6' %}Juni
+      {% when '7' %}Juli
+      {% when '8' %}August
+      {% when '9' %}September
+      {% when '10' %}Oktober
+      {% when '11' %}November
+      {% when '12' %}Dezember
+    {% endcase %}
+    {{ post.date | date: "%Y" }}
+    &nbsp;
+    <i class="ico-edit"></i>
+    {{ site.author }}
+  </span>
+
+  <p>{{ post.excerpt }}</p>
+
+  {% if post.file %}
+    <div class="audio-player">
+      <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
+        Your browser doesn't support the <code>audio</code> element.
+      </audio>
+      <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
+    </div>
+
+
+  {% endif %}
+
+  {% if post.soundcloud %}
+  {{ post.soundcloud }}
+  {% endif %}
+
+  <div class="comment-count">
+    <i class="ico-comment"></i><a rel="nofollow" href="{{ post.url }}#disqus_thread">Lädt...</a>
+  </div>
+
+  <hr>
+  {% endfor %}
+</article>
+
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a href="/" class="previous" rel="nofollow">&laquo;</a>
+    {% else %}
+    <a href="/posts/{{ paginator.previous_page }}" class="previous" rel="nofollow">&laquo;</a>
+    {% endif %}
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="/posts/{{ paginator.next_page }}" class="next" rel="nofollow">&raquo;</a>
+  {% endif %}
+</nav>
+
+{% include social-block.html %}
