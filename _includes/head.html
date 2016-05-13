@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{{ site.description }}">
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-  <link rel="alternate" href="http://aethermonolog.de/" hreflang="de" />
+  <link rel="alternate" href="{{ site.url }}{{ page.url }}" hreflang="de" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <!-- Inline Critical CSS -->
