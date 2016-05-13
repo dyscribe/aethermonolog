@@ -1,0 +1,77 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{ page.excerpt }}">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="alternate" href="{{ site.url }}{{ page.url }}" hreflang="de" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Inline Critical CSS -->
+  <style>
+  html{margin:0;padding:0}body{color:#454545;font-size:16px;font-family:"Podkova",serif;font-weight:700;margin:0 0 4em 0 !important;background:#fff url("/images/background-mobile.jpg") center;background-size:cover;background-attachment:fixed;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media (min-width: 480px){body{background:#fff url("/images/background.jpg") center;background-size:cover;background-attachment:fixed}}.logo{text-align:center;width:100%;display:block;padding:1.5em 0;max-width:600px;margin:0 auto}.logo a{cursor:pointer;border:none}.logo img{width:auto;max-width:100%}section{max-width:32em;margin:0 auto;background:#fff;padding:15px 20px;clear:both;-webkit-box-shadow:1px;-moz-box-shadow:1px;-o-box-shadow:1px;box-shadow:1px}section section{margin:0;padding:0;padding:0 0 .6em;-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none}article,form,footer,hr{clear:both}header,aside,input,textarea,label{float:left}article,footer,[class*="author-"],.comments,form,aside{padding:1em 0 .8em}img{width:auto;max-width:100%;height:auto}h1,h2,h3,h4,h5,h6,p,a,small,blockquote,code,strong,input,textarea{margin:0;padding:0;font-style:normal;font-weight:700}h1,h2,h3,h4,h5,h6{color:#343434}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:700}h1{font-size:1.8em;line-height:1.8em;padding-bottom:.5em}h2{font-size:1.6em;line-height:1.4em;padding-bottom:.5em}h3{font-size:1.2em;line-height:1.8em;padding-bottom:.5em}h4{font-size:1em;line-height:1.5em;padding-bottom:.5em}h5{font-size:.8em;line-height:1.8em;padding-bottom:1em}h6{color:#5f5f5f;font-style:italic;font-weight:300;font-size:.7em;line-height:1.8em;padding-bottom:1em}p,legend{font-size:1em;line-height:1.8em;padding-bottom:.5em}a{color:#009688;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;-o-transition:all .2s ease-out;transition:all .2s ease-out;text-decoration:none}a:hover{color:#00c9b6}a:active{color:#007d71}h2 a:hover,p a:hover{border-bottom:2px solid #00c9b6}blockquote{margin:0;padding:1em;font-weight:300;font-size:2em;color:#787878}blockquote p{padding:0;line-height:1.2em}code{font-family:Courier New,Courier,monospace;border:1px solid #c5c5c5;background:#d9d9d9;-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;border-radius:5px;padding:.2em .4em}hr{height:1px;border:0;background:#d1d1d1;margin:0 0 1em}.credit a{color:#454545}.credit a:hover{color:#121212}::selection{background:#009688;color:#fff}::-moz-selection{background:#009688;color:#fff}form p{display:inline-block;padding-bottom:1em;clear:both}textarea{-webkit-border-radius:0 3px 3px 3px;-moz-border-radius:0 3px 3px 3px;-o-border-radius:0 3px 3px 3px;border-radius:0 3px 3px 3px;min-height:100px}::-webkit-input-placeholder{color:#787878}:-moz-placeholder{color:#787878}::-moz-placeholder{color:#787878}:-ms-input-placeholder{color:#787878}input[type="submit"],button[type="submit"]{min-width:inherit;min-height:40px;border:0;outline:none;padding:0 1.2em;color:#fff;line-height:1em;text-align:center;text-transform:uppercase;font-family:"Podkova",serif;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;-o-transition:all .2s ease-out;transition:all .2s ease-out;background:#009688;text-shadow:0 1px 0 #00635a;padding:.65em 1em;-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;border-radius:5px;box-sizing:border-box;margin:.5em 0 2em 0;cursor:pointer;-webkit-appearance:none}input[type="submit"]:visited,button[type="submit"]:visited{background-color:#009688}input[type="submit"]:hover,button[type="submit"]:hover{background:#00b09f;color:#fff;text-decoration:none}input[type="submit"]:active,button[type="submit"]:active{color:#fff;background:#00302c}@media (min-width: 526px){input[type="submit"],button[type="submit"]{float:right;max-width:170px;margin-top:0;font-size:.9em}}input.pull-left{clear:both !important;float:left !important;display:block !important}label,input,textarea,button{font-size:1em}.comments h3{color:#5f5f5f}.comments ul{list-style:none;padding:0}.comments li{padding-bottom:.4em}.comments p{padding-bottom:.2em}.notifications{text-align:center}.notifications p{display:block;width:100%;padding:.55em 0;margin-bottom:.75em;-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;border-radius:5px;background:#e6e6e6;border:1px solid #b3b3b3}.notifications p.success{background:#ebffeb;border:1px solid #00B800}.notifications p.error{background:#ffe6e6;border:1px solid red}nav.pagination{text-align:center;font-size:1.1em;margin-bottom:1em}nav.pagination a{font-size:1.3em;padding:.3em;border:1px solid #009688;border-radius:5px}nav.pagination a:hover{background-color:#009688;color:#fff}.social-article{clear:both}span#date{padding:.5em 0 1.5em 0;display:inline-block;color:#888;font-size:.8em;font-family:"Muli",sans-serif;font-weight:normal}#top-navigation{width:100%;max-height:4em;background-color:transparent;position:inherit;display:inline-block}#top-navigation #logo-container{height:3em;background-image:url("/images/mini-logo.png");background-size:contain;background-repeat:no-repeat;opacity:0;width:32px;margin-top:10px;display:inline-block}@media (min-width: 530px){#top-navigation #logo-container{background-image:url("/images/full-logo.png");width:240px;margin-top:0px;height:3em}}#top-navigation #nav-main{display:none}@media (min-width: 620px){#top-navigation #nav-main{display:inline-block;float:right}#top-navigation #nav-main li{display:inline-block}#top-navigation #nav-main li a{padding:.5em;font-size:.8em}}@media (min-width: 620px) and (min-width: 320px){#top-navigation #nav-main li a{font-size:1em}}@media (min-width: 620px){#top-navigation #nav-main li a:hover{border-bottom:3px solid #00e3cd}#top-navigation #nav-main #navigation-cta{background-color:#009688;padding:.5em;color:#fff;border-radius:5px}#top-navigation #nav-main #navigation-cta:hover{background-color:#00b09f;border-bottom:0}}.is-sticky #top-navigation{background-color:#fff;transition:background-color 1s ease-in-out;z-index:1000;box-shadow:1px 1px 5px #ccc;opacity:.96}.is-sticky #top-navigation #logo-container{opacity:1;transition:opacity 1s ease-in-out}.navigation-wrapper{max-width:100%;padding:.5em;margin:0 auto;box-sizing:border-box}#nav-trigger{display:inline-block;text-align:center;float:right;font-size:.8em;margin-top:.4em}@media (min-width: 526px){#nav-trigger{font-size:1em;margin-top:.5em}}#nav-trigger span{display:inline-block}@media (min-width: 620px){#nav-trigger{display:none}}#nav-mobile{display:block;position:absolute;right:0;top:4em;width:10em;background-color:#fff;box-shadow:1px 1px 5px #ccc}#nav-mobile ul{display:none;list-style:none;padding:1em}#nav-mobile ul li{padding:.5em}@media (min-width: 620px){#nav-mobile{display:none}}
+  </style>
+
+  {% if site.owner.google.verify %}
+    <!-- Webmaster Tools verfication -->
+      <meta name="google-site-verification" content="{{ site.owner.google.verify }}">
+  {% endif %}
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16 24x24 32x32 48x48 64x64" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--Damn IE 8 & 7 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Twitter Cards Meta Data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@aethermonolog">
+  <meta name="twitter:creator" content="@dyscribe">
+  {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+  {% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% else %}
+  <meta name="twitter:url" content="{{ site.url }}">
+  {% endif %}
+  {% if page.excerpt %}
+  <meta name="twitter:description" content="{{ page.excerpt }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+  <meta name="twitter:image" content="{{ site.url }}/images/cover.jpg">
+  <meta name="twitter:image:width" content="250">
+  <meta name="twitter:image:height" content="250">
+
+
+  <!-- Open Graph Meta Data -->
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.excerpt }}">
+  <meta property="og:image" content="{{ site.url }}/images/cover.jpg"/>
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="250" />
+  <meta property="og:image:height" content="250" />
+
+</head>
