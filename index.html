@@ -50,8 +50,8 @@ title: Aethermonolog Musik Podcast | Home | aethermonolog.de
       </audio>
       <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
     </div>
-
-
+  {% else %}
+    <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
   {% endif %}
 
   {% if post.soundcloud %}

@@ -37,6 +37,7 @@ Redirect 301 /2014/03/11/atom-githubs-neuer-editor-in-der-beta-phase/ https://dy
 Redirect 301 /2014/10/29/praxistest-cubase-5-5-unter-os-x-yosemite/ https://dyscribe.com/404
 Redirect 301 /2014/01/15/vom-mac-%C3%BCber-ssh-auf-raspberry-pi-mit-minepeon-zugreifen/ https://dyscribe.com/404
 Redirect 301 /2014/01/12/tutorial-akai-mpk-mit-mpc-fat-pads-umr%C3%BCsten/ https://dyscribe.com/404
+Redirect 301 /2014/01/09/x-schritte-zum-bitcoin-mining-mit-dem-raspberry-pi/ https://dyscribe.com/404
 
 # Internal Redirects
 Redirect /episode-001.html /podcast/episode-001.html
@@ -56,6 +57,8 @@ Redirect /episode-014.html /podcast/episode-014.html
 Redirect /episode-015.html /podcast/episode-015.html
 Redirect /episode-016.html /podcast/episode-016.html
 Redirect /episode-017.html /podcast/episode-017.html
+Redirect /episode-018.html /podcast/episode-019.html
+Redirect /episode-019.html /podcast/episode-018.html
 
 
 
