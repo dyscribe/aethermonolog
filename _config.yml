@@ -5,7 +5,7 @@ title: aethermonolog - Musikproduktion, Homerecording und Musik machen
 email: moin@aethermonolog.de
 description: "Monologe aus dem Kopf eines Musikers: Was inspiriert? Was blockiert? Was funktioniert? Eine Dokumentation musikalischer Schaffensprozesse."
 subtitle: "Lamento ergo sum."
-paginate: 3
+paginate: 5
 paginate_path: "posts/:num"
 baseurl: ""
 

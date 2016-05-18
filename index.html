@@ -41,22 +41,28 @@ title: Aethermonolog Musik Podcast | Home | aethermonolog.de
     </span>
   </span>
 
-  <p>{{ post.excerpt }}</p>
+  <span class="{{ post.tags }}">
+    {% if post.excerpt %}
+      <p>{{ post.excerpt }}</p>
+    {% else %}
+      {{ post.content | strip_html | truncatewords:250}}
+    {% endif %}
 
-  {% if post.file %}
-    <div class="audio-player">
-      <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
-        Your browser doesn't support the <code>audio</code> element.
-      </audio>
-      <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
-    </div>
-  {% else %}
-    <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
-  {% endif %}
+    {% if post.file %}
+      <div class="audio-player">
+        <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
+          Your browser doesn't support the <code>audio</code> element.
+        </audio>
+        <a href="{{ post.url }}" class="button-invert podcast">Mehr lesen</a>
+      </div>
+    {% else %}
+      <a href="{{ post.url }}" class="button-invert blog">Mehr lesen</a>
+    {% endif %}
 
-  {% if post.soundcloud %}
-  {{ post.soundcloud }}
-  {% endif %}
+    {% if post.soundcloud %}
+    {{ post.soundcloud }}
+    {% endif %}
+  </span>
 
   <div class="comment-count">
     <i class="ico-comment"></i><a rel="nofollow" href="{{ post.url }}#disqus_thread">Lädt...</a>

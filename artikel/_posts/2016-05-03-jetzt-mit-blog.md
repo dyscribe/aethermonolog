@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [artikel]
-tags: [artikel]
+tags: [Artikel]
 title: "Jetzt auch mit Blog"
 date: 2016-05-14 19:00:00
 ---

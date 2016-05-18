@@ -41,18 +41,28 @@ title: Aethermonolog - Recording, Produktion und Musik machen | Podcasts | aethe
     </span>
   </span>
 
-  <p>{{ post.excerpt }}</p>
+  <span class="{{ post.tags }}">
+    {% if post.excerpt %}
+      <p>{{ post.excerpt }}</p>
+    {% else %}
+      {{ post.content | strip_html | truncate: 3}}
+    {% endif %}
 
-  {% if post.file %}
-    <div class="audio-player">
-      <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
-        Your browser doesn't support the <code>audio</code> element.
-      </audio>
-      <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
-    </div>
+    {% if post.file %}
+      <div class="audio-player">
+        <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
+          Your browser doesn't support the <code>audio</code> element.
+        </audio>
+        <a href="{{ post.url }}" class="button-invert podcast">Mehr lesen</a>
+      </div>
+    {% else %}
+      <a href="{{ post.url }}" class="button-invert blog">Mehr lesen</a>
+    {% endif %}
 
-
-  {% endif %}
+    {% if post.soundcloud %}
+      {{ post.soundcloud }}
+    {% endif %}
+  </span>
 
   {% if post.soundcloud %}
   {{ post.soundcloud }}

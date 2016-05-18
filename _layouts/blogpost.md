@@ -36,4 +36,4 @@ Etwas zum Anhören ist nice! Manche Dinge, besonders wenn es visuell wird, lasse
 
 <br />
 
-![Ein Bild]({{site.url}}/images/content/aem014-screenshot.jpg)
+![Ein Bild]({{site.url}}/images/profile-600.jpg)
