@@ -4,7 +4,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="{{ site.lang }}">
 	<channel>
-		<atom:link href="{{ site.url }}/podcast.rss" rel="self" type="application/rss+xml" />
+		<atom:link href="{{ site.url }}podcast.rss" rel="self" type="application/rss+xml" />
 		<title>{{ site.title }}</title>
 		<description>{{ site.description | xml_escape }}</description>
 		<link>{{ site.url }}</link>
@@ -16,7 +16,7 @@
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<image>
 			<link>{{ site.url }}</link>
-			<url>{{ site.url }}/images/itunes.jpg</url>
+			<url>{{ site.url }}images/itunes.jpg</url>
 			<title>{{ site.title }}</title>
 		</image>
 		<itunes:subtitle>{{ site.description | xml_escape }}</itunes:subtitle>
@@ -27,7 +27,7 @@
 			<itunes:name>{{ site.author }}</itunes:name>
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
-		<itunes:image href="{{ site.url }}/images/itunes.jpg" />
+		<itunes:image href="{{ site.url }}images/itunes.jpg" />
 		<itunes:category text="Music" />
 		<itunes:category text="Technology">
 			<itunes:category text="Podcasting" />
@@ -49,7 +49,7 @@
 				<itunes:summary><![CDATA[{{ post.summary }}]]></itunes:summary>
 				<itunes:duration>{{ post.duration }}</itunes:duration>
 				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
-				<itunes:image href="{{ site.url }}/images/itunes.jpg" />
+				<itunes:image href="{{ site.url }}images/itunes.jpg" />
 				<itunes:explicit>{{ post.explicit }}</itunes:explicit>
 				<itunes:block>{{ post.block }}</itunes:block>
 			</item>

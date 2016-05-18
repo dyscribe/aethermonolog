@@ -70,14 +70,6 @@ section p
   padding-bottom: 2em
   font-weight: normal
 
-// Blog Roll
-
-span.artikel
-  p:empty
-    display: none
-  a.button-invert
-    display: block !important
-
 // Selection
 ::selection
   background: $links // Safari
@@ -284,11 +276,12 @@ ul
 
 // Tags
 
-span#tags
+span#tags a
   margin-left: 5px
   padding: 0 5px 3px 5px
   background-color: #efefef
   border-radius: 5px
+  text-transform: capitalize
 
 // Video
 
