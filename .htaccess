@@ -22,6 +22,7 @@ RewriteCond %{HTTP_REFERER} ^http://.*social-buttons\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
+# External 301 Redirects
 Redirect 301 /2014/05/13/git-lokale-änderungen-verwerfen-und-repository-zurücksetzen/ https://dyscribe.com/de/git-lokale-aenderungen-verwerfen.html
 Redirect 301 /2013/10/20/magic-the-gathering-reihenfolge-der-romane/ https://dyscribe.com/de/magic-the-gathering-roman-reihenfolge.html
 Redirect 301 /2014/03/15/dark-souls-2-official-soundtrack-cover-fan-art/ https://dyscribe.com/de/darksouls-2-ost-cover-fan-art.html
@@ -37,6 +38,28 @@ Redirect 301 /2014/10/29/praxistest-cubase-5-5-unter-os-x-yosemite/ https://dysc
 Redirect 301 /2014/01/15/vom-mac-%C3%BCber-ssh-auf-raspberry-pi-mit-minepeon-zugreifen/ https://dyscribe.com/404
 Redirect 301 /2014/01/12/tutorial-akai-mpk-mit-mpc-fat-pads-umr%C3%BCsten/ https://dyscribe.com/404
 Redirect 301 /2014/01/09/x-schritte-zum-bitcoin-mining-mit-dem-raspberry-pi/ https://dyscribe.com/404
+
+# Internal Redirects
+Redirect /episode-001.html /podcast/episode-001.html
+Redirect /episode-002.html /podcast/episode-002.html
+Redirect /episode-003.html /podcast/episode-003.html
+Redirect /episode-004.html /podcast/episode-004.html
+Redirect /episode-005.html /podcast/episode-005.html
+Redirect /episode-006.html /podcast/episode-006.html
+Redirect /episode-007.html /podcast/episode-007.html
+Redirect /episode-008.html /podcast/episode-008.html
+Redirect /episode-009.html /podcast/episode-009.html
+Redirect /episode-010.html /podcast/episode-010.html
+Redirect /episode-011.html /podcast/episode-011.html
+Redirect /episode-012.html /podcast/episode-012.html
+Redirect /episode-013.html /podcast/episode-013.html
+Redirect /episode-014.html /podcast/episode-014.html
+Redirect /episode-015.html /podcast/episode-015.html
+Redirect /episode-016.html /podcast/episode-016.html
+Redirect /episode-017.html /podcast/episode-017.html
+Redirect /episode-018.html /podcast/episode-019.html
+Redirect /episode-019.html /podcast/episode-018.html
+
 
 
 # Keep alive

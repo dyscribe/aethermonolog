@@ -5,13 +5,13 @@ title: aethermonolog - Musikproduktion, Homerecording und Musik machen
 email: moin@aethermonolog.de
 description: "Monologe aus dem Kopf eines Musikers: Was inspiriert? Was blockiert? Was funktioniert? Eine Dokumentation musikalischer Schaffensprozesse."
 subtitle: "Lamento ergo sum."
-paginate: 3
+paginate: 5
 paginate_path: "posts/:num"
 baseurl: ""
 
 # Switch between production and local development
-url: http://aethermonolog.de
-# url: http://localhost:4000
+# url: http://aethermonolog.de/
+url: http://localhost:4000/
 
 include: [".htaccess"]
 
@@ -43,6 +43,7 @@ owner:
   github: dyscribe
   flattr: dyscribe
   disqus: aethermonolog
+  soundcloud: klartexter
   google:
     plus: +KaiBirkenfeld
     verify: XIwbHY2nAqd1Azf8Z3yHwuv1-k8FUlnnm9xQIxJsojQ
