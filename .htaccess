@@ -41,25 +41,25 @@ Redirect 301 /2014/01/12/tutorial-akai-mpk-mit-mpc-fat-pads-umr%C3%BCsten/ https
 Redirect 301 /2014/01/09/x-schritte-zum-bitcoin-mining-mit-dem-raspberry-pi/ https://dyscribe.com/404
 
 # Internal Redirects
-Redirect /episode-001.html /podcast/episode-001.html
-Redirect /episode-002.html /podcast/episode-002.html
-Redirect /episode-003.html /podcast/episode-003.html
-Redirect /episode-004.html /podcast/episode-004.html
-Redirect /episode-005.html /podcast/episode-005.html
-Redirect /episode-006.html /podcast/episode-006.html
-Redirect /episode-007.html /podcast/episode-007.html
-Redirect /episode-008.html /podcast/episode-008.html
-Redirect /episode-009.html /podcast/episode-009.html
-Redirect /episode-010.html /podcast/episode-010.html
-Redirect /episode-011.html /podcast/episode-011.html
-Redirect /episode-012.html /podcast/episode-012.html
-Redirect /episode-013.html /podcast/episode-013.html
-Redirect /episode-014.html /podcast/episode-014.html
-Redirect /episode-015.html /podcast/episode-015.html
-Redirect /episode-016.html /podcast/episode-016.html
-Redirect /episode-017.html /podcast/episode-017.html
-Redirect /episode-018.html /podcast/episode-019.html
-Redirect /episode-019.html /podcast/episode-018.html
+Redirect 301 /episode-001.html /podcast/episode-001.html
+Redirect 301 /episode-002.html /podcast/episode-002.html
+Redirect 301 /episode-003.html /podcast/episode-003.html
+Redirect 301 /episode-004.html /podcast/episode-004.html
+Redirect 301 /episode-005.html /podcast/episode-005.html
+Redirect 301 /episode-006.html /podcast/episode-006.html
+Redirect 301 /episode-007.html /podcast/episode-007.html
+Redirect 301 /episode-008.html /podcast/episode-008.html
+Redirect 301 /episode-009.html /podcast/episode-009.html
+Redirect 301 /episode-010.html /podcast/episode-010.html
+Redirect 301 /episode-011.html /podcast/episode-011.html
+Redirect 301 /episode-012.html /podcast/episode-012.html
+Redirect 301 /episode-013.html /podcast/episode-013.html
+Redirect 301 /episode-014.html /podcast/episode-014.html
+Redirect 301 /episode-015.html /podcast/episode-015.html
+Redirect 301 /episode-016.html /podcast/episode-016.html
+Redirect 301 /episode-017.html /podcast/episode-017.html
+Redirect 301 /episode-018.html /podcast/episode-019.html
+Redirect 301 /episode-019.html /podcast/episode-018.html
 
 
 
