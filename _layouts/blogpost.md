@@ -30,7 +30,7 @@ excerpt: Etwas zum Anhören ist nice! Manche Dinge, besonders wenn es visuell wi
 
 Etwas zum Anhören ist nice! Manche Dinge, besonders wenn es visuell wird, lassen sich mit Text und Bild besser sagen. Daher habe ich die Webseite mit einer Blog Option bereichert. Erst mal zum Testen... und das hier, ist der Test.
 
-[Ein Link](http://aethermonolog.de)
+[Ein Link](https://aethermonolog.de)
 
 {% youtube pGYVeRuelJw %}
 
