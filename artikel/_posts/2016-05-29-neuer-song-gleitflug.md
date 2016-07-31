@@ -18,6 +18,6 @@ Ab sofort lade ich die neuen Tracks auch auf mein [Soundcloud Profil](https://so
 
 ## Support ist wichtig!
 
-Wenn euch die kostenlosen Songs freuen und die Musik oder der Podcast gefällt, freue ich mich, wenn ihr einen meiner Songs kauft oder den meinen [Flattr Button](https://flattr.com/submit/auto?fid=j92rwl&url=http%3A%2F%2Faethermonolog.de) nutzt. Eine kostenlose und trotzdem hilfreiche Alternative ist, wenn ihr einen meiner Track oder den Podcast in eurem Netzwerk teilt.
+Wenn euch die kostenlosen Songs freuen und die Musik oder der Podcast gefällt, freue ich mich, wenn ihr einen meiner Songs kauft oder meinen [Flattr Button](https://flattr.com/submit/auto?fid=j92rwl&url=http%3A%2F%2Faethermonolog.de) nutzt. Eine kostenlose und trotzdem hilfreiche Alternative ist, wenn ihr einen meiner Track oder den Podcast in eurem Netzwerk teilt.
 
 Vielen Dank Freunde :)
