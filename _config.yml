@@ -48,6 +48,11 @@ owner:
     plus: +KaiBirkenfeld
     verify: XIwbHY2nAqd1Azf8Z3yHwuv1-k8FUlnnm9xQIxJsojQ
 
+# Podcast
+
+podcast:
+  source: http://aethermonolog.s3-website.eu-central-1.amazonaws.com/episodes/
+
 # Jekyll plugins
 gems: [jekyll-mentions, jekyll-redirect-from, jekyll-paginate, jekyll-sitemap, jekyll-sass-converter]
 
