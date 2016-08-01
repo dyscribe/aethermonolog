@@ -11,7 +11,8 @@ install:
   - bundle install
 
 script:
-  - bundle exec jekyll build --drafts
+  - bundle exec jekyll build
+  - rsync -a $build_url $user@$host:$production_url --delete
 
 notifications:
   email: false
