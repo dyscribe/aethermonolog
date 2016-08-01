@@ -32,7 +32,7 @@
 
 </itunes:owner>
 
-<itunes:image href="{{ site.url }}images/itunes.jpg" />
+<itunes:image href="{{ site.url }}/images/itunes.jpg" />
 
 <itunes:category text="Music" />
 
@@ -46,7 +46,7 @@
 
 <itunes:explicit>yes</itunes:explicit>
 
-<itunes:new-feed-url>{{ site.url }}podcast.xml</itunes:new-feed-url>
+<itunes:new-feed-url>{{ site.url }}/podcast.xml</itunes:new-feed-url>
 
  {% for post in site.categories.podcast %}
 
@@ -60,11 +60,11 @@
 
 		<itunes:summary><![CDATA[{{ post.summary | xml_escape }}]]></itunes:summary>
 
-		<itunes:image href="{{ site.url }}images/itunes.jpg" />
+		<itunes:image href="{{ site.url }}/images/itunes.jpg" />
 
 		<enclosure url="{{ post.file_itunes }}" length="{{ post.length }}" type="audio/x-m4a" />
 
-		<guid>{{ site.url }}{{ post.url }}</guid>
+		<guid>{{ site.url }}/{{ post.url }}</guid>
 
 		<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 
