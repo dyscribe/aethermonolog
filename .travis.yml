@@ -13,10 +13,8 @@ install:
 script:
   - bundle exec jekyll build
 
-before_script:
-  
-
 after_success:
+  - openssl aes-256-cbc -K $encrypted_11178bb4d22b_key -iv $encrypted_11178bb4d22b_iv -in aem_deploy_key.enc -out aem_deploy_key -d
   - rsync -a $build_url $user@$host:$production_url --delete
 
 notifications:
