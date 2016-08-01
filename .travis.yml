@@ -12,6 +12,11 @@ install:
 
 script:
   - bundle exec jekyll build
+
+before_script:
+  
+
+after_success:
   - rsync -a $build_url $user@$host:$production_url --delete
 
 notifications:
