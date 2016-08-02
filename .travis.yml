@@ -6,10 +6,6 @@ rvm:
 #- 2.1.1
 - 2.1.5
 
-addons:
-  ssh_known_hosts:
-  - $host
-
 install:
   # Install Jekyll and dependencies
   - bundle install
