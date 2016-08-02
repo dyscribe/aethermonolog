@@ -6,6 +6,10 @@ rvm:
 #- 2.1.1
 - 2.1.5
 
+addons:
+  ssh_known_hosts:
+  - $host
+
 install:
   # Install Jekyll and dependencies
   - bundle install
@@ -15,7 +19,12 @@ script:
 
 after_success:
   - openssl aes-256-cbc -K $encrypted_11178bb4d22b_key -iv $encrypted_11178bb4d22b_iv -in aem_deploy_key.enc -out aem_deploy_key -d
-  - rsync -arve "ssh -o StrictHostKeyChecking=no" $build_url $user@$host:$production_url --delete
+
+before_deploy:
+  - chmod 600 "aem_deploy_key" \ && printf "%s\n" \ "Host $host" \"  IdentityFile aem_deploy_key" \"  LogLevel ERROR" >> ~/.ssh/config
+
+deploy:
+  - rsync -arve "ssh -o StrictHostKeyChecking=no " $build_url $user@$host:$production_url --delete
 
 notifications:
   email: false
