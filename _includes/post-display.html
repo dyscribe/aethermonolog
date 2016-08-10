@@ -6,10 +6,11 @@
 
   {% if post.file %}
     <div class="audio-player">
-      {% include player.html %}
-      <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
+      {% include index-player.html %}
     </div>
   {% endif %}
+
+  <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
 
   {% if post.soundcloud %}
   {{ post.soundcloud }}
