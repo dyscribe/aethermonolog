@@ -48,3 +48,21 @@ $wrapper: 34em
   -moz-box-shadow: $shadow
   -o-box-shadow: $shadow
   box-shadow: $shadow
+
+// FadeIn Animation w/ keyframes
+
+@keyframes fadeInLeft
+  0%
+    opacity: 0
+    transform: translateX(-100px)
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+@-webkit-keyframes fadeInLeft
+  0%
+    opacity: 0
+    transform: translateX(-100px)
+  100%
+    opacity: 1
+    transform: translateX(0)
