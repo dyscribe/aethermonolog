@@ -29,13 +29,7 @@
       </article>
 
       {% if page.file %}
-      <div class="audio-player">
-        <audio src="{{ page.file }}" preload="auto" controls="controls" type="audio/mp3">
-          Your browser doesn't support the <code>audio</code> element.
-        </audio>
-
-        <a href="{{ page.file }}" class="button">Download</a>
-      </div>
+        {% include player.html %}
       {% endif %}
 
       <!-- Comments -->

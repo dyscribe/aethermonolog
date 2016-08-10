@@ -3,57 +3,60 @@
   <link href="/assets/podlove/css/vendor/progress-polyfill.css" rel="stylesheet" media="screen" type="text/css" />
 
     <audio controls="controls">
-        <source src="{{ page.file_itunes }}" type="audio/mp4">
-        <source src="{{ page.file }}" type="audio/mpeg">
+        <source src="{{ post.file_itunes }}" type="audio/mp4">
+        <source src="{{ post.file }}" type="audio/mpeg">
     </audio>
     <script src="/assets/podlove/js/vendor/html5shiv.js"></script>
     <script src="/assets/podlove/js/vendor/jquery.min.js"></script>
     <script src="/assets/podlove/js/vendor/progress-polyfill.min.js"></script>
-    <script src="/assets/podlove/js/podlove-web-player.js"></script>
+    <script src="/assets/podlove/js/podlove-web-player.min.js"></script>
     <script>
         $('audio').podlovewebplayer({
             poster: '{{ site.url }}/images/itunes.jpg',
-            title: '{{ page.title }}',
-            permalink: '{{ page.url }}',
-            subtitle: '{{ page.subtitle }}',
-            publicationDate: '{{ page.date }}',
+            title: '{{ post.title }}',
+            permalink: '{{ post.url }}',
+            publicationDate: '{{ post.date }}',
             license: {
                 "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Germany License",
                 "url": "http:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/de\/deed.en"
             },
-            summary: '{{ page.summary }}',
+            chapters: [
+                {
+                    start: '00:00:00.000',
+                    title: '{{ post.title }}'
+                }
+            ],
+            summary: '{{ post.summary }}',
             downloads: [{
-                name: 'MP3', size: '{{ page.duration }}',
-                url: '{{ page.file }}',
-                dlurl: '{{ page.file }}'
+                name: 'MP3', size: '{{ post.length }}',
+                url: '{{ post.file }}',
+                dlurl: '{{ post.file }}'
             }, {
-                name: 'MP4', size: '{{ page.length }}',
-                url: '{{ page.file_itunes }}',
-                dlurl: '{{ page.file_itunes }}'
+                name: 'MP4', size: '{{ post.length }}',
+                url: '{{ post.file_itunes }}',
+                dlurl: '{{ post.file_itunes }}'
             }],
             show: {
-                title: '{{ page.titile }}',
-                subtitle: '{{ page.subtitle }}',
-                summary: '{{ page.summary }}',
+                title: '{{ site.tagline }}',
                 poster: '{{ site.url }}/images/itunes.jpg',
-                url: '{{ page.url }}'
+                url: '{{ site.url }}'
             },
             profiles: [
                 {
                     serviceName: 'twitter',
-                    profile: 'aethermonolog'
+                    profile: 'podlove_org'
                 },
                 {
                     serviceName: 'email',
-                    profile: '{{ site.mail }}'
+                    profile: 'info@podlove.org'
                 }
             ],
             alwaysShowHours: false,
             width: 'auto',
             summaryVisible: false,
             timecontrolsVisible: false,
-            sharebuttonsVisible: true,
-            chaptersVisible: false
+            sharebuttonsVisible: false,
+            chaptersVisible: true
         });
     </script>
 </body>
