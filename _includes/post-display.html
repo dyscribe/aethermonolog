@@ -1,17 +1,16 @@
 <!-- Select Article Previews to display -->
-<span class="{{ post.tags }}">
+
+  <span class="{{ post.tags }}">
 
   {{ post.content | truncate: 200 }}
 
+  {% if post.file %}
     <div class="audio-player">
-      {% if post.file %}
-        <audio src="{{ post.file }}" preload="none" controls="controls" type="audio/mp3">
-          Your browser doesn't support the <code>audio</code> element.
-        </audio>
-      {% endif %}
-      <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
+      {% include index-player.html %}
     </div>
+  {% endif %}
 
+  <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
 
   {% if post.soundcloud %}
   {{ post.soundcloud }}
