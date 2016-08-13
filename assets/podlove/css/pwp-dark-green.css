@@ -1,5 +1,5 @@
 /* line 5, /Users/Kai/git/podlove-web-player/src/sass/_buttons.scss */
-.button {
+.audio-player .button {
   color: #fff;
   font-family: "podlove" !important;
   background: transparent !important;
@@ -9,14 +9,14 @@
   /* Triggers "hasLayout" in IE 7 and lower */
   padding-right: 0.9em; }
   /* line 144, /Users/Kai/git/podlove-web-player/src/sass/_mixins.scss */
-  .button:hover, .button:active {
+  .audio-player .button:hover, .audio-player .button:active {
     zoom: 1; }
   /* line 148, /Users/Kai/git/podlove-web-player/src/sass/_mixins.scss */
-  .button:active {
+  .audio-player .button:active {
     text-shadow: 0px 0px 1px #fff; }
 
 /* line 10, /Users/Kai/git/podlove-web-player/src/sass/_buttons.scss */
-.button-toggle {
+.audio-player .button-toggle {
   display: inline;
   z-index: 78; }
 
@@ -31,7 +31,7 @@
   font-size: 2.1em; }
 
 /* line 25, /Users/Kai/git/podlove-web-player/src/sass/_buttons.scss */
-.button-submit {
+.audio-player .button-submit {
   color: #fff;
   background: #425634;
   text-decoration: none;
@@ -53,13 +53,13 @@
   -webkit-transition-property: all;
   transition-property: all; }
   /* line 161, /Users/Kai/git/podlove-web-player/src/sass/_mixins.scss */
-  .button-submit:hover {
+  .audio-player .button-submit:hover {
     background-color: #678651;
     border: 1px solid #678651;
     color: #fff;
     cursor: pointer; }
   /* line 167, /Users/Kai/git/podlove-web-player/src/sass/_mixins.scss */
-  .button-submit:active {
+  .audio-player .button-submit:active {
     background-color: #425634;
     border: 1px solid #425634; }
 
@@ -95,7 +95,7 @@
     color: #fff; }
 
 /* line 71, /Users/Kai/git/podlove-web-player/src/sass/_buttons.scss */
-button {
+.audio-player button {
   -moz-appearance: none;
   -webkit-appearance: none;
   border: none; }
