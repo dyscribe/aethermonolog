@@ -1,3 +1,13 @@
+<span id="interact">
+  <!-- Facebook Button -->
+  <div class="fb-like" data-href="{{ post.url }}" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+
+  <!-- Flattr Button -->
+  <a class="flattr-button" target="blank" href="https://flattr.com/submit/auto?user_id=dyscribe&url={{ site.url }}{{ post.url }}&title={{ post.title | uri_escape }}&description={{ post.excerpt | uri_escape }}&language=de_DE&category=audio">
+    <img src="/images/flattr-badge.png" alt="Flattr Badge"/>
+  </a>
+</span>
+
   <!-- Start Audio Player -->
   <link href="/assets/podlove/css/pwp-dark-green.css" rel="stylesheet" media="screen" type="text/css" />
   <link href="/assets/podlove/css/vendor/progress-polyfill.css" rel="stylesheet" media="screen" type="text/css" />
