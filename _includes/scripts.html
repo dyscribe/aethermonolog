@@ -160,15 +160,22 @@ fbq('track', "PageView");</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1605737856390983&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Facebook Pixel Code -->
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.7&appId=498677550317467";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-console.log( "Facebook loaded." );
+<!-- Load Flattr JS -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var s = document.createElement('script');
+    var t = document.getElementsByTagName('script')[0];
+
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//button.flattr.com/loader.js?'+
+            'mode=auto&uid=dyscribe&&language=de_DE&category=audio&button=compact';
+
+    t.parentNode.insertBefore(s, t);
+ })();
+ console.log( "Flattr loaded." );
+/* ]]> */
 </script>
