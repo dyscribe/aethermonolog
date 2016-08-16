@@ -6,7 +6,6 @@ cache: bundler
 branches:
   only:
   - master
-  - stable
 
 rvm:
   - 2.1.5
