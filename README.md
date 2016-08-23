@@ -23,7 +23,7 @@ All problems ever occured in this endeavour where solved with the help of friend
 Feel free to open pull requests, issues or make use of this for your own projects.
 
 
-## Copyright and License
+### Copyright and License
 
 **If not stated otherwise all written text, articles, logos, music and images referring to aethermonolog:**
 
