@@ -1,0 +1,27 @@
+<div class="boxes half-row" id="recent-posts">
+
+  <h2>Weitere Posts</h2>
+
+    {% for post in paginator.posts %}
+
+      <article>
+
+      {% include post-meta-data.html %}
+
+      <h3>
+        <a href="{{ post.url }}" title="{{ post.title }}">
+          {{ post.title }}
+        </a>
+      </h3>
+
+      <span class="{{ post.tags }}"></span>
+
+        <a href="{{ post.url }}" class="read-more">Weiterlesen...</a>
+
+      </article>
+
+      <hr />
+
+    {% endfor %}
+
+</div>

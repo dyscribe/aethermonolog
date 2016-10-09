@@ -2,7 +2,9 @@
 
   <span class="{{ post.tags }}">
 
-  {{ post.content | truncate: 200 }}
+  {{ post.content | truncatewords: 50 }}
+
+  <a href="{{ post.url }}" class="read-more">Weiterlesen...</a>
 
   {% if post.file %}
     <div class="audio-player">
@@ -10,10 +12,8 @@
     </div>
   {% endif %}
 
-  <a href="{{ post.url }}" class="button-invert">Mehr lesen</a>
-
   {% if post.soundcloud %}
     {{ post.soundcloud }}
   {% endif %}
-  
+
   </span>

@@ -7,22 +7,15 @@
 
     {% include navigation.html %}
 
-    <div class="logo">
-      <a href="{{ site.url }}">
-        <picture>
-          <source srcset="/images/full-logo.png, /images/full-logo-2x.png 2x" media="(min-width: 600px)">
-          <img src="/images/full-logo.png" alt="aethermonolog Podcast Logo">
-        </picture>
-      </a>
+    <div class="content-wrapper">
+      {% include post-first.html %}
+
+      {% include post-recent.html %}
+
+      {% include sidebar.html %}
+
     </div>
 
-    <section>
-
-      {{ content }}
-
-      {% include footer.html %}
-
-    </section>
     {% include scripts.html %}
   </body>
 </html>

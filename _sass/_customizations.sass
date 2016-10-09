@@ -63,12 +63,15 @@ a.button.ask-me
   max-width: 260px
   float: none
 
-section p
-  font-family: $secondary-font
-  color: $copy
-  line-height: 1.5em
-  padding-bottom: 2em
-  font-weight: normal
+section
+  p
+    font-family: $secondary-font
+    color: $copy
+    line-height: 1.5em
+    padding-bottom: 2em
+    font-weight: normal
+  ul
+    margin-top: 0
 
 // Selection
 ::selection
@@ -227,7 +230,7 @@ div#mce-error-response
 
 .comment-count
   margin: .5em 0em 1.5em 0
-  float: left
+  font-family: $primary-font
   a
     font-weight: 700
   i
@@ -261,7 +264,6 @@ audio
 // List Items
 
 ul
-  margin-top: 0
   li
     font-family: $secondary-font
 
@@ -284,6 +286,7 @@ span#tags a
   background-color: #efefef
   border-radius: 5px
   text-transform: capitalize
+  font-size: 1em
 
 // Video
 
