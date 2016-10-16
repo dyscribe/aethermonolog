@@ -1,0 +1,12 @@
+<!-- RECENT EPISODES MODULE -->
+
+<div id="page-recent">
+  {% for post in site.posts limit:5 %}
+    <h5>
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        {{ post.title }}
+      </a>
+    </h5>
+  {% endfor %}
+</div>
+<hr>

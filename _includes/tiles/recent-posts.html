@@ -1,0 +1,56 @@
+<div class="boxes row half" id="recent-posts">
+
+  <h2 id="recent">Aktuelle Beiträge</h2>
+
+    {% for post in paginator.posts %}
+
+      <article>
+
+        <span id="date" class="right">
+          <i class="ico-time"></i>
+          {% assign m = post.date | date: "%-m" %}
+          {{ post.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Januar
+            {% when '2' %}Februar
+            {% when '3' %}M&auml;rz
+            {% when '4' %}April
+            {% when '5' %}Mai
+            {% when '6' %}Juni
+            {% when '7' %}Juli
+            {% when '8' %}August
+            {% when '9' %}September
+            {% when '10' %}Oktober
+            {% when '11' %}November
+            {% when '12' %}Dezember
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+          </span>
+
+      <h3>
+        <a href="{{ post.url }}" title="{{ post.title }}">
+          {{ post.title }}
+        </a>
+      </h3>
+
+      </article>
+
+      <hr />
+
+    {% endfor %}
+
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <a href="/#recent" class="previous" rel="nofollow">&laquo;</a>
+        {% else %}
+        <a href="/posts/{{ paginator.previous_page }}#recent" class="previous" rel="nofollow">&laquo;</a>
+        {% endif %}
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="/posts/{{ paginator.next_page }}#recent" class="next" rel="nofollow">&raquo;</a>
+      {% endif %}
+    </nav>
+
+
+</div>

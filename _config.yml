@@ -32,6 +32,7 @@ kramdown:
 lang: de-DE
 author: Kai Birkenfeld
 copyright: "&#x2117; &amp; &#xA9; 2015"
+search: true
 
 # Site owner
 owner:

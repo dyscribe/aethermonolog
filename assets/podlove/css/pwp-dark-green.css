@@ -488,7 +488,8 @@ progress[aria-valuenow]:before {
     padding: 0 20px 0 0; }
     /* line 24, /Users/Kai/git/podlove-web-player/src/sass/_titlebar.scss */
     .titlebar header h1 {
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      margin-top: -0.5em; }
     /* line 27, /Users/Kai/git/podlove-web-player/src/sass/_titlebar.scss */
     .titlebar header .subtitle,
     .titlebar header h3 {

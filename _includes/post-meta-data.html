@@ -21,7 +21,10 @@
   &nbsp;
   <i class="ico-edit"></i>
   {{ site.author }}
+
   <span id="tags">
-    <a href="{{ site.url }}{{ post.tags }}">{{ post.tags }}</a>
+    {% for tag in post.tags %}
+      <a href="{{ site.url }}{{ post.tags }}">{{ tag }}</a>
+    {% endfor %}
   </span>
 </span>

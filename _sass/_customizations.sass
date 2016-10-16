@@ -65,7 +65,7 @@ a.button.ask-me
 
 section
   p
-    font-family: $secondary-font
+    font-family: $primary-font
     color: $copy
     line-height: 1.5em
     padding-bottom: 2em
@@ -118,16 +118,12 @@ section
 .clear
   clear: both
 
-// Footer
+// Social Icons
 
-footer
-  text-align: center
-  @media (min-width: 500px)
-    text-align: left
-  .social-icons i
-    font-size: 2em
-    border-bottom: none
-    color: $custom-color
+.social-icons i
+  font-size: 1.8rem
+  border-bottom: none
+  color: $custom-color
   #newsletter
     float: none
     max-width: 240px
@@ -139,9 +135,6 @@ a.subscribe
   img
     max-width: 100px
     margin-bottom: 1em
-  @media (min-width: 500px)
-    float: right
-    margin-top: 1.5em
 
 
 // Pagination Styling
@@ -240,13 +233,6 @@ div#mce-error-response
     vertical-align: middle
 
 // Audio Player
-
-audio
-  @include border-radius($corners)
-  background: $links
-  float: left
-  box-sizing: border-box
-  max-width: 100%
 
 .audio-player
   margin-bottom: 2em

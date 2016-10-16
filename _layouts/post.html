@@ -1,43 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-  {% include post-head.html %}
+  {% include post/head.html %}
 
   <body>
 
+    {% include search.html %}
+
     {% include navigation.html %}
 
-    <section>
+    <div class="content-wrapper">
 
-      <header>
-        <h1>{{ page.title }}</h1>
-      </header>
+      {% include post/view.html %}
 
-      {% include page-meta-data.html %}
+      {% include post/sidebar.html %}
 
-      <article>
-        {{ content }}
-      </article>
+    </div>
 
-      {% if page.file %}
-        {% include onpage-player.html %}
-      {% endif %}
-
-      <!-- Comments -->
-
-      <div id="comments">
-            <div id="disqus_thread">
-            {% include disqus_comments.html %}
-            </div><!-- /#disqus_thread -->
-      </div>
-
-      <hr>
-
-      {% include social-block.html %}
-
-      {% include footer.html %}
-
-    </section>
     {% include scripts.html %}
+
   </body>
 </html>

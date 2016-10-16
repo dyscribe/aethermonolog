@@ -1,4 +1,4 @@
-<div class="boxes full-row">
+<div class="boxes row two-third">
 
   {% for post in paginator.posts limit:1 %}
 
@@ -18,7 +18,7 @@
 
       {% if post.file %}
         <div class="audio-player">
-          {% include index-player.html %}
+          {% include index-player.html%}
         </div>
       {% endif %}
 

@@ -6,6 +6,11 @@ RewriteRule ^podcast.rss http://feedpress.me/aethermonolog [R=302,NC,L]
 RewriteRule ^podcast.xml http://feedpress.me/aethermonolog [R=302,NC,L]
 # END FEEDPRESS
 
+# Allow Origin
+<FilesMatch ".(eot|ttf|otf|woff|json|js)">
+Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
 # Disable directory browsing
 Options -Indexes
 
@@ -65,7 +70,6 @@ Redirect 301 /episode-016.html /podcast/episode-016.html
 Redirect 301 /episode-017.html /podcast/episode-017.html
 Redirect 301 /episode-018.html /podcast/episode-019.html
 Redirect 301 /episode-019.html /podcast/episode-018.html
-
 
 
 # Keep alive

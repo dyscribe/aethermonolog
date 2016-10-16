@@ -1,0 +1,97 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{ page.excerpt }}">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="alternate" href="{{ site.url }}" hreflang="de" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+
+  {% if site.owner.google.verify %}
+    <!-- Webmaster Tools verfication -->
+      <meta name="google-site-verification" content="{{ site.owner.google.verify }}">
+  {% endif %}
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/images/icons//images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.url }}/images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16 24x24 32x32 48x48 64x64" href="{{ site.url }}/images/icons/favicon.ico">
+  <link rel="manifest" href="{{ site.url }}/images/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="{{ site.url }}/images/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--Damn IE 8 & 7 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Twitter Cards Meta Data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@aethermonolog">
+  <meta name="twitter:creator" content="@dyscribe">
+  {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+  {% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% else %}
+  <meta name="twitter:url" content="{{ site.url }}">
+  {% endif %}
+  {% if page.excerpt %}
+  <meta name="twitter:description" content="{{ page.excerpt }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+  <meta name="twitter:image" content="{{ site.url }}/images/cover.jpg">
+  <meta name="twitter:image:width" content="250">
+  <meta name="twitter:image:height" content="250">
+
+
+  <!-- Open Graph Meta Data -->
+  <meta property="fb:app_id" content="498677550317467" />
+  <meta property="og:type" content="article" />
+  {% if page.url %}
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  {% else %}
+  <meta property="og:url" content="{{ site.url }}" />
+  {% endif %}
+  <meta property="og:image" content="{{ site.url }}/images/cover.jpg"/>
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="250" />
+  <meta property="og:image:height" content="250" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="aethermonolog.de" />
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  {% else %}
+  <meta property="og:title" content="{{ site.title }}" />
+  {% endif %}
+  {% if page.excerpt %}
+  <meta property="og:description" content="{{ page.excerpt }}" />
+  {% else %}
+  <meta property="og:description" content="{{ site.description }}" />
+  {% endif %}
+  {% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+  {% endif %}
+  <meta property="article:author" content="https://aethermonolog.de/about/" />
+  <meta property="article:author" content="Kai Birkenfeld" />
+
+  <!-- Inline Critical CSS -->
+  <style>
+  
+  </style>
+
+</head>
