@@ -11,7 +11,7 @@
             jsonFile            : '/search.json',
             template            : '<a href="{url}" title="{desc}">{title}</a>',
             searchResults       : '.results',
-            searchResultsTitle  : '<h4>Search results</h4>',
+            searchResultsTitle  : '<h2>Search results</h2>',
             limit               : '10',
             noResults           : '<p>Oh shucks<br/><small>Nothing found :(</small></p>'
         }, options);

@@ -18,21 +18,17 @@
 
     <span class="{{ post.tags }}"></span>
 
-      {% if post.file %}
-        <div class="audio-player">
-          {% include index-player.html%}
-        </div>
-      {% endif %}
-
-    {{ post.content | truncatewords: 20 }}
-
-    <a href="{{ post.url }}" class="read-more">Weiterlesen...</a>
+    {{ post.content | truncatewords: 30 }}
 
     </span>
 
-  <div class="comment-count">
-    <i class="ico-comment"></i><a rel="nofollow" href="{{ post.url }}#disqus_thread">Lädt...</a>
-  </div>
+    <div id="article-interaction">
+        <div class="comment-count">
+          <i class="ico-comment"></i><a rel="nofollow" href="{{ post.url }}#disqus_thread">Lädt...</a>
+        </div>
+
+        <a href="{{ post.url }}" class="read-more">Zum Podcast &raquo;</a>
+    </div>
 
   <hr>
 

@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: clean-logo
 title: Aethermonolog Musik Podcast | Über mich | aethermonolog.de
 permalink: /about/
 ---
