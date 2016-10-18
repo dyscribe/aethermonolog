@@ -44,6 +44,7 @@
   box-sizing: border-box
   margin: 0.5em 0 2em 0
   cursor: pointer
+  font-family: $primary-font
   &:visited
     background-color: $custom-color
   &:hover,
@@ -54,9 +55,8 @@
     color: $backgrounds
     background: darken($links, 20%)
   @media (min-width: 526px)
-    float: right
     max-width: 170px
-    margin-top: 0
+    margin-top: 2em
     font-size: 0.9em
 
 a.button.ask-me
@@ -224,6 +224,8 @@ div#mce-error-response
 .comment-count
   margin: .5em 0em 1.5em 0
   font-family: $primary-font
+  display: inline-block
+  float: left
   a
     font-weight: 700
   i

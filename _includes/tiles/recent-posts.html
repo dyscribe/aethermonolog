@@ -2,7 +2,7 @@
 
   <h2 id="recent">Aktuelle Beiträge</h2>
 
-    {% for post in paginator.posts %}
+    {% for post in site.posts limit:5 %}
 
       <article>
 
@@ -39,18 +39,6 @@
 
     {% endfor %}
 
-    <nav class="pagination">
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a href="/#recent" class="previous" rel="nofollow">&laquo;</a>
-        {% else %}
-        <a href="/posts/{{ paginator.previous_page }}#recent" class="previous" rel="nofollow">&laquo;</a>
-        {% endif %}
-      {% endif %}
-      {% if paginator.next_page %}
-        <a href="/posts/{{ paginator.next_page }}#recent" class="next" rel="nofollow">&raquo;</a>
-      {% endif %}
-    </nav>
-
+    <a href="/podcast/" class="button-invert">Alle anzeigen</a>
 
 </div>

@@ -12,7 +12,7 @@
   box-shadow: 0px 0px 1px #a0a0a0
   box-sizing: content-box
   font-family: $secondary-font
-  min-height: 41em
+  height: auto
   p
     margin-bottom: 1em
     font-weight: 100
@@ -65,10 +65,11 @@ div#recent-posts article:first-child
 // Read more
 .read-more
   font-family: $primary-font
-  color: #999
+  color: $custom-color
   font-weight: 700
-  margin-top: .5em
-  display: block
+  margin-top: .6em
+  display: inline-block
+  float: right
 
 a.read-more:hover
   border-bottom: 0px
@@ -84,14 +85,15 @@ a.read-more:hover
     padding: 0
     margin: 0
 
-// Interact
-#interact
+// sidebar
+#sidebar
   background-color: transparent
   box-shadow: none
   p
     font-size: .8rem
 
 #author
+  display: inline-block
   img#profile
     border-radius: 100%
     max-width: 4em
@@ -100,7 +102,36 @@ a.read-more:hover
     margin-left: 6em
     max-width: 16em
 
+img#sidebar-cover
+  @media (min-width: 30em)
+    width: auto
+    max-width: 250px
+    height: auto
+    float: left
+    margin-right: 2em
+  @media (min-width: 61em)
+    float: none
+    margin-right: none
+    margin-bottom: 1em
+    width: 100%
+
 #donate
-  input[type="image"]
-    max-width: 100%
-    width: 200px
+  #donate-wrapper
+    display: inline-block
+    width: auto
+    float: left
+    margin-right: 1em
+    margin-bottom: 1em
+    input[type="image"]
+      max-width: 100%
+      width: auto
+
+
+#subscribe
+  text-align: center
+
+#social-icons
+  text-align: center
+
+#tags
+  margin-bottom: 2em
