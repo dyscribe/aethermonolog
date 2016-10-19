@@ -1,0 +1,36 @@
+<!-- LIST ALL PODCAST EPISODES MODULE -->
+
+<div class="boxes row two-third">
+
+  {% for post in site.categories.podcast %}
+
+    <!-- Startpage single article view -->
+
+  {% include post-meta-data.html %}
+
+  <h2>
+    <a href="{{ post.url }}" title="{{ post.title }}">
+      {{ post.title }}
+    </a>
+  </h2>
+
+  {% include social-bar.html %}
+
+    <span class="{{ post.tags }}"></span>
+
+    {{ post.content | truncatewords: 30 }}
+
+    </span>
+
+    <div id="article-interaction">
+        <div class="comment-count">
+          <i class="ico-comment"></i><a rel="nofollow" href="{{ post.url }}#disqus_thread">Lädt...</a>
+        </div>
+
+        <a href="{{ post.url }}" class="read-more">Zum Podcast &raquo;</a>
+    </div>
+
+  <hr>
+
+{% endfor %}
+</div>

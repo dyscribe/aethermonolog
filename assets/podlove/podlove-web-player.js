@@ -729,7 +729,7 @@ if (typeof String.prototype.trim !== 'function') {
       alwaysShowHours: false,
       showTimecodeFrameCount: false,
       framesPerSecond: 25,
-      enableKeyboard: true,
+      enableKeyboard: false,
       pauseOtherPlayers: true,
       duration: false,
       plugins: ['flash', 'silverlight'],

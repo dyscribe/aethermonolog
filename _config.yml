@@ -6,7 +6,7 @@ tagline: Aethermonolog Podcast
 email: moin@aethermonolog.de
 description: "Monologe aus dem Kopf eines Musikers: Was inspiriert? Was blockiert? Was funktioniert? Eine Dokumentation musikalischer Schaffensprozesse."
 subtitle: "Lamento ergo sum."
-paginate: 5
+paginate: 1
 paginate_path: "posts/:num"
 baseurl: ""
 
@@ -32,6 +32,7 @@ kramdown:
 lang: de-DE
 author: Kai Birkenfeld
 copyright: "&#x2117; &amp; &#xA9; 2015"
+search: true
 
 # Site owner
 owner:

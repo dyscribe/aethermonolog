@@ -1,52 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-  {% include post-head.html %}
+  {% include post/head.html %}
 
   <body>
 
+    {% include search.html %}
+
     {% include navigation.html %}
 
-    <div class="logo">
-      <a href="{{ site.url }}">
-        <picture>
-          <source srcset="/images/full-logo.png, /images/full-logo-2x.png 2x" media="(min-width: 600px)">
-          <img src="/images/full-logo.png" alt="Der Aethermonolog Podcast | aethermonolog.de">
-        </picture>
-      </a>
+    <div class="content-wrapper">
+
+      {% include post/view.html %}
+
+      {% include post/sidebar.html %}
+
     </div>
 
-    <section>
-
-      <header>
-        <h1>{{ page.title }}</h1>
-      </header>
-
-      {% include page-meta-data.html %}
-
-      <article>
-        {{ content }}
-      </article>
-
-      {% if page.file %}
-        {% include onpage-player.html %}
-      {% endif %}
-
-      <!-- Comments -->
-
-      <div id="comments">
-            <div id="disqus_thread">
-            {% include disqus_comments.html %}
-            </div><!-- /#disqus_thread -->
-      </div>
-
-      <hr>
-
-      {% include social-block.html %}
-
-      {% include footer.html %}
-
-    </section>
     {% include scripts.html %}
+
   </body>
 </html>

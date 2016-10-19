@@ -488,7 +488,8 @@ progress[aria-valuenow]:before {
     padding: 0 20px 0 0; }
     /* line 24, /Users/Kai/git/podlove-web-player/src/sass/_titlebar.scss */
     .titlebar header h1 {
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      margin-top: -0.5em; }
     /* line 27, /Users/Kai/git/podlove-web-player/src/sass/_titlebar.scss */
     .titlebar header .subtitle,
     .titlebar header h3 {
@@ -508,12 +509,8 @@ progress[aria-valuenow]:before {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
   -ms-flex-order: 1;
-  order: 1;
-  min-width: 100px;
-  height: 100px; }
+  order: 1; }
   /* line 48, /Users/Kai/git/podlove-web-player/src/sass/_titlebar.scss */
-  .coverart img {
-    height: 100px; }
 
 /* line 53, /Users/Kai/git/podlove-web-player/src/sass/_titlebar.scss */
 .showtitle {

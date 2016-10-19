@@ -1,0 +1,54 @@
+<div class="boxes row two-third">
+
+  {% for post in paginator.posts limit:1 %}
+
+    <!-- Startpage single article view -->
+
+  {% include post-meta-data.html %}
+
+  <h2>
+    <a href="{{ post.url }}" title="{{ post.title }}">
+      {{ post.title }}
+    </a>
+  </h2>
+
+  {% include social-bar.html %}
+
+    <span class="{{ post.tags }}"></span>
+
+      {% if post.file %}
+        <div class="audio-player">
+          {% include index-player.html%}
+        </div>
+      {% endif %}
+
+    {{ post.content | truncatewords: 50 }}
+
+    </span>
+
+    <div id="article-interaction">
+        <div class="comment-count">
+          <i class="ico-comment"></i><a rel="nofollow" href="{{ post.url }}#disqus_thread">Lädt...</a>
+        </div>
+
+        <a href="{{ post.url }}" class="read-more">... weiterlesen</a>
+    </div>
+
+{% endfor %}
+
+<div class="clear"></div>
+
+  <nav class="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a href="/" class="previous" rel="nofollow">&laquo;</a>
+      {% else %}
+      <a href="/posts/{{ paginator.previous_page }}" class="previous" rel="nofollow">&laquo;</a>
+      {% endif %}
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="/posts/{{ paginator.next_page }}" class="next" rel="nofollow"> &raquo;</a>
+    {% endif %}
+  </nav>
+
+</div>

@@ -22,13 +22,8 @@
   <i class="ico-edit"></i>
   {{ site.author }}
   <span id="tags">
-    <a href="{{ site.url }}{{ page.tags }}">{{ page.tags }}</a>
+    {% for tag in page.tags %}
+      <a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a>
+    {% endfor %}
   </span>
-</span>
-
-<span id="interact">
-
-  <!-- Flattr Button -->
-  <a class="FlattrButton" href="{{ site.url }}{{ page.url }}" title="{{ page.title }}" lang="de_DE" button="compact" category="audio" uid="dyscribe"></a>
-
 </span>
