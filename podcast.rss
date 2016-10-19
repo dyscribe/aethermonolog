@@ -5,7 +5,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="{{ site.lang }}">
 <channel>
 		<atom:link href="{{ site.url }}/podcast.rss" rel="self" type="application/rss+xml" />
-		<atom:link rel="payment" href="https://flattr.com/submit/auto?url=https%3A%2F%2Faethermonolog.de&user_id=dyscribe" type="text/html" />
 		<title>{{ site.title }}</title>
 		<description>{{ site.description | xml_escape }}</description>
 		<link>{{ site.url }}</link>
