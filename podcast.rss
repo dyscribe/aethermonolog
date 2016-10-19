@@ -38,7 +38,6 @@
 		<itunes:explicit>yes</itunes:explicit>
 		{% for post in site.categories.podcast %}
 			<item>
-				<atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?url={{ site.url }}{{ post.url }}&user_id=dyscribe" type="text/html" />
 				<title>{{ post.title | xml_escape }}</title>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
