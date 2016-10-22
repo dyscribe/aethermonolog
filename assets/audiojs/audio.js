@@ -68,7 +68,7 @@
       // The default markup and classes for creating the player:
       createPlayer: {
         markup: '\
-          <img src="/images/itunes.jpg" id="audio-cover"></img> \
+          <img src="/images/player-cover.jpg" id="audio-cover"></img> \
           <div class="play-pause"> \
             <p class="play"><i class="ico-play"></i></p> \
             <p class="pause"><i class="ico-pause"></i></p> \
