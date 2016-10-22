@@ -8,7 +8,7 @@
 
   {% if post.file %}
     <div class="audio-player">
-      {% include index-player.html %}
+        <audio src="{{ post.file_itunes }}" preload="none"></audio>
     </div>
   {% endif %}
 

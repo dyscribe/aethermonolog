@@ -18,7 +18,11 @@
 
       {% if post.file %}
         <div class="audio-player">
-          {% include index-player.html%}
+          <audio preload="metadata">
+            <source src="{{ post.file_itunes }}" type="audio/mp4">
+            <source src="{{ post.file }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
         </div>
       {% endif %}
 
@@ -37,6 +41,8 @@
 {% endfor %}
 
 <div class="clear"></div>
+
+<hr>
 
   <nav class="pagination">
     {% if paginator.previous_page %}

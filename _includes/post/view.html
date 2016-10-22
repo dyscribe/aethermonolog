@@ -10,7 +10,11 @@
 
   {% if page.file %}
     <div class="audio-player">
-      {% include post/audio-player.html %}
+      <audio preload="metadata">
+        <source src="{{ page.file_itunes }}" type="audio/mp4">
+        <source src="{{ page.file }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
     </div>
   {% endif %}
 

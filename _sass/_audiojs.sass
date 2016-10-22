@@ -1,0 +1,117 @@
+.audiojs
+  audio
+    position: absolute
+    left: -1px
+    width: 100%
+    height: 6em
+    background: $lightest-grey
+  overflow: hidden
+  font-family: monospace
+  font-size: 1em
+  background-color: $lightest-grey
+  color: $custom-color
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+  padding: .5em
+  img#audio-cover
+    display: none
+    @media (min-width: 400px)
+      display: block
+      max-width: 100px
+      float: left
+  .play-pause
+    width: 100px
+    height: 100px
+    float: left
+    margin-right: 10px
+    font-size: 1.8em
+    overflow: hidden
+    @media (min-width: 400px)
+      text-align: center
+  p
+    display: none
+    width: auto
+    height: auto
+    margin: 10px
+    cursor: pointer
+  .play,
+  .pause
+    display: block
+    width: 100px
+    height: 100px
+    margin-top: 13px
+    i
+      background-color: $custom-color
+      color: $lightest-grey
+      border-radius: 100%
+      padding: 8px
+  .scrubber
+    position: relative
+    margin-top: 40px
+    width: auto
+    background: #333
+    height: 14px
+    overflow: hidden
+    cursor: pointer
+  .progress
+    position: absolute
+    top: 0px
+    left: 0px
+    height: 14px
+    width: 0px
+    background: $custom-color
+    z-index: 1
+    border-right: 5px solid darken($custom-color, 5%)
+  .loaded
+    position: absolute
+    top: 0px
+    left: 0px
+    height: 14px
+    width: 0px
+    background: lighten($custom-color, 5%)
+  .time
+    float: right
+    height: 36px
+    line-height: 36px
+    margin-top: 5px
+    color: $copy
+    font-size: .8em
+    em
+      padding: 0px 2px 0px 0px
+      color: $custom-color
+      font-style: normal
+    strong
+      font-weight: normal
+  .error-message
+    float: left
+    display: none
+    margin: 0px 10px
+    height: 36px
+    width: 400px
+    overflow: hidden
+    line-height: 36px
+    white-space: nowrap
+    color: #fff
+    text-overflow: ellipsis
+    -o-text-overflow: ellipsis
+    -icab-text-overflow: ellipsis
+    -khtml-text-overflow: ellipsis
+    -moz-text-overflow: ellipsis
+    -webkit-text-overflow: ellipsis
+    a
+      color: #eee
+      text-decoration: none
+      padding-bottom: 1px
+      border-bottom: 1px solid #999
+      white-space: wrap
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2)
+  .audiojs
+    .play, .loading, .error, .pause
+      font-size: 2em
+      background-size: 30px 120px
+
+.playing
+  .play, .loading, .error
+    display: none
+  .pause
+    display: block
