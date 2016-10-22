@@ -11,6 +11,7 @@
   $script('/assets/js/jquery-1.9.1.min.js', function () {
   $script('/assets/js/jquery.sticky.js', 'sticky');
   $script('/assets/js/simpleJekyllSearch.js', 'search');
+  $script('/assets/audiojs/audio.js', 'audio');
     $script.ready('search', function() {
              var bs = {
                   close: $(".close-btn"),
@@ -46,6 +47,13 @@
     });
     console.log( "Sticky JS has been loaded." );
 
+    $script.ready('audio', function(){
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+    });
+    console.log( "AudioJS has been loaded." );
+
     $( document ).ready(function() {
       console.log( "document loaded" );
     });
@@ -74,7 +82,7 @@
   <script type="text/javascript" async>
     // Load Fonts
     WebFontConfig = {
-      google: { families: [ 'Muli::latin', 'Podkova:400,700:latin' ] }
+      google: { families: [ 'Source+Sans:400,700:latin', 'Podkova:400,700:latin' ] }
     };
     (function() {
     var wf = document.createElement('script');
