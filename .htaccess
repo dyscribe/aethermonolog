@@ -32,6 +32,9 @@ RewriteCond %{HTTP_REFERER} ^http://.*buttons-for-websites\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*social-buttons\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC]
 RewriteRule ^(.*)$ – [F,L]
+RewriteCond %{HTTP_USER_AGENT} Twitterbot
+RewriteRule ^(.*)$ http://aethermonolog.de/$1
+
 
 # External 301 Redirects
 Redirect 301 /2014/05/13/git-lokale-änderungen-verwerfen-und-repository-zurücksetzen/ https://dyscribe.com/de/git-lokale-aenderungen-verwerfen.html
