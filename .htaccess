@@ -6,12 +6,6 @@ RewriteRule ^podcast.rss http://feedpress.me/aethermonolog [R=302,NC,L]
 RewriteRule ^podcast.xml http://feedpress.me/aethermonolog [R=302,NC,L]
 # END FEEDPRESS
 
-# BEGIN TWITTER CARDS
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} Twitterbot [NC]
-RewriteRule ^(.*)$ http://aethermonolog.de/$1
-# END TWITTER CARDS
-
 # Allow Origin
 <FilesMatch ".(eot|ttf|otf|woff|json|js)">
 Header set Access-Control-Allow-Origin "*"
