@@ -56,8 +56,9 @@
     background: darken($links, 20%)
   @media (min-width: 526px)
     max-width: 170px
-    margin-top: 2em
+    margin-top: 1em
     font-size: 0.9em
+    float: right
 
 a.button.ask-me
   max-width: 260px
@@ -141,15 +142,17 @@ a.subscribe
 
 nav.pagination
   text-align: center
-  font-size: 1.3em
-  margin: .8em 0 .5em
+  font-size: 1em
+  margin: .5em 0 2em 0
+  font-family: $primary-font
   a
-    padding: 0 .3em .3em .3em
-    border: 1px solid $custom-color
+    padding: .1em .3em .3em .3em
+    background-color: $custom-color
+    color: white
     border-radius: $corners
     &:hover
-      background-color: $custom-color
-      color: white
+      background-color: lighten($custom-color, 5)
+
 
 // Newsletter & Contact Input
 
