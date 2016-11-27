@@ -1,10 +1,9 @@
-<div class="boxes row half" id="recent-posts">
 
-  <h2 id="recent">Aktuelle Beiträge</h2>
+  <h2 id="recent">Neuste Beiträge</h2>
 
     {% for post in site.posts limit:5 %}
 
-      <article>
+      <div class="recent-post-list">
 
         <span id="date" class="right">
           <i class="ico-time"></i>
@@ -27,18 +26,18 @@
           {{ post.date | date: "%Y" }}
           </span>
 
-      <h3>
+      <h3 class="left">
         <a href="{{ post.url }}" title="{{ post.title }}">
           {{ post.title }}
         </a>
       </h3>
 
-      </article>
+      </div>
 
-      <hr />
+      <hr>
 
     {% endfor %}
 
     <a href="/podcast/" class="button-invert">Alle anzeigen</a>
 
-</div>
+    <div class="clear"></div>

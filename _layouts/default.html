@@ -10,13 +10,19 @@
 
     <div class="content-wrapper">
 
-      {% include tiles/first-post.html %}
+      <div class="boxes row two-third">
 
-      {% include tiles/sidebar.html %}
+        {% include tiles/first-post.html %}
 
-      {% include tiles/recent-posts.html %}
+        {% include tiles/recent-posts.html %}
 
-      {% include tiles/support.html %}
+      </div>
+
+      <div class="boxes row one-third" id="interact">
+
+        {% include tiles/sidebar.html %}
+
+      </div>
 
     </div>
 
