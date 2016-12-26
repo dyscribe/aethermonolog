@@ -1,4 +1,4 @@
-  {% for post in paginator.posts limit:1 %}
+  {% for post in paginator.posts limit:10 %}
 
     <!-- Startpage single article view -->
 
@@ -36,11 +36,11 @@
         <a href="{{ post.url }}" class="read-more">... weiterlesen</a>
     </div>
 
-{% endfor %}
-
 <div class="clear"></div>
 
 <hr>
+
+{% endfor %}
 
   <nav class="pagination">
     {% if paginator.previous_page %}
