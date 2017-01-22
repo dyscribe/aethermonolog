@@ -4,23 +4,21 @@ title: Aethermonolog Musik Podcast | Über mich | aethermonolog.de
 permalink: /about/
 ---
 
-# Über mich
+# About
 
-  ![](/images/profile-600.jpg)
+  ![](/images/profile-1000.jpg)
 
-### Moin!
+## Über den Aethermonolog
 
-  Mein Name ist Kai. Ich bin Musiker und Computer Nerd aus Hamburg. Tagsüber arbeite ich als Projekt Manager bei [Jimdo](//jimdo.com) - einem Webseiten Baukasten-System.
-  In meiner Freizeit mache ich Musik und seit Ende 2015 diesen Podcast hier.
-  Weitere Projekte von mir findet ihr hier:
+Der *Aethermonolog* ist ein wöchentlicher Podcast über Songwriting, Musik und Audioproduktion. Was inspiriert? Was funktioniert? Was blockiert? Diesen Fragen gehen Moderator *Kai Birkenfeld (aka. Klartexter)* und seine Gäste, aus dem verschiedensten Bereichen der Musikindustrie auf den Grund. Vom Songwriting, zur Aufnahme, über Mix und Mastering, hin zu Veröffentlichung, Marketing und Social Media - hier sind Musiker, Songwriter, Produzenten und Homestudio-Besitzer an der richtigen Adresse.
 
-  * [klartexter.net](//klartexter.net) - Meine Musik
-  * [ZwoHandBreit](//zwohandbreit.de) - Meine HipHop Band
-  * [dyscribe.com](//dyscribe.com) - Mein Blog
+  * [klartexter.net](//klartexter.net) *- Klartexter als Solo Artist*
+  * [ZwoHandBreit](//zwohandbreit.de) *- Klartexter mit der Hip Hop Crew ZwoHandBreit*
 
-## Credits
+## Über die Website
 
-  Diese Webseite wurde mit Hilfe einer Menge Open Source Tools erstellt, als da wären:
+Diese Website wurde mit verschiedenen Open Source Tools erstellt, als da wären:
 
   * [jekyllrb.com](//jekyllrb.com) - Jekyll, der Static Site renderer
   * [stickyjs.com](//stickyjs.com/) - Für eine statische Navigation
+  * [audiojs](https://kolber.github.io/audiojs/) - Media Player

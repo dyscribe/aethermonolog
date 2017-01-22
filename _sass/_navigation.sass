@@ -4,12 +4,10 @@
 #top-navigation
   width: 100%
   max-height: 4em
-  background-color: white
   z-index: 1000
-  box-shadow: 1px 1px 5px #ccc
-  opacity: .96
   position: inherit
   display: inline-block
+  opacity: .96
   #logo-container
     height: 3em
     background-image: url("/images/mini-logo.png")
@@ -29,13 +27,12 @@
       width: 220px
       margin-top: 5px
       height: 3em
-
   #nav-main
     display: none
     @media (min-width: 768px)
       display: inline-block
       float: right
-      margin-top: -.5em
+      margin-top: -.1em
       li
         display: inline-block
         a
@@ -59,6 +56,14 @@
   margin: 0 auto
   box-sizing: border-box
   padding: .5em
+
+.is-sticky
+  #top-navigation
+    background-color: white
+    -webkit-transition: background-color 1000ms ease-in-out
+    -ms-transition: background-color 1000ms ease-in-out
+    transition: background-color 1000ms ease-in-out
+    box-shadow: 1px 1px 5px #ccc
 
 // Navigation Trigger
 

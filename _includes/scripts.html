@@ -54,11 +54,7 @@
     });
     console.log( "AudioJS has been loaded." );
 
-    $( document ).ready(function() {
-      console.log( "document loaded" );
-    });
-
-    $( document ).ready(function(){
+    $script.ready('search', function() {
     $("#nav-mobile").html($("#nav-main").html());
     $("#nav-trigger span").click(function(){
         if ($("#nav-indicator, nav#nav-mobile ul").hasClass("expanded")) {
