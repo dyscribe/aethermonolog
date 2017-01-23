@@ -4,7 +4,7 @@ destination: ../html/aethermonolog.de
 title: aethermonolog - Musikproduktion, Homerecording und Musik machen
 tagline: Aethermonolog Podcast
 email: moin@aethermonolog.de
-description: "Monologe aus dem Kopf eines Musikers: Was inspiriert? Was blockiert? Was funktioniert? Eine Dokumentation musikalischer Schaffensprozesse."
+description: "Der wöchentliche Podcast über Musik, Songwriting und Produktion. Tipps und Tricks für das Homestudio, Gear Reviews, Erfahrungsberichte und Interviews mit Experten aus verschiedenen Bereichen der Audio und Musikindustrie. Mehr auf www.aethermonolog.de"
 subtitle: "Lamento ergo sum."
 paginate: 5
 paginate_path: "posts/:num"
