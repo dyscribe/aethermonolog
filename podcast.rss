@@ -6,7 +6,7 @@
 <channel>
 		<atom:link href="{{ site.url }}/podcast.rss" rel="self" type="application/rss+xml" />
 		<title>{{ site.title }}</title>
-		<description>{{ site.description | xml_escape }}</description>
+		<description><![CDATA[{{ site.description | xml_escape }}]]></description>
 		<link>{{ site.url }}</link>
 		<language>{{ site.lang }}</language>
 		<managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
