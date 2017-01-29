@@ -10,7 +10,8 @@
   font-size: 1em
   background-color: $lightest-grey
   color: $custom-color
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3)
+  @include border-radius($corners)
   padding: .5em
   img#audio-cover
     display: none
@@ -23,7 +24,7 @@
     height: 100px
     float: left
     margin-right: 10px
-    font-size: 1.8em
+    font-size: 1.5em
     overflow: hidden
     @media (min-width: 400px)
       text-align: center
@@ -40,13 +41,14 @@
     height: 100px
     margin-top: 13px
     i
-      background-color: $custom-color
-      color: $lightest-grey
+      //background-color: $custom-color
+      color: $moderate-grey
       border-radius: 100%
       padding: 8px
+      border: 1px solid $moderate-grey
   .scrubber
     position: relative
-    margin-top: 40px
+    margin-top: 33px
     width: auto
     background: #333
     height: 14px
