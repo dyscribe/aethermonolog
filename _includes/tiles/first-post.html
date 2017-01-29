@@ -2,15 +2,13 @@
 
     <!-- Startpage single article view -->
 
-  {% include post-meta-data.html %}
-
   <h2>
     <a href="{{ post.url }}" title="{{ post.title }}">
       {{ post.title }}
     </a>
   </h2>
 
-  {% include social-bar.html %}
+    {% include post-meta-data.html %}
 
     <span class="{{ post.tags }}"></span>
 
