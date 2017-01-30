@@ -5,13 +5,13 @@
 
     <!-- Startpage single article view -->
 
-  {% include post-meta-data.html %}
-
   <h2>
     <a href="{{ post.url }}" title="{{ post.title }}">
       {{ post.title }}
     </a>
   </h2>
+
+    {% include post-meta-data.html %}
 
     <span class="{{ post.tags }}"></span>
 
@@ -20,8 +20,6 @@
           {% include index-player.html%}
         </div>
       {% endif %}
-
-    <br />
 
     {{ post.content | truncatewords: 50 }}
 
@@ -34,5 +32,7 @@
 
         <a href="{{ post.url }}" class="read-more">... weiterlesen</a>
     </div>
+
+    <hr>
 
 {% endfor %}
