@@ -1,19 +1,15 @@
 ---
 layout: post
 categories: [artikel]
-tags: [artikel]
+tags: [artikel, songs, news]
 title: "Neuer Song: Gleitflug - Out Now!"
 date: 2016-05-29 19:00:00
-excerpt: "SEO"
+excerpt: "Der neue Track von Klartexter - Gleitflug. Ab sofort bei iTunes, Spotify, Soundcloud und Co. erhältlich."
 ---
 
 {% soundcloud tracks 266601215 %}
 
-Mein neuer Track **Gleitflug** ist seit Sonntag überall erhältlich.
-
-## Kontext
-
-Die letzten Songs erschienen immer "nur" bei [Spotify](https://play.spotify.com/artist/6oVNztHJaWh9WgyZVMOO4w?play=true&utm_source=open.spotify.com&utm_medium=open), [iTunes](https://itunes.apple.com/de/album/technik-phoniks-feat.-captain/id1087906453), [Google Play](https://play.google.com/store/search?q=klartexter&c=music) und [Co.](https://www.amazon.de/s/ref=nb_sb_noss_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=klartexter).
+Mein neuer Track **Gleitflug** ist ab sofort überall erhältlich. Die letzten Songs erschienen immer "nur" bei [Spotify](https://play.spotify.com/artist/6oVNztHJaWh9WgyZVMOO4w?play=true&utm_source=open.spotify.com&utm_medium=open), [iTunes](https://itunes.apple.com/de/album/technik-phoniks-feat.-captain/id1087906453), [Google Play](https://play.google.com/store/search?q=klartexter&c=music) und [Co.](https://www.amazon.de/s/ref=nb_sb_noss_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=klartexter).
 Ab sofort lade ich die neuen Tracks auch auf mein [Soundcloud Profil](https://soundcloud.com/klartexter). Für mich macht es nicht wirklich mehr Arbeit, bietet euch aber den Vorteil die Lieder auch direkt und ohne Account hören zu können.
 
 ## Support ist wichtig!

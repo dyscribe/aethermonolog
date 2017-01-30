@@ -4,14 +4,26 @@
   {% include head.html %}
 
   <body>
+    {% include search.html %}
 
     {% include navigation.html %}
 
-    <section>
+    <div class="content-wrapper">
 
-      {{ content }}
+      <div class="boxes row two-third">
 
-    </section>
+        {{ content }}
+
+      </div>
+
+      <div class="boxes row one-third" id="interact">
+
+        {% include tiles/minimal-sidebar.html %}
+
+      </div>
+
+    </div>
+
     {% include scripts.html %}
   </body>
 </html>
