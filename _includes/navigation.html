@@ -11,11 +11,11 @@
 
   <nav id="nav-main">
     <ul>
-      <li><a id="nav-home" href="/">Home</a></li>
-      <li><a href="/artikel/">Blog</a></li>
-      <li><a href="/podcast/">Podcast</a></li>
-      <li><a href="/about/">About</a></li>
-      <li><a href="/kontakt/">Kontakt</a></li>
+      <li><a id="nav-home" href="/" {% if page.url == '/' %}class='active'{% endif %}>Home</a></li>
+      <li><a href="/artikel/" {% if page.url == '/artikel/' %}class='active'{% endif %}>Blog</a></li>
+      <li><a href="/podcast/" {% if page.url == '/podcast/' %}class='active'{% endif %}>Podcast</a></li>
+      <li><a href="/about/" {% if page.url == '/about/' %}class='active'{% endif %}>About</a></li>
+      <li><a href="/kontakt/" {% if page.url == '/kontakt/' %}class='active'{% endif %}>Kontakt</a></li>
       <li><a href="http://aethermonolog.us10.list-manage2.com/subscribe?u=51fa74881242eaa159eb6b9c0&id=096e160dfd" target="blank" id="navigation-cta"> Newsletter</a></li>
     </ul>
   </nav>

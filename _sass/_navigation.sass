@@ -8,6 +8,8 @@
   position: inherit
   display: inline-block
   opacity: .96
+  .active
+    border-bottom: 3px solid
   #logo-container
     height: 3em
     background-image: url("/images/mini-logo.png")
@@ -98,5 +100,12 @@
     li
       padding: .5em
       border-bottom: 1px solid #efefef
+      a
+        display: block
+        width: 100%
+  .active
+    border-bottom: none
+    border-left: 3px solid
+    padding-left: 5px
   @media (min-width: 768px)
     display: none
