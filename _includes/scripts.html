@@ -54,20 +54,6 @@
     });
     console.log( "AudioJS has been loaded." );
 
-    $script.ready('search', function() {
-    $("#nav-mobile").html($("#nav-main").html());
-    $("#nav-trigger span").click(function(){
-        if ($("#nav-indicator, nav#nav-mobile ul").hasClass("expanded")) {
-            $("#nav-indicator.expanded, nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-            $(this).removeClass("open");
-        } else {
-            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-            $(this).addClass("open");
-        }
-      });
-      console.log( "responsive nav loaded" );
-    });
-
     $( window ).load(function() {
         console.log( "window loaded" );
     });
@@ -90,6 +76,19 @@
     s.parentNode.insertBefore(wf, s);
     })();
     console.log( "Fonts loaded" );
+    (function() {
+    $("#nav-mobile").html($("#nav-main").html());
+    $("#nav-trigger span").click(function(){
+        if ($("#nav-indicator, nav#nav-mobile ul").hasClass("expanded")) {
+            $("#nav-indicator.expanded, nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+      });
+      console.log( "responsive nav loaded" );
+    });
   </script>
 
 <!-- Load Disqus Comment Count -->
