@@ -18,8 +18,10 @@ Options -Indexes
 AddDefaultCharset utf-8
 
 
+
 # Enforce https
 RewriteEngine On
+RewriteCond %{REQUEST_URI}  !^/(itunes-cover)
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://aethermonolog.de/$1 [R,L]
 
@@ -36,6 +38,7 @@ RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC]
 RewriteRule ^(.*)$ – [F,L]
 RewriteCond %{HTTP_USER_AGENT} Twitterbot
 RewriteRule ^(.*)$ http://aethermonolog.de/$1
+
 
 
 # External 301 Redirects
