@@ -19,7 +19,7 @@ Die Bandbreite der Ergebnisse klingt so:
 
 ## Über den Aethermonolog
 
-Der *Aethermonolog* ist ein wöchentlicher Podcast über Songwriting, Musik und Audioproduktion. Was inspiriert? Was funktioniert? Was blockiert? Diesen Fragen gehen Moderator *Kai Birkenfeld (aka. Klartexter)* und seine Gäste, aus dem verschiedensten Bereichen der Musikindustrie auf den Grund. Vom Songwriting, zur Aufnahme, über Mix und Mastering, hin zu Veröffentlichung, Marketing und Social Media - hier sind Musiker, Songwriter, Produzenten und Homestudio-Besitzer an der richtigen Adresse.
+Der *Aethermonolog* ist ein wöchentlicher Podcast über Songwriting, Musik und Audioproduktion. Was inspiriert? Was funktioniert? Was blockiert? Diesen Fragen gehe ich mit meinen Gästen, aus dem verschiedensten Bereichen der Musikindustrie auf den Grund. Vom Songwriting, zur Aufnahme, über Mix und Mastering, hin zu Veröffentlichung, Marketing und Social Media - hier sind Musiker, Songwriter, Produzenten, Homestudio-Besitzer und Solopreneure an der richtigen Adresse.
 
 
 ## Über die Website
