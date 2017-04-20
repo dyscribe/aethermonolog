@@ -6,14 +6,14 @@ permalink: /about/
 
 # About
 
-  ![](/images/profile-1000.jpg)
+![](/images/profile-1000.jpg)
+*__Foto__: Click Boom Clique*
 
 ## Über mich
 
 Ich bin Kai Birkenfeld aka. [Klartexter](https://klartexter.net), MC und Produzent aus Hamburg.
 Als ehemaliger Graffiti Writer, langjähriger Hobby-Gitarrist, passionierter Heimstudiobesitzer und 90er Jahre Hip-Hop Fan, bewegt sich mein musikalisches Schaffen im Schmelztiegel dieser Einflüsse.
 
-Die Bandbreite der Ergebnisse klingt so:
 
 {% soundcloud playlists 229855238 %}
 
