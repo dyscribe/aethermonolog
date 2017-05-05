@@ -14,7 +14,7 @@
 
       {% if post.file %}
         <div class="audio-player">
-          <audio preload="metadata">
+          <audio preload="none">
             <source src="{{ post.file_itunes }}" type="audio/mp4">
             <source src="{{ post.file }}" type="audio/mpeg">
             Your browser does not support the audio element.

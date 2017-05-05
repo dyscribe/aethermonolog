@@ -29,3 +29,4 @@ Diese Website wurde mit verschiedenen Open Source Tools erstellt, als da wären:
   * [jekyllrb.com](//jekyllrb.com) - Jekyll, der Static Site renderer
   * [stickyjs.com](//stickyjs.com/) - Für eine statische Navigation
   * [audiojs](https://kolber.github.io/audiojs/) - Media Player
+  * [Lazy Sizes](https://github.com/aFarkas/lazysizes) - Optimiertes laden von Bildern

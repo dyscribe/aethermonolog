@@ -4,7 +4,8 @@ destination: ../html/aethermonolog.de
 title: Aethermonolog Musik Podcast
 tagline: Aethermonolog Podcast
 email: moin@aethermonolog.de
-description: "Der wöchentliche Podcast über Musik, Songwriting und Produktion. Tipps und Tricks für das Homestudio, Gear Reviews, Erfahrungsberichte und Interviews mit Experten aus verschiedenen Bereichen der Audio und Musikindustrie. Mehr auf www.aethermonolog.de"
+description: "Der wöchentliche Podcast über Musikproduktion, Songwriting, Beatmaking und Audio Produktion. Tipps und Tricks für das Homestudio, Gear Reviews, Erfahrungsberichte und Interviews mit Experten aus verschiedenen Bereichen der Audio und Musikindustrie. Mehr auf www.aethermonolog.de"
+seo: "Der wöchentliche Podcast über Musikproduktion, Songwriting und Homerecording. Tipps, Tricks und Interviews über Audio und Musik machen. Jetzt reinhören!"
 subtitle: "Lamento ergo sum."
 paginate: 5
 paginate_path: "posts/:num"

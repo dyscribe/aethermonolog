@@ -1,13 +1,19 @@
 // Top Navigation
 ////////////////////////////////
 
+
 #top-navigation
   width: 100%
   max-height: 4em
   z-index: 1000
-  position: fixed
   display: inline-block
   opacity: .96
+  height: 75px
+  -webkit-transition: padding .2s ease-in-out, background-color .2s ease-in-out
+  -ms-transition: padding .2s ease-in-out, background-color .2s ease-in-out
+  transition: padding .2s ease-in-out, background-color .2s ease-in-out
+  @media (min-width: 767px)
+    padding: .8em 0 .5em 0
   .active
     border-bottom: 3px solid
   #logo-container
@@ -58,13 +64,15 @@
   margin: 0 auto
   box-sizing: border-box
   padding: .5em
+  height: 71px
 
 .is-sticky
   #top-navigation
+    padding: 0 0
     background-color: white
-    -webkit-transition: background-color 1000ms ease-in-out
-    -ms-transition: background-color 1000ms ease-in-out
-    transition: background-color 1000ms ease-in-out
+    -webkit-transition: padding .2s ease-in-out, background-color .2s ease-in-out
+    -ms-transition: padding .2s ease-in-out, background-color .2s ease-in-out
+    transition: padding .2s ease-in-out, background-color .2s ease-in-out
     box-shadow: 1px 1px 5px #ccc
 
 // Navigation Trigger

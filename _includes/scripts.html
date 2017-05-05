@@ -12,6 +12,7 @@
   $script('/assets/js/jquery.sticky.js', 'sticky');
   $script('/assets/js/simpleJekyllSearch.js', 'search');
   $script('/assets/audiojs/audio.js', 'audio');
+  $script('/assets/js/lazysizes.min.js', 'lazy');
     $script.ready('search', function() {
              var bs = {
                   close: $(".close-btn"),
@@ -67,6 +68,10 @@
       });
     });
     console.log( "AudioJS has been loaded." );
+
+    $script.ready('lazy', function(){
+    });
+    console.log( "Lazy images are loaded." );
 
     $( window ).load(function() {
         console.log( "window loaded" );
@@ -194,22 +199,3 @@ fbq('track', "PageView");</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1605737856390983&ev=PageView&noscript=1"
 /></noscript>
-
-<!-- Load Flattr JS -->
-
-<script type="text/javascript">
-/* <![CDATA[ */
-(function() {
-    var s = document.createElement('script');
-    var t = document.getElementsByTagName('script')[0];
-
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = '//button.flattr.com/loader.js?'+
-            'mode=auto&uid=dyscribe&&language=de_DE&category=audio&button=compact';
-
-    t.parentNode.insertBefore(s, t);
- })();
- console.log( "Flattr loaded." );
-/* ]]> */
-</script>
