@@ -58,7 +58,7 @@ podcast:
   source: https://aethermonolog.s3.amazonaws.com/episodes/
 
 # Jekyll plugins
-gems: [jekyll-mentions, jekyll-redirect-from, jekyll-paginate, jekyll-sitemap, jekyll-sass-converter]
+gems: [jekyll-redirect-from, jekyll-paginate, jekyll-sitemap, jekyll-sass-converter]
 
 # Settings for deploy rake task
 # Username and repo of Github repo, e.g.
