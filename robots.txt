@@ -5,8 +5,10 @@ User-agent: googlebot
 Disallow: /kontakt.html
 Disallow: /success.html
 Disallow: /kontakt/
+Disallow: /tags/
 
 user-agent: googlebot-news
 Disallow: /kontakt.html
 Disallow: /success.html
 Disallow: /kontakt/
+Disallow: /tags/

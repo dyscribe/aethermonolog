@@ -138,7 +138,7 @@ p, legend
 
 a
   color: $links
-  @include transition()
+  @include transition(.2s, ease)
   text-decoration: none
   cursor: pointer
   &:hover,
@@ -148,6 +148,8 @@ a
 
 h2 a
   color: #444
+  &:hover
+    color: darken(#444, 10%)
 
 p a
   &:hover
