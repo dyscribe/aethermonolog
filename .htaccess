@@ -57,6 +57,14 @@ Redirect 301 /2014/10/29/praxistest-cubase-5-5-unter-os-x-yosemite/ https://dysc
 Redirect 301 /2014/01/15/vom-mac-%C3%BCber-ssh-auf-raspberry-pi-mit-minepeon-zugreifen/ https://dyscribe.com/404
 Redirect 301 /2014/01/12/tutorial-akai-mpk-mit-mpc-fat-pads-umr%C3%BCsten/ https://dyscribe.com/404
 Redirect 301 /2014/01/09/x-schritte-zum-bitcoin-mining-mit-dem-raspberry-pi/ https://dyscribe.com/404
+Redirect 301 /2014/01/12/tutorial-akai-mpk-25-pad-tuning-zum-nulltarif/ https://dyscribe.com/404
+Redirect 301 /2014/05/10/minepeon-auf-dem-raspberrypi-updaten/ https://dyscribe.com/404
+Redirect 301 /2014/01/12/tutorial-akai-mpk-mit-mpc-fat-pads-umr%C3%BCsten/ https://dyscribe.com/404
+Redirect 301 /2014/01/13/bitcoin-mining-mit-minepeon-auf-dem-raspberry-pi/ https://dyscribe.com/404
+Redirect 301 /2014/08/28/git-username-und-email-setzen/ https://dyscribe.com/404
+Redirect 301 /2014/01/12/tutorial-akai-mpk-25-zerlegen-umbauen/ https://dyscribe.com/404
+Redirect 301 /2014/01/15/vom-mac-%C3%BCber-ssh-auf-raspberry-pi-mit-minepeon-zugreifen/ https://dyscribe.com/404
+Redirect 301 /2014/08/29/git-lernen-mit-code-school-mastering-github/ https://dyscribe.com/404
 
 # Internal Redirects
 Redirect 301 /episode-001.html /podcast/episode-001.html
@@ -78,7 +86,16 @@ Redirect 301 /episode-016.html /podcast/episode-016.html
 Redirect 301 /episode-017.html /podcast/episode-017.html
 Redirect 301 /episode-018.html /podcast/episode-019.html
 Redirect 301 /episode-019.html /podcast/episode-018.html
-
+Redirect 301 /audio-production/
+Redirect 301 /audio-produktion/
+Redirect 301 /events/ /
+Redirect 301 /blog-1/ausprobiert/ /
+Redirect 301 /tech/ /
+Redirect 301 /2015/11/01/episode-001/
+Redirect 301 /about-me/ /about/
+Redirect 301 /sitemap /sitemap.xml
+Redirect 301 /gaming/ /
+Redirect 301 /websdesign/ /
 
 # Keep alive
 <IfModule mod_headers.c>
