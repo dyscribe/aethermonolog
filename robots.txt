@@ -6,9 +6,11 @@ Disallow: /kontakt.html
 Disallow: /success.html
 Disallow: /kontakt/
 Disallow: /tags/
+Diallow: /404.html
 
 user-agent: googlebot-news
 Disallow: /kontakt.html
 Disallow: /success.html
 Disallow: /kontakt/
 Disallow: /tags/
+Diallow: /404.html
