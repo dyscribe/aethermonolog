@@ -1,7 +1,7 @@
 ---
 layout: clean
 title: Tag Index
-excerpt: "An archive of posts sorted by tag."
+sitemap: flase
 ---
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
