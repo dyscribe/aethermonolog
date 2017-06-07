@@ -1,7 +1,7 @@
   {% for post in paginator.posts limit:10 %}
 
     <!-- Startpage single article view -->
-
+<article>
   <h2>
     <a href="{{ post.url }}" title="{{ post.title }}">
       {{ post.title }}
@@ -34,9 +34,8 @@
         <a href="{{ post.url }}" class="read-more">... weiterlesen</a>
     </div>
 
-<div class="clear"></div>
-
-<hr>
+    <div class="clear"></div>
+</article>
 
 {% endfor %}
 

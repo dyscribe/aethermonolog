@@ -6,19 +6,37 @@
   <body>
     {% include search.html %}
 
+    <div class="hero-unit">
     {% include navigation.html %}
+      <div class="content-wrapper">
+        <h1>Aethermonolog Musik Podcast</h1>
+        <p>Der wöchentliche Podcast über Musikproduktion und Songwriting von und mit Kai Birkenfeld</p>
+      </div>
+    </div>
+
+    <div class="banner">
+
+    </div>
 
     <div class="content-wrapper">
 
-      <div class="boxes row two-third">
+      <div class="row">
 
-        {% include tiles/first-post.html %}
+        <div class="two-third">
 
-      </div>
+          {% include tiles/first-post.html %}
 
-      <div class="boxes row one-third" id="interact">
+        </div>
 
-        {% include tiles/sidebar.html %}
+        <div class="one-third">
+
+          <div class="boxes" id="interact">
+
+          {% include tiles/sidebar.html %}
+
+          </div>
+
+        </div>
 
       </div>
 
