@@ -3,20 +3,12 @@
 
   {% include head.html %}
 
-  <body>
+  <body id="about">
     {% include search.html %}
 
-    <div class="hero-unit">
-    {% include navigation.html %}
-      <div class="content-wrapper">
-        <h1>Aethermonolog Musik Podcast</h1>
-        <p>Der wöchentliche Podcast über Musikproduktion und Songwriting von und mit Kai Birkenfeld</p>
-      </div>
-    </div>
+    {% include modules/hero-unit-clean.html %}
 
-    <div class="banner">
-
-    </div>
+    {% include modules/banner.html %}
 
     <div class="content-wrapper">
 
@@ -24,7 +16,7 @@
 
         <div class="two-third">
 
-          {% include tiles/first-post.html %}
+          {{ content }}
 
         </div>
 

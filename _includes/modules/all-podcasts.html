@@ -1,9 +1,9 @@
 <!-- LIST ALL PODCAST EPISODES MODULE -->
 
-  {% for post in site.categories.podcast %}
+{% for post in site.categories.podcast limit:20 %}
 
-    <!-- Startpage single article view -->
-
+<!-- Podcast Episode -->
+<article>
   <h2>
     <a href="{{ post.url }}" title="{{ post.title }}">
       {{ post.title }}
@@ -14,7 +14,7 @@
 
     {% if post.file %}
       <div class="audio-player">
-        <audio preload="metadata">
+        <audio preload="none">
           <source src="{{ post.file_itunes }}" type="audio/mp4">
           <source src="{{ post.file }}" type="audio/mpeg">
           Your browser does not support the audio element.
@@ -24,8 +24,6 @@
 
     {{ post.content | truncatewords: 30 }}
 
-    </span>
-
     <div id="article-interaction">
         <div class="comment-count">
           <i class="ico-comment"></i><a rel="nofollow" href="{{ post.url }}#disqus_thread"> Lädt...</a>
@@ -34,6 +32,6 @@
         <a href="{{ post.url }}" class="read-more">Zum Podcast &raquo;</a>
     </div>
 
-  <hr>
+</article>
 
 {% endfor %}

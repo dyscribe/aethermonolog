@@ -1,7 +1,8 @@
 // Buttons
 .button
+  font-family: $primary-font
   display: inline-block
-  width: 100%
+  width: auto
   max-width: 300px
   color: $white
   line-height: 1em
@@ -24,11 +25,6 @@
   &:active
     color: $backgrounds
     background: darken($links, 20%)
-  @media (min-width: 526px)
-    float: right
-    max-width: 170px
-    margin-top: 0
-    font-size: 0.9em
 
 .button-invert
   display: inline-block
@@ -63,6 +59,32 @@
 a.button.ask-me
   max-width: 260px
   float: none
+
+.button-red
+  font-family: $primary-font
+  display: inline-block
+  width: auto
+  max-width: 300px
+  color: $white
+  line-height: 1em
+  text-align: center
+  @include transition(.1s)
+  background: $cta-red
+  text-shadow: 1px 1px 1px darken($cta-red, 20%)
+  padding: .65em 1em
+  @include border-radius($corners)
+  cursor: pointer
+  border-bottom: 5px solid darken($cta-red, 10%)
+  &:visited
+    background-color: $cta-red
+  &:hover,
+    margin-top: 4px
+    color: $white
+    text-decoration: none
+    border-bottom: 2px solid darken($cta-red, 10%)
+  &:active
+    color: $backgrounds
+    background: darken($links, 20%)
 
 section
   p
@@ -128,7 +150,7 @@ section
   #newsletter
     float: none
     max-width: 240px
-  @media (min-width: 61em)
+  @media (min-width: $break)
     font-size: 1.8rem
 
 // iTunes & Android Badge
@@ -237,7 +259,6 @@ div#mce-error-response
   margin: .5em 0em 1.5em 0
   font-family: $primary-font
   display: inline-block
-  float: left
   a
     font-weight: 700
   i

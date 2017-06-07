@@ -12,6 +12,7 @@ $moderate-grey: #999
 $lightest-grey: #efefef
 $modal-title: #252525
 $pale-blue: #d9e0e8
+$cta-red: #ea2e2e
 
 
 // Color effects and recycled usages
@@ -21,6 +22,8 @@ $links: $custom-color
 $title: $custom-color
 $backgrounds: $white
 
+// Mobile Breakpoint
+$break: 64em
 
 // Border Radius Size
 $corners: 5px
@@ -29,9 +32,9 @@ $corners: 5px
 
 $primary-font: 'Podkova', serif
 $secondary-font: 'Muli', sans-serif
-$wrapper: 80em
+$wrapper: $break
 $navigation-wrapper: 100%
-$content-wrapper: 80em
+$content-wrapper: $break
 
 // Mixins
 @mixin transition($duration:0.2s, $ease:ease-out)
