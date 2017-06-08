@@ -1,7 +1,5 @@
 
-  {% include modules/about.html %}
-
-  <hr>
+  <img data-src="/images/sidebar-cover.jpg" class="lazyload" id="sidebar-cover" alt="Aethermonolog Podcast Cover Bild"/>
 
   {% include modules/subscribe.html %}
 
@@ -9,14 +7,18 @@
 
   <hr>
 
-  <h4>Unterstützen</h4>
+  {% include modules/about.html %}
+
+  <hr>
 
   {% include modules/support.html %}
 
-  <br />
   <hr>
 
   <h4>Aktuelle Beiträge:</h4>
   {% include modules/recent.html %}
 
   <br />
+
+  <h4>Benachrichtigungen über neue Folgen erhalten:</h4>
+  {% include modules/newsletter.html %}
