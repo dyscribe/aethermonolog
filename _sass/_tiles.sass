@@ -1,11 +1,14 @@
 // Tile Design Specifics
 
-// Tiles Design
+// Content Wrapper
+
 .content-wrapper
   max-width: $content-wrapper
   margin: 0 auto
   @media (min-width: 767px)
     position: relative
+
+// Hero Unit aka. Page Header Section
 
 .hero-unit
   background-position: center, center
@@ -52,6 +55,7 @@
     @media (min-width: 640px)
       top: 390px
 
+// Banner with Ratings
 
 .banner
   background-color: #efefef
@@ -73,6 +77,8 @@
       position: absolute
       left: 14px
       top: -5px
+
+// General Box / Article Layout Styles
 
 .boxes, article
   padding: 1.5em
@@ -124,6 +130,12 @@
   width: 100%
   @media (min-width: $break)
     max-width: 60em
+
+.footer-col
+  width: 100%
+  float: left
+  @media (min-width: $break)
+    max-width: 25%
 
 // Startpage Design
 
@@ -223,9 +235,38 @@ img#sidebar-cover
     @media (max-width: $break)
       display: inline-block
 
-
 #subscribe
   text-align: center
 
 #social-icons
   text-align: center
+
+// Footer Design
+
+footer
+  background-color: $copy
+  color: $white
+  h4
+    color: $background
+  a
+    font-family: $secondary-font
+    color: $white
+  .content-wrapper
+    padding: 2em
+  .store-badge img
+    height: 32px
+  #social-icons a i
+    color: #999
+    font-size: 2.5em
+    &:hover
+      color: #efefef
+  #notes
+    font-family: $secondary-font
+    color: #ccc
+    h6
+      font-size: .6em
+      color: #ccc
+      font-weight: 600
+    p
+      font-size: .6em
+      font-style: italic
