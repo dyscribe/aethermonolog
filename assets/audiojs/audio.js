@@ -43,7 +43,7 @@
     settings: {
       autoplay: false,
       loop: false,
-      preload: true,
+      preload: false,
       imageLocation: path + 'player-graphics.gif',
       retinaImageLocation: path + 'player-graphics@2x.gif',
       swfLocation: path + 'audiojs.swf',

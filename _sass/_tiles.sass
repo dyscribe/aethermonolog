@@ -88,6 +88,7 @@
   font-family: $secondary-font
   height: auto
   float: left
+  margin-bottom: 1.5em
   @media (min-width: $break)
     margin: 1em .5em 1em .5em
   p
@@ -115,14 +116,14 @@
 .one-third
   width: 100%
   @media (min-width: $break)
-    max-width: 20em
+    max-width: 18em
     display: inline-block
     float: right
 
 .two-third
   width: 100%
   @media (min-width: $break)
-    max-width: 44em
+    max-width: 46em
     display: inline-block
     float: left
 
@@ -134,6 +135,7 @@
 .footer-col
   width: 100%
   float: left
+  margin-bottom: 1em
   @media (min-width: $break)
     max-width: 25%
 
@@ -195,18 +197,6 @@ h2#recent
   p
     font-size: .8rem
 
-#author
-  display: inline-block
-  img#profile
-    border-radius: 100%
-    max-width: 4em
-    float: left
-  p
-    margin-top: 0
-    font-style: italic
-    margin-left: 6em
-    max-width: 16em
-
 img#sidebar-cover
   @media (min-width: 30em)
     width: auto
@@ -219,6 +209,38 @@ img#sidebar-cover
     margin-right: none
     margin-bottom: 1em
     width: 100%
+
+.subscribe-button
+  text-align: center
+  max-width: 400px
+  width: 100%
+  height: 45px
+  background-color: $custom-color
+  border-bottom: 4px solid darken($custom-color, 15%)
+  border-radius: $corners
+  &:hover
+    margin-top: 2px
+    border-bottom: 2px solid darken($custom-color, 15%)
+  iframe
+    vertical-align: middle
+
+.subscribe-button-small
+  display: block
+  text-align: right
+  @media (min-width: $break)
+    display: none
+
+#author
+  display: inline-block
+  img#profile
+    border-radius: 100%
+    max-width: 4em
+    float: left
+  p
+    margin-top: 0
+    font-style: italic
+    margin-left: 6em
+    max-width: 16em
 
 #donate
   .donate-item
@@ -246,8 +268,9 @@ img#sidebar-cover
 footer
   background-color: $copy
   color: $white
-  h4
-    color: $background
+  h3
+    color: $white
+    font-family: $primary-font
   a
     font-family: $secondary-font
     color: $white

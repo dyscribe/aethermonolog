@@ -1,6 +1,7 @@
 // Social Block on the side
+// Include: social-block.html
 
-.social-bar-unused
+.social-block
   display: none
   @media (min-width: 685px)
     -webkit-animation-name: fadeInLeft
@@ -53,7 +54,32 @@
       font-size: 1em
       top: 1px
       position: relative
-      color: white
     span
       display: block
       font-size: 0.6em
+
+
+// Social Bar to display share icons in a row
+// Include is: social-bar.html
+
+.social-bar
+  clear: both
+  display: inline-block
+  margin: 0 .5em
+  a
+    font-family: $secondary-font
+    font-size: 1em
+    padding: 3px 6px
+    @include border-radius($corners)
+  #twitter
+    color: #fff
+    background-color: $twitter
+    &:hover
+      background-color: darken($twitter, 10%)
+  #facebook
+    color: #fff
+    background-color: $facebook
+    &:hover
+      background-color: darken($facebook, 10%)
+  i
+    font-size: 1em

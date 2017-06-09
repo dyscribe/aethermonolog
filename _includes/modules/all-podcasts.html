@@ -19,6 +19,7 @@
           <source src="{{ post.file }}" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
+        <div class="player-title">{{ post.title | truncate: 70 }}</div>
       </div>
     {% endif %}
 

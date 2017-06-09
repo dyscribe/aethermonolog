@@ -7,14 +7,17 @@
   {% include post/meta-data.html %}
 
   {% if page.file %}
+    {% include modules/subscribe-button.html %}
     <div class="audio-player">
       <audio preload="none">
         <source src="{{ page.file_itunes }}" type="audio/mp4">
         <source src="{{ page.file }}" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
+      <div class="player-title">{{ page.title }}</div>
     </div>
   {% endif %}
+
 
     {{ content }}
 

@@ -4,7 +4,7 @@
     {% if page.claim %}<h1 id="claim">{{ page.claim }}</h1>{% elsif page.claim == false%} &nbsp {% else %}<h1 id="claim">{{ page.title | truncate: 56 }}</h1>{% endif %}
     {% if page.subclaim %}<p id="subclaim">{{ page.subclaim }}</p>{% else %}<style>h1#claim{margin-top:1em;}@media(min-width:767px){h1#claim{margin-top:2em;}}</style>{% endif %}
     {% if page.button == true %}
-      <p><a href="{% for post in site.categories.podcast limit:1 %}{{ post.url }}{% endfor %}" class="button-red">Jetzt anhören! <i class="ico-volume-low"></i></a></p>
+      <p><a href="{% for post in site.categories.podcast limit:1 %}{{ post.url }}{% endfor %}" class="button-red">Neuste Folge anhören! <i class="ico-volume-low"></i></a></p>
     {% endif %}
   </div>
   {% if page.credit %}<span id="image-credit">Foto: {{ page.credit }}</span>{% endif %}
