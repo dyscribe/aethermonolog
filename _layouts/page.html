@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  {% include post/head.html %}
+  {% include head.html %}
 
   <body>
     {% include search.html %}
@@ -16,7 +16,7 @@
 
         <div class="two-third">
 
-          {% include post/view.html %}
+          {{ content }}
 
         </div>
 
@@ -28,10 +28,9 @@
 
           </div>
 
-
           <div class="boxes" id="interact">
 
-            {% include tiles/sidebar.html %}
+          {% include tiles/sidebar.html %}
 
           </div>
 
@@ -42,6 +41,7 @@
     </div>
 
     {% include footer.html %}
+
     {% include scripts.html %}
   </body>
 </html>

@@ -67,18 +67,19 @@
   display: inline-block
   margin: 0 .5em
   a
-    font-family: Muli, sans-serif
+    font-family: $secondary-font
     font-size: 1em
-    padding: .2em .8em .4em .6em
-    font-weight: 100
+    padding: 3px 6px
     @include border-radius($corners)
   #twitter
+    color: #fff
+    background-color: $twitter
     &:hover
-      color: #fff
-      background-color: #55acee
+      background-color: darken($twitter, 10%)
   #facebook
+    color: #fff
+    background-color: $facebook
     &:hover
-      color: #fff
-      background-color: #3b5998
+      background-color: darken($facebook, 10%)
   i
     font-size: 1em

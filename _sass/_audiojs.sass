@@ -6,13 +6,10 @@
     height: 6em
     background: $lightest-grey
   overflow: hidden
-  font-family: monospace
   font-size: 1em
-  background-color: $lightest-grey
-  color: $custom-color
+  background-color: #333
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3)
   @include border-radius($corners)
-  padding: .5em
   img#audio-cover
     display: none
     @media (min-width: 400px)
@@ -41,48 +38,46 @@
     height: 100px
     margin-top: 13px
     i
-      //background-color: $custom-color
-      color: $moderate-grey
+      background-color: $white
+      color: $cta-red
       border-radius: 100%
-      padding: 8px
-      border: 1px solid $moderate-grey
+      padding: 12px
   .scrubber
     position: relative
-    margin-top: 33px
+    margin-top: 99px
     width: auto
-    background: #333
-    height: 14px
-    overflow: hidden
+    background: #000
+    height: 18px
     cursor: pointer
   .progress
     position: absolute
     top: 0px
     left: 0px
-    height: 14px
+    height: 18px
     width: 0px
     background: $custom-color
     z-index: 1
-    border-right: 5px solid darken($custom-color, 5%)
+    border-right: 8px solid #fff
   .loaded
     position: absolute
     top: 0px
     left: 0px
-    height: 14px
+    height: 18px
     width: 0px
-    background: lighten($custom-color, 5%)
+    background: #666
   .time
     float: right
     height: 36px
     line-height: 36px
-    margin-top: 5px
-    color: $copy
+    margin: -50px 5px 0 0
+    color: $lightest-grey
     font-size: .8em
     em
       padding: 0px 2px 0px 0px
-      color: $custom-color
+      color: $lightest-grey
       font-style: normal
     strong
-      font-weight: normal
+      font-weight: 700
   .error-message
     float: left
     display: none
@@ -105,6 +100,26 @@
       padding-bottom: 1px
       border-bottom: 1px solid #999
       white-space: wrap
+
+.player-title
+  font-size: 0.8em
+  color: #fff
+  max-width: 160px
+  min-height: 54px
+  position: relative
+  top: -104px
+  left: 105px
+  margin-bottom: -2.5em
+  @media (min-width: 400px)
+    top: -94px
+    left: 210px
+  @media (min-width: 560px)
+    font-size: 1em
+    max-width: 280px
+    left: 220px
+  @media (min-width: 767px)
+    max-width: 360px
+
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2)
   .audiojs

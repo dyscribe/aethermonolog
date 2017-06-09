@@ -53,8 +53,6 @@
   list-style: none
   float: right
   margin-top: 0
-  @media (min-width: 768px)
-    margin-top: 0.3em
   span
     display: block
     margin-bottom: 10px
@@ -68,12 +66,14 @@
     @include transition(.2s)
   i
     font-size: 1.4em
+    color: #fff
+    position: relative
 
 
 // Overlay Styling
 .search-wrapper
   position: absolute
-  width: 100%
+  top: -100px
 
 .search-form.active
   background-color: rgba(0,0,0,0.9)

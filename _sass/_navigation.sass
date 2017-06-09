@@ -1,64 +1,68 @@
 // Top Navigation
 ////////////////////////////////
 
+.is-sticky
+  #top-navigation
+    padding: 0 0
+    background-color: $white
+    -webkit-transition: padding .2s ease-in-out, background-color .2s ease-in-out
+    -ms-transition: padding .2s ease-in-out, background-color .2s ease-in-out
+    transition: padding .2s ease-in-out, background-color .2s ease-in-out
+    box-shadow: 1px 1px 5px #ccc
+    font-size: .9em
+    @media (min-width: 767px)
+      #nav-main li a, i
+        color: $copy !important
+        text-shadow: none
+    #logo-container
+      background-image: url(/images/full-logo.png)
+      height: 2.5em
+    li.dosearch span i
+      color: $custom-color
+
 
 #top-navigation
   width: 100%
   max-height: 4em
   z-index: 1000
+  opacity: 1
   display: inline-block
-  opacity: .96
-  height: 75px
   -webkit-transition: padding .2s ease-in-out, background-color .2s ease-in-out
   -ms-transition: padding .2s ease-in-out, background-color .2s ease-in-out
   transition: padding .2s ease-in-out, background-color .2s ease-in-out
-  @media (min-width: 767px)
-    padding: .8em 0 .5em 0
   .active
     border-bottom: 2px solid
   #logo-container
-    height: 3em
-    background-image: url("/images/mini-logo.png")
+    height: 3.5em
+    background-image: url("/images/navigation-logo-2x.png")
     background-size: contain
     background-repeat: no-repeat
-    opacity: 1
     width: 32px
     margin-top: 10px
     display: inline-block
     @media (min-width: 320px)
-      background-image: url("/images/full-logo.png")
       width: 180px
       margin-top: 8px
-      height: 3em
     @media (min-width: 530px)
-      background-image: url("/images/full-logo.png")
       width: 220px
       margin-top: 5px
-      height: 3em
   #nav-main
     display: none
     @media (min-width: 768px)
       display: inline-block
       float: right
-      margin-top: -.1em
+      margin-top: -.4em
       li
         display: inline-block
         a
           padding: .5em
           font-size: 0.8em
-          color: #444
+          color: $white
+          text-shadow: 1px 1px 2px #333
           @media (min-width: 320px)
             font-size: 1em
           &:hover
             border-bottom: 2px solid
-      #navigation-cta
-        background-color: $custom-color
-        padding: .5em
-        color: white
-        border-radius: $corners
-        &:hover
-          background-color: lighten($custom-color, 5)
-          border-bottom: 0
 
 .navigation-wrapper
   max-width: $navigation-wrapper
@@ -66,15 +70,6 @@
   box-sizing: border-box
   padding: .5em
   height: 71px
-
-.is-sticky
-  #top-navigation
-    padding: 0 0
-    background-color: white
-    -webkit-transition: padding .2s ease-in-out, background-color .2s ease-in-out
-    -ms-transition: padding .2s ease-in-out, background-color .2s ease-in-out
-    transition: padding .2s ease-in-out, background-color .2s ease-in-out
-    box-shadow: 1px 1px 5px #ccc
 
 // Navigation Trigger
 
@@ -101,7 +96,7 @@
   top: 4em
   width: 100%
   background-color: white
-  box-shadow: 1px 1px 5px #ccc
+  box-shadow: 1px 1px 5px #111
   ul
     display: none
     list-style: none

@@ -1,21 +1,96 @@
 // Tile Design Specifics
 
-// Tiles Design
+// Content Wrapper
+
 .content-wrapper
   max-width: $content-wrapper
   margin: 0 auto
   @media (min-width: 767px)
     position: relative
-    top: 1.6em
 
+// Hero Unit aka. Page Header Section
 
-.boxes
-  padding: 1.2em
+.hero-unit
+  background-position: center, center
+  background-size: cover
+  height: 18em
+  font-family: $secondary-font
+  color: $white
+  @media (min-width: 640px)
+    height: 26em
+  h1
+    color: $white
+    font-size: 1.5em
+    text-align: center
+    text-shadow: 1px 1px 3px #333
+    padding: .5em
+    @media (min-width: 480px)
+      font-size: 2em
+    @media (min-width: 640px)
+      font-size: 3em
+  p
+    text-align: center
+    margin-bottom: 1em
+  #subclaim
+    display: none
+    @media (min-width: 400px)
+      display: block
+      font-style: italic
+      font-size: .8em
+      max-width: 40em
+      margin: auto
+      padding: 1em
+      @media (min-width: 640px)
+        font-size: 1em
+  i
+    vertical-align: middle
+  #image-credit
+    position: absolute
+    right: 2em
+    top: 265px
+    font-size: 0.6em
+    font-style: italic
+    font-weight: 100
+    text-shadow: 1px 1px 1px #333
+    @media (min-width: 640px)
+      top: 390px
+
+// Banner with Ratings
+
+.banner
+  background-color: #efefef
+  text-align: center
+  padding: 1em
+  .review-icon img
+    height: 14px
+    @media (min-width: 480px)
+      height: 100%
+  .reviews
+    font-family: $secondary-font
+    font-style: italic
+    font-size: .5em
+    color: #888
+    margin-top: 10px
+    display: block
+    @media (min-width: $break)
+      display: inline-block
+      position: absolute
+      left: 14px
+      top: -5px
+
+// General Box / Article Layout Styles
+
+.boxes, article
+  padding: 1.5em
   background-color: white
   box-shadow: 0px 0px 1px #a0a0a0
   box-sizing: content-box
   font-family: $secondary-font
   height: auto
+  float: left
+  margin-bottom: 1.5em
+  @media (min-width: $break)
+    margin: 1em .5em 1em .5em
   p
     margin: 1em 0 1em 0
     font-weight: 400
@@ -23,34 +98,46 @@
 .row
   margin: 0 auto
   height: 100%
+  width: 100%
   vertical-align: top
   display: inline-block
   box-sizing: border-box
 
 .full
   width: 100%
-  @media (min-width: 61em)
-    max-width: 60em
+  @media (min-width: $break)
+    max-width: $break
 
 .half
   width: 100%
-  @media (min-width: 61em)
-    max-width: 30em
+  @media (min-width: $break)
+    max-width: 35em
 
 .one-third
   width: 100%
-  @media (min-width: 61em)
-    max-width: 17em
+  @media (min-width: $break)
+    max-width: 18em
+    display: inline-block
+    float: right
 
 .two-third
   width: 100%
-  @media (min-width: 61em)
-    max-width: 43em
+  @media (min-width: $break)
+    max-width: 46em
+    display: inline-block
+    float: left
 
 .three-third
   width: 100%
-  @media (min-width: 61em)
+  @media (min-width: $break)
     max-width: 60em
+
+.footer-col
+  width: 100%
+  float: left
+  margin-bottom: 1em
+  @media (min-width: $break)
+    max-width: 25%
 
 // Startpage Design
 
@@ -110,6 +197,39 @@ h2#recent
   p
     font-size: .8rem
 
+img#sidebar-cover
+  @media (min-width: 30em)
+    width: auto
+    max-width: 250px
+    height: auto
+    float: left
+    margin-right: 2em
+  @media (min-width: $break)
+    float: none
+    margin-right: none
+    margin-bottom: 1em
+    width: 100%
+
+.subscribe-button
+  text-align: center
+  max-width: 400px
+  width: 100%
+  height: 45px
+  background-color: $custom-color
+  border-bottom: 4px solid darken($custom-color, 15%)
+  border-radius: $corners
+  &:hover
+    margin-top: 2px
+    border-bottom: 2px solid darken($custom-color, 15%)
+  iframe
+    vertical-align: middle
+
+.subscribe-button-small
+  display: block
+  text-align: right
+  @media (min-width: $break)
+    display: none
+
 #author
   display: inline-block
   img#profile
@@ -121,19 +241,6 @@ h2#recent
     font-style: italic
     margin-left: 6em
     max-width: 16em
-
-img#sidebar-cover
-  @media (min-width: 30em)
-    width: auto
-    max-width: 250px
-    height: auto
-    float: left
-    margin-right: 2em
-  @media (min-width: 61em)
-    float: none
-    margin-right: none
-    margin-bottom: 1em
-    width: 100%
 
 #donate
   .donate-item
@@ -147,12 +254,42 @@ img#sidebar-cover
         width: auto
   img#patreon
     max-width: 160px
-    @media (max-width: 61em)
+    @media (max-width: $break)
       display: inline-block
-
 
 #subscribe
   text-align: center
 
 #social-icons
   text-align: center
+
+// Footer Design
+
+footer
+  background-color: $copy
+  color: $white
+  h3
+    color: $white
+    font-family: $primary-font
+  a
+    font-family: $secondary-font
+    color: $white
+  .content-wrapper
+    padding: 2em
+  .store-badge img
+    height: 32px
+  #social-icons a i
+    color: #999
+    font-size: 2.5em
+    &:hover
+      color: #efefef
+  #notes
+    font-family: $secondary-font
+    color: #ccc
+    h6
+      font-size: .6em
+      color: #ccc
+      font-weight: 600
+    p
+      font-size: .6em
+      font-style: italic

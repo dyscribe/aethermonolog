@@ -1,9 +1,10 @@
 <!-- LIST ALL PODCAST EPISODES MODULE -->
 
 
-  {% for post in site.categories.artikel %}
+{% for post in site.categories.artikel %}
 
     <!-- Startpage single article view -->
+<article>
 
   <h2>
     <a href="{{ post.url }}" title="{{ post.title }}">
@@ -23,8 +24,6 @@
 
     {{ post.content | truncatewords: 50 }}
 
-    </span>
-
     <div id="article-interaction">
         <div class="comment-count">
           <i class="ico-comment"></i><a rel="nofollow" href="{{ post.url }}#disqus_thread">Lädt...</a>
@@ -33,6 +32,6 @@
         <a href="{{ post.url }}" class="read-more">... weiterlesen</a>
     </div>
 
-    <hr>
+</article>
 
 {% endfor %}
