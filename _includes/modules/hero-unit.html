@@ -1,4 +1,4 @@
-<div class="hero-unit" {% if page.image %}style="background-image: url({{ page.image }})"{% else %}style="background-image: url(/images/hero-header-default.jpg)"{% endif %}>
+<div class="hero-unit" {% if page.image %}style="background-image: url({{ page.image }})"{% elsif post.image %}style="background-image: url({{ post.image }})"{% else %}style="background-image: url(/images/hero-header-default.jpg)"{% endif %}>
 {% include navigation.html %}
   <div class="content-wrapper">
     {% if page.claim %}<h1 id="claim">{{ page.claim }}</h1>{% elsif page.claim == false%} &nbsp {% else %}<h1 id="claim">{{ page.title | truncate: 56 }}</h1>{% endif %}
