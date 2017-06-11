@@ -96,6 +96,7 @@ Redirect 301 /about-me/ /about/
 Redirect 301 /sitemap /sitemap.xml
 Redirect 301 /gaming/ /
 Redirect 301 /websdesign/ /
+Redirect 301 /posts/20/ /podcast/episode-020.html
 
 # Keep alive
 <IfModule mod_headers.c>
