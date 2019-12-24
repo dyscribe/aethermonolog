@@ -59,6 +59,8 @@ podcast:
   source: https://aethermonolog.s3.amazonaws.com/episodes/
 
 # Jekyll plugins
+plugins_dir: ./_scripts
+
 plugins:
  - jekyll-redirect-from
  - jekyll-paginate
