@@ -19,9 +19,9 @@ claim: Kontakt
       <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
       <input type='hidden' name='redirect_to' value='http://aethermonolog.de/success.html' />
       <!-- all your input fields here.... -->
-      <input type='text' name='Name' placeholder="Dein Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Name'"/>
-      <input type='email' name='Mail' placeholder="Deine Mail Adresse" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Mail Adresse'"/>
-      <textarea name='Message' rows="5" placeholder="Deine Nachricht" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Nachricht'"></textarea>
+      <input type='text' name='Name' placeholder="Dein Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Name'" required/>
+      <input type='email' name='Mail' placeholder="Deine Mail Adresse" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Mail Adresse'" required/>
+      <textarea name='Message' rows="5" placeholder="Deine Nachricht" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Nachricht'" required></textarea>
       <div id="captcha">
         <div class="g-recaptcha" data-sitekey="6LeDxckUAAAAADz-QBQY9wuB3J-J_F37taXcPzGN" data-callback="enableBtn" style="display:inline-block"></div>
       </div>
