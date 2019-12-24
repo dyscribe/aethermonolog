@@ -14,6 +14,7 @@ claim: Kontakt
   </h2>
 
   <div class="col-left-50">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <form action="https://getsimpleform.com/messages?form_api_token=5514ba77402583e3a404a6c285914573" method="post">
       <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
       <input type='hidden' name='redirect_to' value='http://aethermonolog.de/success.html' />
@@ -22,6 +23,9 @@ claim: Kontakt
       <input type='email' name='Mail' placeholder="Deine Mail Adresse" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Mail Adresse'"/>
       <textarea name='Message' rows="5" placeholder="Deine Nachricht" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Nachricht'"></textarea>
       <input class="pull-left" type='submit' value='Nachricht senden' />
+      <p id="captcha">
+        <div class="g-recaptcha" data-sitekey="6LeDxckUAAAAADz-QBQY9wuB3J-J_F37taXcPzGN"></div>
+      </p>
     </form>
   </div>
 
