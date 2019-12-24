@@ -196,5 +196,15 @@ fbq('track', "PageView");</script>
 src="https://www.facebook.com/tr?id=1605737856390983&ev=PageView&noscript=1"
 /></noscript>
 
+<!-- Google reCaptcha  -->
+<script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
+       ...
+    });
+});
+</script>
+
 <!-- Load Disqus Comment Count -->
 <!-- <script id="dsq-count-scr" src="//{{ site.owner.disqus }}.disqus.com/count.js" async></script> -->
