@@ -22,10 +22,12 @@ claim: Kontakt
       <input type='text' name='Name' placeholder="Dein Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Name'"/>
       <input type='email' name='Mail' placeholder="Deine Mail Adresse" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Mail Adresse'"/>
       <textarea name='Message' rows="5" placeholder="Deine Nachricht" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Nachricht'"></textarea>
-      <p id="captcha">
+      <div id="captcha">
         <div class="g-recaptcha" data-sitekey="6LeDxckUAAAAADz-QBQY9wuB3J-J_F37taXcPzGN" data-callback="enableBtn"></div>
-      </p>
-      <input id="submit" class="pull-left" type='submit' value='Nachricht senden'/>
+      </div>
+      <div id="button-test">
+        <input id="submit" class="pull-left" type='submit' value='Nachricht senden'/>
+      </div>
     </form>
   </div>
 
