@@ -59,7 +59,7 @@ podcast:
   source: https://aethermonolog.s3.amazonaws.com/episodes/
 
 # Jekyll plugins
-plugins_dir: ./_scripts
+plugins_dir: ./_plugins
 
 plugins:
  - jekyll-redirect-from
